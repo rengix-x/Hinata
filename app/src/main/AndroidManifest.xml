@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Quiet keep-alive foreground notification to prevent OEM background kills -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Used only for downloading offline ML Kit translation packs or explicitly opted-in text-only online translation; screenshots are never uploaded -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Optional permission for UsageStatsManager recent-app history backfill on service startup -->
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- Package visibility for launchable apps in Blacklist picker & optional Shizuku status check -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <package android:name="moe.shizuku.privileged.api" />
+        <package android:name="com.google.android.googlequicksearchbox" />
+        <package android:name="com.parallelc.micts" />
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="false">
+
+        <!-- Settings UI isolated in :settings process and excluded from Recents to prevent swipe-away collateral kills -->
+        <activity
+            android:name="com.edgeflow.settings.SettingsActivity"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:process=":settings"
+            android:theme="@style/Theme.MyApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <!-- Ultra-lightweight transparent proxy Activity in default process for no-Shizuku floating window launch -->
+        <activity
+            android:name="com.edgeflow.service.FloatingProxyActivity"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- Ultra-lightweight transparent emergency recovery Activity in default resident process (zero Compose) -->
+        <activity
+            android:name="com.edgeflow.service.HinataRecoveryActivity"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- Ultra-lightweight AccessibilityService running in default resident process (zero Compose) -->
+        <service
+            android:name="com.edgeflow.service.EdgeAccessibilityService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse"
+            android:label="@string/accessibility_service_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="accessibility_gesture_keep_alive" />
+        </service>
+
+        <!-- Quick Settings / Control Center 1-tap emergency recovery Tile (default resident process, zero Compose) -->
+        <service
+            android:name="com.edgeflow.service.HinataRecoveryTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher_monochrome"
+            android:label="@string/qs_tile_recovery_label"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Cross-process atomic configuration & runtime status provider hosted in resident process -->
+        <provider
+            android:name="com.edgeflow.data.EdgeConfigProvider"
+            android:authorities="${applicationId}.config"
+            android:exported="false" />
+
+        <!-- Official Shizuku binder provider hosted in default process (shared with :settings via multi-process support) -->
+        <provider
+            android:name="rikka.shizuku.ShizukuProvider"
+            android:authorities="${applicationId}.shizuku"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="false"
+            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    </application>
+
+</manifest>
