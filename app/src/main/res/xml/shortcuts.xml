@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="revive_service"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_monochrome"
+        android:shortcutShortLabel="@string/shortcut_revive_short"
+        android:shortcutLongLabel="@string/shortcut_revive_long">
+        <intent
+            android:action="io.github.rengixx.hinata.action.REVIVE_SERVICE"
+            android:targetPackage="io.github.rengixx.hinata"
+            android:targetClass="com.edgeflow.service.HinataRecoveryActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="restore_system_nav"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_monochrome"
+        android:shortcutShortLabel="@string/shortcut_restore_nav_short"
+        android:shortcutLongLabel="@string/shortcut_restore_nav_long">
+        <intent
+            android:action="io.github.rengixx.hinata.action.RESTORE_SYSTEM_NAV"
+            android:targetPackage="io.github.rengixx.hinata"
+            android:targetClass="com.edgeflow.service.HinataRecoveryActivity" />
+    </shortcut>
+</shortcuts>
