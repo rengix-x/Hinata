@@ -1,0 +1,826 @@
+<resources>
+    <string name="app_name">Hinata</string>
+    <string name="accessibility_service_label">Hinata एज जेस्चर</string>
+    <string name="accessibility_service_description">बैक, होम, रीसेंट ऐप्स, सर्कल टू सर्च और क्विक मेनू के लिए स्क्रीन के किनारों से आसानी से नेविगेट करें। स्क्रीन की सामग्री कभी नहीं पढ़ी जाती।</string>
+    <string name="toast_circle_to_search_fallback">कृपया Google को अपना डिफ़ॉल्ट डिजिटल असिस्टेंट सेट करें</string>
+
+    <!-- Navigation tabs (5 tabs, concise single-line) -->
+    <string name="tab_zones">एरिया</string>
+    <string name="tab_arc">मेनू</string>
+    <string name="tab_actions">एक्शन</string>
+    <string name="tab_blacklist">ऐप्स</string>
+    <string name="tab_guide">HyperOS</string>
+
+    <!-- Service status -->
+    <string name="status_service_active">चालू</string>
+    <string name="status_service_inactive">बंद</string>
+    <string name="status_enable_now">चालू करें</string>
+
+    <!-- Edges & Appearance -->
+    <string name="section_trigger_zones">एज एरिया</string>
+    <string name="section_appearance">दिखावट और वाइब्रेशन</string>
+    <string name="section_bottom_cts">बॉटम बार और सर्कल टू सर्च</string>
+    <string name="label_left_edge">बायां किनारा</string>
+    <string name="label_right_edge">दायां किनारा</string>
+    <string name="label_bottom_bar">बॉटम बार</string>
+    <string name="label_bottom_long_press">बॉटम बार होल्ड करें</string>
+    <string name="label_bottom_long_press_duration">होल्ड समय</string>
+    <string name="label_bottom_long_press_action">होल्ड एक्शन</string>
+    <string name="button_test_cts">सर्कल टू सर्च आज़माएं</string>
+    <string name="button_assistant_settings">असिस्टेंट सेटिंग्स</string>
+    <string name="label_edge_width">एज चौड़ाई</string>
+    <string name="label_edge_height">एज ऊंचाई</string>
+    <string name="label_edge_offset">नीचे से दूरी</string>
+    <string name="label_bottom_width">बॉटम बार चौड़ाई</string>
+    <string name="label_swipe_threshold">स्वाइप दूरी</string>
+    <string name="label_hold_duration">होल्ड समय</string>
+    <string name="label_diagonal_angle">तिरछा कोण</string>
+    <string name="label_feedback_style">इंडिकेटर स्टाइल</string>
+    <string name="label_visual_theme">इंडिकेटर रंग</string>
+    <string name="label_feedback_alpha">इंडिकेटर पारदर्शिता</string>
+    <string name="label_edge_guide_alpha">एज बार पारदर्शिता</string>
+    <string name="label_bottom_pill_alpha">बॉटम बार पारदर्शिता</string>
+    <string name="label_haptic_strength">वाइब्रेशन</string>
+    <string name="label_reset_defaults">डिफ़ॉल्ट रीसेट करें</string>
+    <string name="preview_sandbox_hint">प्रीव्यू देखने के लिए किसी भी किनारे से स्वाइप करें</string>
+    <string name="preview_stage2_guideline_hint">दूसरा एक्शन चलाने के लिए डॉटेड लाइन के पार स्वाइप करें</string>
+    <string name="metric_width_short">चौड़ाई %1$ddp</string>
+    <string name="metric_opacity_short">पारदर्शिता %1$d%%</string>
+    <string name="metric_side_short">साइड %1$d%%</string>
+    <string name="metric_bottom_short">नीचे %1$d%%</string>
+    <string name="metric_range_short">%1$d%%–%2$d%%</string>
+    <string name="preview_deep_side_focus">साइड स्वाइप दूरी · %1$d%%</string>
+    <string name="preview_deep_bottom_focus">नीचे स्वाइप दूरी · %1$d%%</string>
+    <string name="preview_deep_action_prefix">लंबा स्वाइप: %1$s</string>
+
+    <!-- Deep Swipe -->
+    <string name="section_long_swipe">लंबा स्वाइप</string>
+    <string name="desc_long_swipe">किनारे से थोड़ा और अंदर स्वाइप करके तुरंत दूसरा एक्शन चलाएं।</string>
+    <string name="label_secondary_trigger_mode">ट्रिगर मोड</string>
+    <string name="mode_distance">दूरी</string>
+    <string name="mode_hold">होल्ड</string>
+    <string name="mode_both">दोनों</string>
+    <string name="label_horizontal_long_swipe">साइड स्वाइप दूरी</string>
+    <string name="label_bottom_long_swipe">नीचे स्वाइप दूरी</string>
+
+    <!-- Quick Menu -->
+    <string name="arc_title">क्विक मेनू</string>
+    <string name="arc_subtitle">किनारे से मेनू खोलें और उंगली उठाए बिना तुरंत अपना पसंदीदा एक्शन चुनें।</string>
+    <string name="arc_section_trigger_method">खोलने का तरीका</string>
+    <string name="arc_method_dedicated_title">अलग एज एरिया</string>
+    <string name="arc_method_dedicated_badge">सुझाया गया</string>
+    <string name="arc_method_dedicated_desc">अलग किनारे के हिस्से से अंदर खींचते ही मेनू खुलता है, बैक जेस्चर से कोई टकराव नहीं।</string>
+    <string name="arc_method_edge_hold_title">किनारे पर होल्ड करें</string>
+    <string name="arc_method_edge_hold_badge">बिना अलग एरिया</string>
+    <string name="arc_method_edge_hold_desc">किनारे पर उंगली थोड़ी देर रोकें तो मेनू खुलेगा। तुरंत स्वाइप करने पर सामान्य एक्शन चलेगा।</string>
+    <string name="arc_method_pull_return_title">खींचकर वापस ले जाएं</string>
+    <string name="arc_method_pull_return_badge">बिना अलग एरिया</string>
+    <string name="arc_method_pull_return_desc">थोड़ा अंदर खींचकर किनारे की ओर वापस ले जाएं, फिर स्लाइड करके विकल्प चुनें।</string>
+    <string name="arc_method_gesture_title">जेस्चर पर सेट करें</string>
+    <string name="arc_method_gesture_badge">मैनुअल</string>
+    <string name="arc_method_gesture_desc">एक्शन टैब से किसी भी स्वाइप या होल्ड पर क्विक मेनू सेट करें।</string>
+    <string name="arc_zone_side_label">सक्रिय किनारे</string>
+    <string name="arc_zone_side_both">दोनों</string>
+    <string name="arc_zone_side_left">बायां</string>
+    <string name="arc_zone_side_right">दायां</string>
+    <string name="arc_zone_height_label">एरिया ऊंचाई</string>
+    <string name="arc_zone_offset_label">नीचे से दूरी</string>
+    <string name="arc_zone_legend_main">मुख्य किनारा</string>
+    <string name="arc_zone_legend_arc">क्विक मेनू</string>
+    <string name="arc_zone_overlap_hint">ओवरलैप वाले हिस्से में क्विक मेनू को प्राथमिकता मिलती है। अलग रखने के लिए दूरी बदलें।</string>
+    <string name="menu_zone_range_format">%1$d%%–%2$d%%</string>
+    <string name="menu_zone_bottom_label">नीचे 0%</string>
+    <string name="menu_zone_top_label">ऊपर 100%</string>
+    <string name="arc_edge_hold_ms_label">होल्ड समय</string>
+    <string name="arc_pull_return_step1">1. थोड़ा खींचें</string>
+    <string name="arc_pull_return_step2">2. वापस ले जाएं</string>
+    <string name="arc_pull_return_step3">3. स्लाइड करें</string>
+    <string name="arc_free_long_swipe_title">साइड लंबा स्वाइप खाली करें</string>
+    <string name="arc_free_long_swipe_desc">साइड लंबा स्वाइप अभी भी क्विक मेनू पर सेट है। इसे पिछला ऐप पर बदलकर तेज़ी से स्विच करें।</string>
+    <string name="arc_free_long_swipe_button">साइड लंबा स्वाइप को पिछला ऐप बनाएं</string>
+    <string name="arc_section_geometry">मेनू लेआउट</string>
+    <string name="arc_section_slots">मेनू स्लॉट</string>
+    <string name="arc_label_slot_count">स्लॉट की संख्या</string>
+    <string name="arc_slot_count_format">%1$d</string>
+    <string name="arc_label_radius">मेनू आकार</string>
+    <string name="arc_label_dim_alpha">बैकग्राउंड डिम</string>
+    <string name="arc_preview_hint">क्विक मेनू आज़माने के लिए किसी भी किनारे से अंदर स्वाइप करें</string>
+    <string name="menu_preview_metrics">आकार %1$ddp · डिम %2$d%%</string>
+    <string name="arc_slot_number">स्लॉट %1$d</string>
+    <string name="arc_deadzone_cancel">रद्द करने के लिए किनारे पर छोड़ें</string>
+    <string name="arc_trigger_active_title">क्विक मेनू सेट है</string>
+    <string name="arc_trigger_unassigned_title">कोई जेस्चर सेट नहीं</string>
+    <string name="arc_trigger_unassigned_desc">किसी भी किनारे से तुरंत खोलने के लिए इसे साइड लंबा स्वाइप पर सेट करें।</string>
+    <string name="arc_trigger_assign_button">साइड लंबा स्वाइप पर सेट करें</string>
+    <string name="arc_assigned_side_short">साइड स्वाइप</string>
+    <string name="arc_assigned_side_deep_distance">साइड लंबा स्वाइप (%1$d%%)</string>
+    <string name="arc_assigned_side_deep_hold">साइड होल्ड (%1$dms)</string>
+    <string name="arc_assigned_side_deep_both">साइड लंबा स्वाइप (%1$d%% / %2$dms)</string>
+    <string name="arc_assigned_diag_up">ऊपर तिरछा स्वाइप</string>
+    <string name="arc_assigned_diag_down">नीचे तिरछा स्वाइप</string>
+    <string name="arc_assigned_bottom_up">नीचे से छोटा स्वाइप</string>
+    <string name="arc_assigned_bottom_deep">नीचे से लंबा स्वाइप</string>
+    <string name="arc_assigned_bottom_hold">बॉटम बार होल्ड</string>
+
+    <!-- Actions & Task Switching -->
+    <string name="section_side_actions">साइड किनारे</string>
+    <string name="section_bottom_actions">बॉटम बार</string>
+    <string name="section_task_switching">ऐप स्विचिंग</string>
+    <string name="section_smart_avoidance">स्मार्ट व्यवहार</string>
+    <string name="gesture_horizontal">छोटा स्वाइप</string>
+    <string name="gesture_horizontal_hold">लंबा स्वाइप</string>
+    <string name="gesture_diagonal_up">ऊपर तिरछा स्वाइप</string>
+    <string name="gesture_diagonal_down">नीचे तिरछा स्वाइप</string>
+    <string name="gesture_bottom_up">ऊपर छोटा स्वाइप</string>
+    <string name="gesture_bottom_hold">ऊपर लंबा स्वाइप</string>
+    <string name="gesture_bottom_long_press">बॉटम बार होल्ड करें</string>
+    <string name="label_hyperos_recents_compat">HyperOS रीसेंट फिक्स</string>
+    <string name="desc_hyperos_recents_compat">HyperOS पर थर्ड-पार्टी लॉन्चर के साथ रीसेंट ऐप्स खोलना आसान बनाता है।</string>
+    <string name="label_hyperos_recents_delay">स्विच समय</string>
+    <string name="label_usage_stats_permission">उपयोग एक्सेस (वैकल्पिक)</string>
+    <string name="desc_usage_stats_permission">रीस्टार्ट के तुरंत बाद भी हाल के ऐप्स दिखाने में मदद करता है। इसके बिना भी सामान्य ट्रैकिंग काम करती है।</string>
+    <string name="status_usage_granted">अनुमत</string>
+    <string name="status_usage_optional">वैकल्पिक</string>
+    <string name="button_open_usage_access">उपयोग एक्सेस खोलें</string>
+    <string name="button_test_recent_history">हाल के ऐप्स देखें</string>
+    <string name="dialog_recent_history_title">हाल के ऐप्स</string>
+    <string name="dialog_recent_history_subtitle">तुरंत स्विच आज़माने के लिए किसी ऐप पर टैप करें</string>
+    <string name="recent_history_empty">अभी कोई हाल का ऐप नहीं है। एक या दो ऐप खोलें, वे यहां अपने आप दिख जाएंगे।</string>
+    <string name="recent_history_prev_badge">पिछला</string>
+    <string name="label_ime_avoidance">कीबोर्ड खुला होने पर</string>
+    <string name="label_landscape_mode">लैंडस्केप मोड में</string>
+    <string name="dialog_pick_action_title">एक्शन चुनें</string>
+    <string name="picker_tab_system">एक्शन</string>
+    <string name="picker_tab_apps">ऐप्स</string>
+
+    <!-- Action names (Official Glossary) -->
+    <string name="action_back">बैक</string>
+    <string name="action_home">होम</string>
+    <string name="action_recents">रीसेंट ऐप्स (सिस्टम)</string>
+    <string name="action_previous_app">पिछला ऐप</string>
+    <string name="action_notifications">नोटिफ़िकेशन</string>
+    <string name="action_quick_settings">क्विक सेटिंग्स</string>
+    <string name="action_lock_screen">स्क्रीन लॉक</string>
+    <string name="action_screenshot">स्क्रीनशॉट</string>
+    <string name="action_split_screen">स्प्लिट स्क्रीन</string>
+    <string name="action_circle_to_search">सर्कल टू सर्च</string>
+    <string name="action_open_quick_menu">क्विक मेनू</string>
+    <string name="action_open_recent_switcher">हाल के ऐप्स</string>
+    <string name="action_toggle_torch">टॉर्च</string>
+    <string name="action_launch_app">ऐप खोलें</string>
+    <string name="action_none">कोई नहीं</string>
+
+    <!-- Styles / themes / haptics / avoidance -->
+    <string name="style_bezier">ड्रॉपलेट</string>
+    <string name="style_minimal">मिनिमल</string>
+    <string name="style_hidden">छुपाएं</string>
+    <string name="theme_auto">ऑटो</string>
+    <string name="theme_dark_glass">डार्क</string>
+    <string name="theme_light_glass">लाइट</string>
+    <string name="theme_material_you">डायनेमिक</string>
+    <string name="haptic_off">बंद</string>
+    <string name="haptic_light">हल्का</string>
+    <string name="haptic_medium">सामान्य</string>
+    <string name="haptic_strong">तेज़</string>
+    <string name="ime_shift_up">ऊपर खिसकाएं</string>
+    <string name="ime_disable">रोकें</string>
+    <string name="ime_none">चालू रखें</string>
+    <string name="landscape_double_swipe">दो बार स्वाइप</string>
+    <string name="landscape_disable">रोकें</string>
+    <string name="landscape_keep">चालू रखें</string>
+
+    <!-- Excluded Apps -->
+    <string name="blacklist_title">बाहर रखे गए ऐप्स</string>
+    <string name="blacklist_subtitle">इन ऐप्स के खुले रहने पर एज जेस्चर अपने आप रुक जाएंगे।</string>
+    <string name="blacklist_search_placeholder">ऐप्स खोजें</string>
+    <string name="blacklist_empty">कोई मिलता-जुलता ऐप नहीं</string>
+    <string name="blacklist_selected_count">%1$d बाहर</string>
+
+    <!-- HyperOS Setup Guide -->
+    <string name="guide_title">HyperOS सेटअप</string>
+    <string name="guide_subtitle">बैकग्राउंड में Hinata को बिना रुके चलाने के लिए सुझाई गई सेटिंग्स।</string>
+    <string name="guide_step1_title">1. एक्सेसिबिलिटी चालू करें</string>
+    <string name="guide_step1_desc">डाउनलोड किए गए ऐप्स में Hinata को चालू करें। स्क्रीन की सामग्री नहीं पढ़ी जाती।</string>
+    <string name="guide_step1_action">एक्सेसिबिलिटी सेटिंग्स</string>
+    <string name="guide_step2_title">2. बैटरी को \"असीमित\" पर सेट करें</string>
+    <string name="guide_step2_desc">बैटरी सेवर को बैकग्राउंड में जेस्चर रोकने से बचाता है।</string>
+    <string name="guide_step2_action">बैटरी सेटिंग्स</string>
+    <string name="guide_step3_title">3. ऑटोस्टार्ट की अनुमति दें</string>
+    <string name="guide_step3_desc">फ़ोन रीस्टार्ट होने के बाद Hinata अपने आप फिर से चालू हो जाता है।</string>
+    <string name="guide_step3_action">ऑटोस्टार्ट सेटिंग्स</string>
+    <string name="guide_step_done">पूरा हुआ</string>
+    <string name="guide_step_pending">सेट नहीं</string>
+    <string name="guide_architecture_title">सिस्टम स्थिति</string>
+
+    <!-- General Settings Screen -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_section_language">भाषा</string>
+    <string name="settings_language_label">ऐप की भाषा</string>
+    <string name="settings_language_sheet_title">भाषा चुनें</string>
+    <string name="lang_system_default">सिस्टम डिफ़ॉल्ट</string>
+    <string name="settings_section_appearance">थीम</string>
+    <string name="settings_theme_mode">रंग थीम</string>
+    <string name="settings_theme_system">सिस्टम</string>
+    <string name="settings_theme_dark">डार्क</string>
+    <string name="settings_theme_light">लाइट</string>
+    <string name="settings_dynamic_color">Material You</string>
+    <string name="settings_dynamic_color_desc">Android 12 और नए वर्ज़न पर वॉलपेपर के रंगों से मेल खाता है।</string>
+    <string name="settings_dynamic_color_unavailable">Android 12 या नया वर्ज़न आवश्यक है।</string>
+    <string name="settings_section_privacy">गोपनीयता और सुरक्षा</string>
+    <string name="settings_privacy_title">100% ऑन-डिवाइस प्रोसेसिंग</string>
+    <string name="settings_privacy_desc">कोई ट्रैकिंग, विज्ञापन या स्क्रीनशॉट अपलोड नहीं। Hinata डिफ़ॉल्ट रूप से डिवाइस पर स्थानीय रूप से चलता है; HTTPS नेटवर्क का उपयोग केवल Google ML Kit ऑफ़लाइन मॉडल डाउनलोड व प्रबंधन, या आपकी स्पष्ट अनुमति से ऑनलाइन अनुवाद (केवल टेक्स्ट) के लिए होता है।</string>
+    <string name="settings_section_diagnostics">सिस्टम निदान</string>
+    <string name="settings_diagnostics_subtitle">सर्विस स्थिति, प्रोसेस अलगाव और अनुमतियां</string>
+    <string name="diag_settings_process">सेटिंग्स प्रोसेस</string>
+    <string name="diag_settings_process_value">अलग (:settings · PID %1$d)</string>
+    <string name="diag_resident_process">जेस्चर सर्विस</string>
+    <string name="diag_resident_running">सक्रिय (PID %1$d)</string>
+    <string name="diag_resident_standby">स्टैंडबाय</string>
+    <string name="diag_accessibility">एक्सेसिबिलिटी</string>
+    <string name="diag_usage_access">उपयोग एक्सेस</string>
+    <string name="diag_ime_state">कीबोर्ड</string>
+    <string name="diag_ime_visible">दिख रहा है</string>
+    <string name="diag_ime_hidden">छुपा हुआ</string>
+    <string name="diag_orientation">स्क्रीन दिशा</string>
+    <string name="diag_orientation_landscape">लैंडस्केप</string>
+    <string name="diag_orientation_portrait">पोर्ट्रेट</string>
+    <string name="settings_section_about">ऐप के बारे में</string>
+    <string name="settings_version_label">वर्ज़न</string>
+    <string name="settings_licenses_label">ओपन-सोर्स लाइसेंस</string>
+    <string name="settings_licenses_desc">GNU General Public License v3.0 (GPLv3) · Jetpack Compose, AndroidX, Kotlin, Shizuku API, Inter, Plus Jakarta Sans, JetBrains Mono</string>
+    <string name="settings_licenses_dialog_title">ओपन-सोर्स लाइसेंस</string>
+    <string name="settings_licenses_dialog_body">Hinata — GNU General Public License v3.0 (GPLv3) (ओपन-सोर्स)\nCopyright (C) 2026 rengix-x\n\nओपन-सोर्स और थर्ड-पार्टी श्रेय:\n• Shizuku API &amp; Provider (RikkaApps) — Apache License 2.0\n• AndroidHiddenApiBypass (LSPosed) — Apache License 2.0\n• Google ML Kit (टेक्स्ट पहचान v2, भाषा पहचान, ऑन-डिवाइस अनुवाद) — Google APIs सेवा शर्तें\n• AndroidX, Jetpack Compose, Material 3 और Kotlin — Apache License 2.0\n• Inter, Plus Jakarta Sans और JetBrains Mono — SIL Open Font License 1.1\n\nअस्वीकरण: Hinata, rengix-x द्वारा बनाया गया एक स्वतंत्र ओपन-सोर्स (GPLv3) प्रोजेक्ट है और इसका Google LLC, Apple Inc., Xiaomi Corporation (HyperOS / POCO), Samsung Electronics, OPPO या vivo से कोई संबंध या अनुमोदन नहीं है।</string>
+    <string name="button_close">बंद करें</string>
+
+    <!-- Shizuku 3-button navigation bar control -->
+    <string name="shizuku_card_title">3-बटन नेविगेशन छिपाएं (Shizuku)</string>
+    <string name="shizuku_card_subtitle">HyperOS पर थर्ड-पार्टी लॉन्चर के साथ बिना PC के 3-बटन बार छिपाएं।</string>
+    <string name="shizuku_status_not_installed">इंस्टॉल नहीं</string>
+    <string name="shizuku_status_stopped">बंद है</string>
+    <string name="shizuku_status_permission_required">अनुमति आवश्यक</string>
+    <string name="shizuku_status_connected">कनेक्टेड</string>
+    <string name="shizuku_action_open_app">Shizuku खोलें</string>
+    <string name="shizuku_action_grant_permission">Shizuku अनुमति दें</string>
+    <string name="shizuku_action_setup_guide">Shizuku सेटअप गाइड देखें</string>
+    <string name="shizuku_button_hide_navbar">3-बटन नेविगेशन छिपाएं</string>
+    <string name="shizuku_button_restore_navbar">3-बटन नेविगेशन वापस लाएं</string>
+    <string name="shizuku_toggle_auto_hide_title">रीसेट पर ऑटो-हाइड</string>
+    <string name="shizuku_toggle_auto_hide_desc">यदि HyperOS बार को वापस लाता है, तो अनलॉक पर उसे फिर से छिपा देता है।</string>
+    <string name="shizuku_toggle_hide_gesture_line_title">निचली इंडिकेटर लाइन भी छिपाएं</string>
+    <string name="shizuku_toggle_hide_gesture_line_desc">नेविगेशन बार छिपाते समय स्क्रीन के नीचे की पतली जेस्चर लाइन भी हटाता है।</string>
+    <string name="shizuku_reboot_note">फ़ोन रीस्टार्ट करने के बाद, बटन दबाने से पहले Shizuku को फिर से चालू करें।</string>
+    <string name="shizuku_guide_dialog_title">Shizuku सेटअप करें</string>
+    <string name="shizuku_guide_dialog_body">1. Google Play या GitHub से आधिकारिक Shizuku ऐप इंस्टॉल करें।\n2. Shizuku खोलें और वायरलेस डीबगिंग से इसे शुरू करें (PC की ज़रूरत नहीं)।\n3. यहां लौटें, अनुमति दें और 3-बटन नेविगेशन छिपाएं पर टैप करें।</string>
+    <string name="shizuku_snackbar_hide_success">3-बटन नेविगेशन छिपा दिया गया।</string>
+    <string name="shizuku_snackbar_restore_success">3-बटन नेविगेशन वापस आ गया।</string>
+    <string name="shizuku_snackbar_failed">नेविगेशन बार सेटिंग लागू नहीं हो सकी।</string>
+    <string name="shizuku_snackbar_failed_detail">सेटिंग लागू नहीं हो सकी (%1$s)।</string>
+    <string name="shizuku_snackbar_not_ready">पहले Shizuku चालू करें और अनुमति दें।</string>
+    <string name="shizuku_snackbar_permission_granted">Shizuku कनेक्ट हो गया।</string>
+    <string name="shizuku_snackbar_permission_denied">Shizuku अनुमति अस्वीकार कर दी गई।</string>
+    <string name="shizuku_snackbar_open_failed">Shizuku खोला नहीं जा सका।</string>
+    <string name="shizuku_auto_hide_disabled_toast">Hinata: लगातार Shizuku त्रुटियों के कारण ऑटो-हाइड रोक दिया गया।</string>
+
+    <!-- Accessibility content descriptions -->
+    <string name="cd_open_settings">सेटिंग्स खोलें</string>
+    <string name="cd_back">बैक</string>
+    <string name="cd_change">बदलें</string>
+    <string name="cd_selected">चयनित</string>
+    <string name="cd_clear_search">खोज साफ़ करें</string>
+    <string name="cd_refresh_status">स्थिति रीफ्रेश करें</string>
+    <string name="cd_move_up">ऊपर ले जाएं</string>
+    <string name="cd_move_down">नीचे ले जाएं</string>
+    <string name="cd_test_launch">ऐप खोलें</string>
+    <string name="cd_expand">विस्तार करें</string>
+    <string name="cd_collapse">समेटें</string>
+    <!-- 3-स्टेज ट्यूनिंग, स्टिकी प्रीव्यू और कस्टम GIF/इमेज -->
+    <string name="preview_live_title">लाइव प्रीव्यू</string>
+    <string name="preview_side_stage2_focus">साइड स्टेज 2 · %1$d%%</string>
+    <string name="preview_side_stage3_focus">साइड स्टेज 3 · %1$d%%</string>
+    <string name="preview_bottom_stage2_focus">बॉटम स्टेज 2 · %1$d%%</string>
+    <string name="preview_bottom_stage3_focus">बॉटम स्टेज 3 · %1$d%%</string>
+    <string name="preview_stage3_action_prefix">स्टेज 3: %1$s</string>
+    <string name="preview_sticky_hint">स्टेज 1–3 और बॉटम पिल लिफ़्ट जांचने के लिए मॉकअप के किनारे ड्रैग करें।</string>
+    <string name="metric_side_s2_short">S2 %1$d%%</string>
+    <string name="metric_side_s3_short">S3 %1$d%%</string>
+    <string name="metric_side_hold_short">साइड %1$dms</string>
+    <string name="metric_bottom_s2_short">B2 %1$d%%</string>
+    <string name="metric_bottom_s3_short">B3 %1$d%%</string>
+    <string name="metric_bottom_hold_short">बॉटम %1$dms</string>
+
+    <string name="section_side_edge_tuning">साइड एज (बाएं और दाएं)</string>
+    <string name="label_side_trigger_mode">साइड एज ट्रिगर मोड</string>
+    <string name="label_side_stage2_distance">स्टेज 2 दूरी (डीप स्वाइप)</string>
+    <string name="label_side_stage3_distance">स्टेज 3 दूरी (एक्स्ट्रा डीप)</string>
+    <string name="label_side_stage2_hold">स्टेज 2 होल्ड अवधि</string>
+    <string name="label_side_stage3_hold">स्टेज 3 होल्ड अवधि</string>
+
+    <string name="label_bottom_trigger_mode">बॉटम एज ट्रिगर मोड</string>
+    <string name="label_bottom_stage2_distance">बॉटम स्टेज 2 दूरी</string>
+    <string name="label_bottom_stage3_distance">बॉटम स्टेज 3 दूरी</string>
+    <string name="label_bottom_stage2_hold">बॉटम स्टेज 2 होल्ड अवधि</string>
+    <string name="label_bottom_stage3_hold">बॉटम स्टेज 3 होल्ड अवधि</string>
+    <string name="hint_stage3_unassigned">एक्शन टैब में स्टेज 3 एक्शन सेट करने तक यह स्वतः 2-स्टेज मोड में रहता है।</string>
+
+    <string name="gesture_left_stage3">बायां एज स्टेज 3 (एक्स्ट्रा डीप)</string>
+    <string name="gesture_right_stage3">दायां एज स्टेज 3 (एक्स्ट्रा डीप)</string>
+    <string name="gesture_bottom_stage3">बॉटम स्टेज 3 (एक्स्ट्रा डीप)</string>
+
+    <string name="section_custom_media">साइड-एज विज़ुअल (कस्टम GIF / इमेज)</string>
+    <string name="desc_custom_media">साइड स्वाइप के लिए ट्रांसपेरेंट GIF, एनिमेटेड WebP या PNG चुनें। निष्क्रिय अवस्था में 0% CPU।</string>
+    <string name="label_edge_visual_style">विज़ुअल स्टाइल</string>
+    <string name="visual_style_default">डिफ़ॉल्ट</string>
+    <string name="visual_style_custom_only">GIF / इमेज</string>
+    <string name="visual_style_droplet_media">ड्रॉपलेट + इमेज</string>
+    <string name="button_pick_custom_media">GIF / इमेज चुनें</string>
+    <string name="button_change_custom_media">GIF / इमेज बदलें</string>
+    <string name="button_reset_custom_media">डिफ़ॉल्ट पर रीसेट करें</string>
+    <string name="hint_custom_media_fallback">कस्टम विज़ुअल सक्रिय करने के लिए ऊपर से GIF, WebP या PNG चुनें।</string>
+    <string name="label_custom_media_size">डिस्प्ले आकार</string>
+    <string name="label_custom_media_alpha">अपारदर्शिता</string>
+    <string name="label_custom_media_mirror_right">दाएं किनारे पर मिरर करें</string>
+    <string name="desc_custom_media_mirror_right">दाएं किनारे से स्वाइप करने पर GIF/इमेज को क्षैतिज रूप से पलट देता है।</string>
+    <string name="custom_media_saved">कस्टम एज मीडिया लागू हो गया।</string>
+    <string name="custom_media_error_too_large">फ़ाइल बहुत बड़ी है (अधिकतम 15 MB)।</string>
+    <string name="custom_media_error_invalid">असमर्थित या अमान्य इमेज फ़ॉर्मेट।</string>
+    <string name="custom_media_error_io">चयनित फ़ाइल लोड नहीं हो सकी।</string>
+    <string name="custom_media_reset_done">डिफ़ॉल्ट ग्लास ड्रॉपलेट बहाल हो गया।</string>
+    <string name="cd_custom_media_empty">कोई कस्टम इमेज चयनित नहीं</string>
+
+    <!-- Floating Window Shortcuts -->
+    <string name="action_float_current_app">मौजूदा ऐप को फ़्लोटिंग बनाएं</string>
+    <string name="action_launch_app_floating">फ़्लोटिंग विंडो में ऐप खोलें</string>
+    <string name="action_launch_app_floating_format">%1$s (फ़्लोटिंग)</string>
+    <string name="floating_window_toggle_title">फ़्लोटिंग विंडो में खोलें</string>
+    <string name="floating_window_toggle_desc">चयनित ऐप को सीधे आकार बदलने योग्य मिनी फ़्लोटिंग विंडो में खोलता है।</string>
+    <string name="floating_window_badge_short">फ़्लोटिंग</string>
+    <string name="floating_window_need_shizuku">फ़्लोटिंग विंडो शॉर्टकट के लिए कृपया Shizuku शुरू करें।</string>
+    <string name="floating_window_cannot_float_current">मौजूदा स्क्रीन को फ़्लोटिंग विंडो में नहीं बदला जा सकता।</string>
+    <string name="shizuku_floating_window_note">Shizuku जोड़ने से 3-बटन बार छिपाने के साथ-साथ जेस्चर और क्विक मेन्यू से फ़्लोटिंग विंडो शॉर्टकट भी विश्वसनीय रूप से चलते हैं।</string>
+
+    <!-- First-Launch 30-Second Onboarding -->
+    <string name="onboarding_language_chip">भाषा</string>
+    <string name="onboarding_step1_tagline">स्क्रीन के किनारे से, एक हाथ से सहज नियंत्रण।</string>
+    <string name="onboarding_privacy_title">100% ऑन-डिवाइस · पूर्ण गोपनीयता</string>
+    <string name="onboarding_privacy_desc">कोई ट्रैकिंग, विज्ञापन या स्क्रीनशॉट अपलोड नहीं। Hinata डिफ़ॉल्ट रूप से डिवाइस पर स्थानीय रूप से चलता है; HTTPS नेटवर्क का उपयोग केवल Google ML Kit ऑफ़लाइन मॉडल डाउनलोड व प्रबंधन, या आपकी स्पष्ट अनुमति से ऑनलाइन अनुवाद (केवल टेक्स्ट) के लिए होता है।</string>
+    <string name="onboarding_button_start">शुरू करें</string>
+    <string name="onboarding_step2_title">एज जेस्चर चालू करें</string>
+    <string name="onboarding_step2_desc">स्क्रीन के किनारे से बैक, होम और शॉर्टकट चलाने के लिए एक्सेसिबिलिटी सेटिंग में Hinata को चालू करें।</string>
+    <string name="onboarding_step2_status_enabled">सक्रिय हो गया</string>
+    <string name="onboarding_step2_status_waiting">अभी सक्रिय नहीं है</string>
+    <string name="onboarding_step2_open_settings">एक्सेसिबिलिटी सेटिंग खोलें</string>
+    <string name="onboarding_button_next">आगे बढ़ें</string>
+    <string name="onboarding_button_skip">बाद में सेट करें</string>
+    <string name="onboarding_step3_title">सब तैयार है!</string>
+    <string name="onboarding_step3_try_hint">तैयार! अभी आज़माने के लिए स्क्रीन के किसी भी किनारे से अंदर स्वाइप करें।</string>
+    <string name="onboarding_step3_battery_title">अप्रतिबंधित बैटरी (अनुशंसित)</string>
+    <string name="onboarding_step3_battery_desc">HyperOS को बैकग्राउंड में जेस्चर रोकने से बचाता है। आप इसे कभी भी छोड़ सकते हैं।</string>
+    <string name="onboarding_step3_battery_done">बैटरी अप्रतिबंधित पर सेट है</string>
+    <string name="onboarding_button_finish">सेटिंग्स पर जाएं</string>
+    <string name="settings_replay_onboarding_title">परिचय गाइड फिर से देखें</string>
+    <string name="settings_replay_onboarding_desc">3-चरण वाला त्वरित सेटअप गाइड दोबारा देखें</string>
+
+    <!-- प्रिज़्म ग्लास, रोटरी क्विक मेन्यू, शॉर्टकट और लिंक एक्शन, बॉटम बार लेआउट -->
+    <string name="action_launch_shortcut">ऐप शॉर्टकट</string>
+    <string name="action_open_url">लिंक खोलें</string>
+    <string name="toast_url_open_failed">यह लिंक खोला नहीं जा सका।</string>
+    <string name="toast_shortcut_launch_failed">यह शॉर्टकट लॉन्च नहीं हो सका।</string>
+
+    <string name="tab_shortcuts">शॉर्टकट</string>
+    <string name="tab_link">लिंक</string>
+    <string name="label_url_input">URL</string>
+    <string name="hint_url_input">https://example.com</string>
+    <string name="label_custom_name_optional">कस्टम नाम (वैकल्पिक)</string>
+    <string name="button_test_link">लिंक जांचें</string>
+    <string name="button_save_link">सहेजें</string>
+    <string name="search_shortcuts_hint">शॉर्टकट या ऐप खोजें…</string>
+    <string name="section_app_shortcuts">ऐप शॉर्टकट</string>
+    <string name="section_create_shortcut_apps">ऐप से शॉर्टकट बनाएं</string>
+    <string name="empty_shortcuts_found">कोई मिलता-जुलता शॉर्टकट नहीं मिला।</string>
+    <string name="shortcut_create_failed">शॉर्टकट नहीं बनाया जा सका।</string>
+
+    <string name="label_liquid_glass">प्रिज़्म ग्लास</string>
+    <string name="desc_liquid_glass">Android 13+ पर रियल-टाइम ऑप्टिकल रिफ्रैक्शन और फ्रॉस्टेड ग्लास इफ़ेक्ट (1-टैप टॉगल)।</string>
+    <string name="desc_liquid_glass_unsupported">Android 13 या नया वर्ज़न आवश्यक है।</string>
+    <string name="label_liquid_glass_refraction">रिफ्रैक्शन तीव्रता</string>
+
+    <string name="button_add_slot">स्लॉट जोड़ें</string>
+    <string name="label_slot_count_ratio">%1$d / %2$d</string>
+    <string name="cd_delete_slot">स्लॉट हटाएं</string>
+    <string name="hint_quick_menu_rotary">7+ स्लॉट सक्रिय: स्मूथ रोटरी स्क्रॉल के लिए आर्क के ऊपरी या निचले सिरे के पार स्लाइड करें।</string>
+
+    <string name="label_bottom_height">बॉटम बार ऊंचाई</string>
+    <string name="label_bottom_offset">निचला मार्जिन</string>
+    <string name="label_bottom_horizontal_offset">बॉटम क्षैतिज स्थिति</string>
+    <string name="button_center_reset">केंद्र में लाएं</string>
+
+    <string name="arc_section_feel_boundary">अनुभव और वापसी सीमा</string>
+    <string name="arc_retreat_mode_label">निचले स्टेज पर वापसी तरीका</string>
+    <string name="arc_retreat_mode_radial">आर्क</string>
+    <string name="arc_retreat_mode_edge">किनारा</string>
+    <string name="arc_retreat_mode_custom">कस्टम</string>
+    <string name="arc_retreat_desc_radial">केवल मूल बिंदु की ओर अंदर खींचने पर वापस लौटता है। ऊपरी या निचले स्लॉट और रोटरी स्क्रॉल में गलत कैंसल नहीं होता।</string>
+    <string name="arc_retreat_desc_edge">केवल किनारे के डेड-ज़ोन में लौटने पर निचले स्टेज पर वापस जाता है। चौड़े आर्क जेस्चर के लिए अधिकतम सुरक्षा।</string>
+    <string name="arc_retreat_desc_custom">कस्टम रेखा से पीछे खींचने पर वापस लौटता है, साथ ही चौड़े कोण के आर्क की सुरक्षा बनी रहती है।</string>
+    <string name="arc_label_retreat_radial">वापसी आर्क आकार</string>
+    <string name="arc_label_retreat_custom">कस्टम वापसी रेखा</string>
+    <string name="arc_label_dead_zone">कैंसल डेड-ज़ोन</string>
+    <string name="arc_label_rotary_speed">रोटरी स्क्रॉल गति</string>
+
+    <string name="button_watch_animation">एनिमेशन देखें</string>
+    <string name="demo_sheet_guide_dedicated">हाइलाइट किए गए किनारे से अंदर की ओर स्वाइप करें, मेन्यू तुरंत खुल जाएगा—फिर स्लाइड करके चुनें।</string>
+    <string name="demo_sheet_guide_edge_hold">स्क्रीन के किनारे पर उंगली दबाए रखें, रिंग भरते ही मेन्यू खुल जाएगा—फिर स्लाइड करके चुनें।</string>
+    <string name="demo_sheet_guide_pull_return">पहले अंदर की ओर खींचें और फिर किनारे की ओर वापस मोड़ें—मुड़ते ही मेन्यू खुल जाएगा।</string>
+    <string name="demo_sheet_guide_gesture">सामान्य किनारे से दूसरे चरण तक खींचें या दबाए रखें, और फैन मेन्यू सहजता से खुल जाएगा।</string>
+    <string name="demo_badge_instant_0ms">तुरंत 0 ms</string>
+    <string name="demo_badge_hold_ms">होल्ड %1$d ms</string>
+    <string name="demo_badge_uturn">खींचकर वापस मोड़ें</string>
+    <string name="demo_badge_distance_pct">दूरी %1$d%%</string>
+    <string name="demo_retreat_preview_title">लाइव अनुभव प्रीव्यू</string>
+    <string name="demo_badge_arc_safe">आर्क सुरक्षित</string>
+    <string name="demo_badge_rotary_speed">स्क्रॉल %1$d%%</string>
+    <string name="demo_badge_retreat_demo">वापस खींचकर लौटें</string>
+    <string name="demo_badge_returned_previous">पिछले एक्शन पर लौटे</string>
+    <string name="demo_badge_bottom_long_press">लॉन्ग-प्रेस</string>
+
+    <!-- सामान्य बैज और बटन -->
+    <string name="badge_beta">Beta</string>
+    <string name="button_cancel">रद्द करें</string>
+
+    <!-- ऐप-व्यापी प्रिज़्म ग्लास UI -->
+
+    <!-- HyperOS Second Space ट्रिक और इमरजेंसी रिकवरी -->
+    <string name="guide_second_space_title">Second Space से 3-बटन छिपाने की ट्रिक</string>
+    <string name="guide_second_space_badge">बिना PC · रीबूट के बाद भी</string>
+    <string name="guide_second_space_desc">कई HyperOS फ़ोन में Second Space बनाकर जेस्चर चालू करने पर थर्ड-पार्टी लॉन्चर के साथ भी 3-बटन बार छिपा रहता है।</string>
+    <string name="guide_second_space_step1">सेटिंग्स → अतिरिक्त सेटिंग्स → Second Space खोलें और एक Second Space बनाएं।</string>
+    <string name="guide_second_space_step2">Second Space के अंदर डिफ़ॉल्ट सिस्टम लॉन्चर चुनें और फुल-स्क्रीन जेस्चर चालू करें।</string>
+    <string name="guide_second_space_step3">Main Space पर लौटें; आपके थर्ड-पार्टी लॉन्चर के साथ भी 3-बटन बार छिपा रह सकता है।</string>
+    <string name="guide_second_space_step4">HyperOS वर्ज़न के अनुसार व्यवहार भिन्न हो सकता है—यदि बार वापस आए तो ऊपर दिया Shizuku विकल्प उपयोग करें।</string>
+    <string name="guide_emergency_badge">सुरक्षा</string>
+    <string name="guide_emergency_settings_title">इमरजेंसी रिकवरी ①: सेटिंग्स से 3-बटन वापस लाएं</string>
+    <string name="guide_emergency_settings_desc">यदि 3-बटन छिपे होने पर जेस्चर काम न करें, तो आप कभी भी सिस्टम सेटिंग्स से 3-बटन नेविगेशन वापस चालू कर सकते हैं।</string>
+    <string name="guide_emergency_settings_path">सेटिंग्स → होम स्क्रीन → सिस्टम नेविगेशन → बटन</string>
+    <string name="guide_emergency_safemode_title">इमरजेंसी रिकवरी ②: Android सेफ़ मोड</string>
+    <string name="guide_emergency_safemode_desc">सेफ़ मोड अस्थायी रूप से सभी थर्ड-पार्टी एक्सेसिबिलिटी सेवाओं और लॉन्चर को रोक देता है ताकि आप सामान्य नेविगेशन बहाल कर सकें।</string>
+    <string name="guide_emergency_safemode_step1">अपने फ़ोन को बंद करें (या पावर बटन दबाकर रीस्टार्ट करें)।</string>
+    <string name="guide_emergency_safemode_step2">Xiaomi / HyperOS लोगो दिखते ही लॉक स्क्रीन आने तक वॉल्यूम डाउन बटन दबाए रखें।</string>
+    <string name="guide_emergency_safemode_step3">नीचे बाईं ओर "Safe mode" दिखने पर 3-बटन बहाल करें या Hinata बंद करें, फिर सामान्य रूप से रीबूट करें।</string>
+
+    <!-- 5-चरण इंटरैक्टिव ऑनबोर्डिंग -->
+    <string name="onboarding_disclaimer_title">⚠️ शुरू करने से पहले महत्वपूर्ण चेतावनी (लॉकआउट जोखिम और स्वयं की ज़िम्मेदारी)</string>
+    <string name="onboarding_disclaimer_body">एज नेविगेशन को नियंत्रित करने के लिए Hinata को हर समय Android एक्सेसिबिलिटी चालू रखने की आवश्यकता होती है। यदि सिस्टम नेविगेशन (जैसे 3-बटन) छिपा है और OS बैटरी सेवर, मेमोरी क्लीनअप या किसी त्रुटि के कारण यह ऐप बंद हो जाता है या एक्सेसिबिलिटी ऑफ़ हो जाती है, तो बैक/होम काम करना बंद कर सकते हैं और आप डिवाइस चलाने में फँस सकते हैं। हालाँकि ऑटो-रिकवरी और क्विक पैनल रिकवरी सुविधाएँ शामिल हैं, फिर भी ऐप बंद होने या किसी समस्या के लिए डेवलपर की कोई ज़िम्मेदारी नहीं होगी — उपयोग पूरी तरह आपकी स्वयं की ज़िम्मेदारी है।</string>
+    <string name="onboarding_disclaimer_agree">मैं ऐप बंद होने पर नेविगेशन अटकने के जोखिम को समझता हूँ और सहमत हूँ कि यदि यह बंद या डिस्कनेक्ट हो जाए तो पूरी ज़िम्मेदारी मेरी स्वयं की होगी</string>
+    <string name="onboarding_button_agree_start">सहमत हों और शुरू करें</string>
+    <string name="onboarding_sandbox_title">यहीं जेस्चर आज़माकर देखें</string>
+    <string name="onboarding_sandbox_desc">बिना किसी अनुमति के नीचे दिए प्रीव्यू फ़ोन पर स्वाइप करके अनुभव करें।</string>
+    <string name="onboarding_sandbox_tab_side">साइड किनारा</string>
+    <string name="onboarding_sandbox_tab_menu">क्विक मेन्यू</string>
+    <string name="onboarding_sandbox_tab_bottom">निचला बार</string>
+    <string name="onboarding_sandbox_side_hint">बाएं या दाएं किनारे से अंदर की ओर स्वाइप करें</string>
+    <string name="onboarding_sandbox_menu_hint">किनारे से खींचें और फैन आर्क पर उंगली घुमाएं</string>
+    <string name="onboarding_sandbox_bottom_hint">निचले बार को ऊपर खींचें या वहीं दबाए रखें</string>
+    <string name="onboarding_sandbox_stage1">चरण 1 · पीछे</string>
+    <string name="onboarding_sandbox_stage2">चरण 2 · पिछला ऐप</string>
+    <string name="onboarding_sandbox_stage3">चरण 3 · स्क्रीनशॉट</string>
+    <string name="onboarding_sandbox_menu_selected">क्विक मेन्यू · %1$s</string>
+    <string name="onboarding_sandbox_bottom_home">हल्का ऊपर खींचें · होम</string>
+    <string name="onboarding_sandbox_bottom_recents">गहरा ऊपर खींचें · हाल के ऐप्स</string>
+    <string name="onboarding_sandbox_bottom_cts">होल्ड चमक · सर्कल टू सर्च</string>
+    <string name="onboarding_shizuku_title">3-बटन बार छिपाएं (वैकल्पिक)</string>
+    <string name="onboarding_shizuku_desc">थर्ड-पार्टी लॉन्चर के साथ HyperOS का 3-बटन बार छिपाने के लिए मुफ़्त Shizuku ऐप जोड़ सकते हैं, या बाद में HyperOS टैब में Second Space ट्रिक देख सकते हैं।</string>
+    <string name="onboarding_shizuku_connected">Shizuku कनेक्टेड</string>
+    <string name="onboarding_shizuku_not_connected">कनेक्ट नहीं (वैकल्पिक)</string>
+    <string name="onboarding_shizuku_return_hint">लिंक आपके ब्राउज़र या स्टोर में खुलेंगे। वापस आने पर स्थिति अपने आप अपडेट हो जाएगी।</string>
+    <string name="onboarding_shizuku_link_play">Google Play से Shizuku पाएं</string>
+    <string name="onboarding_shizuku_link_github">GitHub Releases से डाउनलोड करें</string>
+    <string name="onboarding_shizuku_link_fdroid">F-Droid / IzzyOnDroid</string>
+    <string name="onboarding_shizuku_link_apkmirror">APKMirror</string>
+    <string name="onboarding_button_try_ab_wizard">शुरुआती A/B ऑटो-ट्यून आज़माएं (Beta)</string>
+    <string name="onboarding_button_start_now">अभी उपयोग शुरू करें</string>
+
+    <!-- शुरुआती A/B ऑटो-ट्यून विज़ार्ड (Beta) -->
+    <string name="ab_wizard_entry_title">शुरुआती A/B ऑटो-ट्यून</string>
+    <string name="ab_wizard_entry_desc">सुविधाएं चुनें और A व B की तुलना करके अपने लिए आदर्श एज सेटिंग्स अपने आप तैयार करें।</string>
+    <string name="ab_wizard_title">शुरुआती A/B ऑटो-ट्यून</string>
+    <string name="ab_wizard_apply_button">मेरी सेटिंग्स लागू करें</string>
+    <string name="ab_step_features_title">आप कौन सी सुविधाएं चाहते हैं?</string>
+    <string name="ab_step_features_desc">जो सुविधा न चाहिए उसे बंद रखें—बाद में आप कभी भी बदल सकते हैं।</string>
+    <string name="ab_feat_quick_menu_title">क्विक मेन्यू (रेडियल फैन)</string>
+    <string name="ab_feat_quick_menu_desc">स्क्रीन किनारे से फैन-स्टाइल शॉर्टकट मेन्यू खोलें।</string>
+    <string name="ab_feat_recent_switcher_title">हाल के ऐप्स पट्टी</string>
+    <string name="ab_feat_recent_switcher_desc">हाल के ऐप्स के बीच सहज स्लाइड से स्विच करें।</string>
+    <string name="ab_feat_bottom_bar_title">निचला बार जेस्चर</string>
+    <string name="ab_feat_bottom_bar_desc">होम/रीसेंट्स के लिए ऊपर स्वाइप करें और सर्कल टू सर्च के लिए होल्ड करें।</string>
+    <string name="ab_feat_three_stage_title">3-चरण गहरा स्वाइप</string>
+    <string name="ab_feat_three_stage_desc">अधिक अंदर खींचकर तीसरा अतिरिक्त एक्शन ट्रिगर करें।</string>
+    <string name="ab_feat_liquid_glass_title">प्रिज़्म ग्लास प्रभाव</string>
+    <string name="ab_feat_liquid_glass_desc">Android 13 और नए वर्ज़न पर रीयल-टाइम ऑप्टिकल ग्लास रिफ्रैक्शन।</string>
+    <string name="ab_q1_title">Q1 · साइड किनारे की ऊंचाई व चौड़ाई</string>
+    <string name="ab_q1_desc">अपने अंगूठे की ऊंचाई मापने के लिए नीचे पैड पर स्वाइप करें, फिर पसंदीदा चौड़ाई चुनें।</string>
+    <string name="ab_q1_opt_a_title">A · पतला और हल्का (14 dp)</string>
+    <string name="ab_q1_opt_a_desc">किनारे के बटनों में कम हस्तक्षेप करता है।</string>
+    <string name="ab_q1_opt_b_title">B · चौड़ा और आसान (24 dp)</string>
+    <string name="ab_q1_opt_b_desc">मोटे फ़ोन कवर के साथ भी आसानी से पकड़ में आता है।</string>
+    <string name="ab_q1_pad_hint">अपने अंगूठे से स्वाभाविक रूप से 2–3 बार अंदर स्वाइप करें</string>
+    <string name="ab_q1_calibrated_status">%1$d स्वाइप मापा गया · निचला ऑफ़सेट %2$d%%</string>
+    <string name="ab_q1_uncalibrated_status">वैकल्पिक: अंगूठे की ऊंचाई मापने के लिए ऊपर स्वाइप करें</string>
+    <string name="ab_q2_title">Q2 · निचले बार का आराम</string>
+    <string name="ab_q2_desc">चुनें कि निचला स्वाइप क्षेत्र कितना उदार महसूस होना चाहिए।</string>
+    <string name="ab_q2_opt_a_title">A · स्लीक और सटा हुआ</string>
+    <string name="ab_q2_opt_a_desc">निचले किनारे के बिल्कुल पास कम प्रोफ़ाइल।</string>
+    <string name="ab_q2_opt_b_title">B · ऊंचा और कवर-अनुकूल</string>
+    <string name="ab_q2_opt_b_desc">मोटे कवर के ऊपर से खींचना आसान बनाता है।</string>
+    <string name="ab_q2_pad_hint">निचले पिल से ऊपर की ओर खींचकर आज़माएं</string>
+    <string name="ab_q3_title">Q3 · विज़ुअल लुक और आकार</string>
+    <string name="ab_q3_desc">अपनी पसंदीदा सतह और इंडिकेटर आकार चुनें।</string>
+    <string name="ab_q3_surface_a_title">सतह A · प्रिज़्म ग्लास</string>
+    <string name="ab_q3_surface_a_desc">मुलायम चमक के साथ पारदर्शी रिफ्रैक्टिव ग्लास।</string>
+    <string name="ab_q3_surface_b_title">सतह B · साफ़ फ्रॉस्टेड</string>
+    <string name="ab_q3_surface_b_desc">बिना रिफ्रैक्शन के स्पष्ट और सरल फ्रॉस्टेड कंट्रास्ट।</string>
+    <string name="ab_q3_shape_a_title">आकार A · मुड़ती बूंद</string>
+    <string name="ab_q3_shape_a_desc">अंगूठे के साथ सहज मुड़ने वाला बेज़ियर कर्व।</string>
+    <string name="ab_q3_shape_b_title">आकार B · मिनिमल तीर</string>
+    <string name="ab_q3_shape_b_desc">कम जगह घेरने वाला कॉम्पैक्ट तीर इंडिकेटर।</string>
+    <string name="ab_q3_pad_hint">लाइव लुक तुलना के लिए किसी भी किनारे से स्वाइप करें</string>
+    <string name="ab_q4_title">Q4 · चरण 2 कैसे ट्रिगर हो?</string>
+    <string name="ab_q4_desc">नीचे पैड पर आज़माकर चुनें कि दूर खींचना बेहतर है या हल्का रुकना।</string>
+    <string name="ab_q4_opt_a_title">A · अधिक दूर खींचें (दूरी)</string>
+    <string name="ab_q4_opt_a_desc">तेज़ और निरंतर—आधे से आगे खींचें।</string>
+    <string name="ab_q4_opt_b_title">B · हल्का रुकें (होल्ड)</string>
+    <string name="ab_q4_opt_b_desc">कम पहुंच—थोड़ा खींचकर क्षण भर रोकें।</string>
+    <string name="ab_q4_pad_hint">चरण 1 → चरण 2 बदलाव महसूस करने के लिए अंदर खींचें</string>
+    <string name="ab_q4_stage1_lit">चरण 1 · पीछे</string>
+    <string name="ab_q4_stage2_lit">चरण 2 · ट्रिगर हुआ</string>
+    <string name="ab_summary_title">आपका कस्टम सेटअप तैयार है</string>
+    <string name="ab_summary_desc">नीचे समीक्षा करें और एक टैप में लागू करें। बाद में कभी भी हर विकल्प बदल सकते हैं।</string>
+    <string name="ab_summary_calibrated_tag">आपके स्वाइप से अंगूठे की स्थिति स्वतः कैलिब्रेट की गई</string>
+    <string name="ab_summary_on">चालू</string>
+    <string name="ab_summary_off">बंद</string>
+
+    <!-- HyperOS फ़्लोटिंग विंडो API डायग्नोस्टिक्स -->
+    <string name="diag_copy_freeform_api_button">फ़्लोटिंग विंडो API लॉग कॉपी करें</string>
+    <string name="diag_copy_freeform_api_copied">फ़्लोटिंग विंडो API डायग्नोस्टिक लॉग क्लिपबोर्ड पर कॉपी हो गया</string>
+    <string name="diag_copy_freeform_api_failed">API लॉग प्राप्त नहीं हो सका। कृपया जांचें कि Shizuku जुड़ा हुआ है।</string>
+
+    <!-- URL सत्यापन मार्गदर्शन -->
+    <string name="hint_url_validation_guide">https://example.com या example.com जैसा मान्य URL दर्ज करें</string>
+
+    <!-- लाइव स्क्रीन अनुवाद -->
+    <string name="action_toggle_screen_translate">अनुवाद बटन दिखाएं/छिपाएं</string>
+    <string name="action_translate_screen_once">अभी स्क्रीन अनुवाद करें</string>
+    <string name="translate_toast_unsupported_android">स्क्रीन अनुवाद के लिए Android 11 या उच्चतर आवश्यक है।</string>
+    <string name="translate_toast_secure_screen">यह स्क्रीन सुरक्षित है और अनुवाद के लिए कैप्चर नहीं की जा सकती।</string>
+    <string name="translate_toast_downloading_model">ऑफ़लाइन भाषा पैक डाउनलोड हो रहा है…</string>
+    <string name="translate_toast_wifi_required">Wi-Fi से जुड़ें या अनुवाद सेटिंग्स में केवल Wi-Fi डाउनलोड बंद करें।</string>
+    <string name="translate_toast_model_download_failed">ऑफ़लाइन भाषा पैक डाउनलोड विफल रहा। अपना कनेक्शन जांचें और पुनः प्रयास करें।</string>
+
+    <string name="translate_settings_entry_title">स्क्रीन अनुवाद</string>
+    <string name="translate_settings_entry_desc">गेम, कॉमिक्स और ऐप्स के लिए वन-टैप फ़्लोटिंग अनुवाद बटन</string>
+    <string name="translate_settings_title">स्क्रीन अनुवाद</string>
+
+    <string name="translate_section_languages">अनुवाद भाषाएँ</string>
+    <string name="translate_label_source">स्रोत</string>
+    <string name="translate_label_target">लक्ष्य</string>
+    <string name="translate_source_auto_short">ऑटो</string>
+    <string name="translate_source_auto_title">स्वतः पहचानें (अनुशंसित)</string>
+    <string name="translate_source_auto_desc">स्क्रीन की लिपि और भाषा स्वतः पहचानता है</string>
+    <string name="translate_languages_note">OCR 42 पठनीय भाषाओं (लैटिन, जापानी, चीनी, कोरियाई, देवनागरी) का समर्थन करता है। लक्ष्य भाषा में सभी 59 ऑफ़लाइन ML Kit भाषाएँ उपलब्ध हैं।</string>
+    <string name="cd_swap_languages">स्रोत और लक्ष्य भाषाएँ बदलें</string>
+    <string name="translate_picker_source_title">स्रोत भाषा चुनें</string>
+    <string name="translate_picker_target_title">लक्ष्य भाषा चुनें</string>
+    <string name="translate_search_language_hint">भाषा का नाम या कोड खोजें…</string>
+    <string name="translate_lang_section_popular">लोकप्रिय</string>
+    <string name="translate_lang_section_all">सभी भाषाएँ</string>
+    <string name="translate_pack_ready_short">तैयार</string>
+
+    <string name="translate_section_tracking">ट्रैकिंग और रिफ़्रेश मोड</string>
+    <string name="translate_mode_smart_auto">स्मार्ट ऑटो</string>
+    <string name="translate_mode_smart_auto_desc">स्क्रीन में बदलाव स्वतः पहचानता है और बैटरी बचाने के लिए स्थिर फ़्रेम छोड़ देता है।</string>
+    <string name="translate_mode_game_continuous">गेम / निरंतर</string>
+    <string name="translate_mode_game_continuous_desc">गेम UI और सबटाइटल को लगातार अपडेट करता है, भले ही ऐप स्क्रॉल इवेंट न भेजे।</string>
+    <string name="translate_mode_manual_once">मैन्युअल एक बार</string>
+    <string name="translate_mode_manual_once_desc">वर्तमान स्क्रीन का एक बार अनुवाद करता है; पुनः अनुवाद के लिए फ़्लोटिंग पिल पर रिफ़्रेश टैप करें।</string>
+    <string name="translate_label_refresh_speed">रिफ़्रेश गति</string>
+    <string name="translate_speed_power_saver">बैटरी सेवर</string>
+    <string name="translate_speed_balanced">संतुलित</string>
+    <string name="translate_speed_fast">तेज़</string>
+
+    <string name="translate_section_display">ओवरले शैली</string>
+    <string name="translate_style_inplace">इन-प्लेस ब्लेंड</string>
+    <string name="translate_style_frosted">फ़्रॉस्टेड कार्ड</string>
+    <string name="translate_label_overlay_alpha">ओवरले अपारदर्शिता</string>
+    <string name="translate_toggle_skip_target_title">पहले से अनुवादित टेक्स्ट छोड़ें</string>
+    <string name="translate_toggle_skip_target_desc">जो टेक्स्ट पहले से आपकी लक्ष्य भाषा में है, उसे बिना बदले रहने दें।</string>
+
+    <string name="translate_section_packs">ऑफ़लाइन भाषा पैक</string>
+    <string name="translate_toggle_wifi_only_title">केवल Wi-Fi पर डाउनलोड करें</string>
+    <string name="translate_toggle_wifi_only_desc">मोबाइल डेटा पर ~30 MB भाषा पैक डाउनलोड होने से रोकें।</string>
+    <string name="translate_search_pack_hint">भाषा पैक फ़िल्टर करें…</string>
+    <string name="translate_pack_size_hint">~30 MB ऑफ़लाइन</string>
+    <string name="translate_packs_show_all">सभी %1$d भाषाएँ दिखाएँ</string>
+    <string name="translate_packs_show_popular">केवल लोकप्रिय भाषाएँ दिखाएँ</string>
+    <string name="cd_download_language_pack">ऑफ़लाइन भाषा पैक डाउनलोड करें</string>
+    <string name="cd_delete_language_pack">ऑफ़लाइन भाषा पैक हटाएँ</string>
+
+    <string name="translate_section_guide">उपयोग कैसे करें</string>
+    <string name="translate_guide_step1">किसी भी एज स्वाइप या क्विक मेन्यू स्लॉट पर \"अनुवाद बटन दिखाएं/छिपाएं\" या \"अभी स्क्रीन अनुवाद करें\" असाइन करें।</string>
+    <string name="translate_guide_step2">स्क्रीन किनारे के फ़्लोटिंग \"文A\" बटन पर एक बार टैप करके पूरी स्क्रीन का साफ़ अनुवाद करें—हटाने के लिए दोबारा टैप करें।</string>
+    <string name="translate_guide_step3">बटन के नीचे छोटे \"⋯\" टैब पर टैप करके पुनः अनुवाद करें, मूल टेक्स्ट देखने के लिए दबाए रखें, भाषा बदलें, इंजन बदलें या बंद करें।</string>
+
+    <!-- Spec 66: ML Kit safe init & smooth droplet shape sliders -->
+    <string name="translate_mlkit_unavailable_notice">इस डिवाइस वातावरण में ऑफ़लाइन अनुवाद मॉडल प्रबंधक उपलब्ध नहीं है। आप फिर भी भाषा प्राथमिकताएँ सुरक्षित रूप से बदल सकते हैं।</string>
+    <string name="label_droplet_peak_width">ड्रॉपलेट शिखर ऊँचाई</string>
+    <string name="label_droplet_base_width">ड्रॉपलेट आधार चौड़ाई</string>
+
+    <!-- Native Circle to Search & CN ROM Assistant Repair -->
+    <string name="cts_card_title">Circle to Search (नेटिव और CN ROM मरम्मत)</string>
+    <string name="cts_card_subtitle">सिस्टम के नेटिव Google Circle to Search सत्र को सीधे ट्रिगर करता है, और CN ROM के लिए वैकल्पिक Shizuku असिस्टेंट मरम्मत प्रदान करता है।</string>
+    <string name="cts_toggle_auto_repair_title">Shizuku से Google Assistant स्वतः ठीक करें</string>
+    <string name="cts_toggle_auto_repair_desc">यदि CN ROM वॉइस असिस्टेंट रीसेट कर दे, तो Shizuku जुड़े होने पर Google Assistant स्वतः पुनर्स्थापित करें।</string>
+    <string name="cts_shizuku_repair_button">Google Assistant लागू करें (Shizuku)</string>
+    <string name="cts_shizuku_reset_button">असिस्टेंट सेटिंग्स रीसेट करें</string>
+    <string name="cts_shizuku_repair_success">Circle to Search के लिए Google Assistant सेट हो गया।</string>
+    <string name="cts_shizuku_reset_success">सिस्टम असिस्टेंट सेटिंग्स डिफ़ॉल्ट पर लौट आईं।</string>
+    <string name="cts_cn_rom_checklist_title">CN ROM चेकलिस्ट (OriginOS / ColorOS / realme UI / HyperOS CN)</string>
+    <string name="cts_cn_rom_step1">Google ऐप इंस्टॉल कर साइन इन करें और सिस्टम सेटिंग्स में Google Basic Services चालू करें।</string>
+    <string name="cts_cn_rom_step2">Google ऐप के लिए ऑटो-स्टार्ट अनुमति दें और बैटरी को अप्रतिबंधित (Unrestricted) सेट करें।</string>
+    <string name="cts_cn_rom_step3">यदि नेटिव Circle to Search न खुले, तो ऊपर \"Google Assistant लागू करें (Shizuku)\" टैप करें।</string>
+    <string name="cts_cn_rom_step4">Google ऐप को नवीनतम संस्करण पर अपडेट रखें और सिस्टम सेटिंग्स में इसे डिफ़ॉल्ट डिजिटल असिस्टेंट चुनें।</string>
+    <string name="cts_open_google_app_info_button">Google ऐप जानकारी खोलें</string>
+    <string name="cts_google_app_not_found">इस डिवाइस पर Google ऐप इंस्टॉल नहीं है।</string>
+
+    <!-- OS Back Gesture Conflict Mitigation & Shizuku Control -->
+    <string name="zones_os_back_mitigation_title">OS बैक जेस्चर टकराव समाधान</string>
+    <string name="zones_os_back_mitigation_desc">यदि ट्रिगर ज़ोन के ऊपरी हिस्से में सिस्टम बैक जेस्चर ट्रिगर होता है, तो Shizuku से OS बैक अक्षम करें या डिवाइस नेविगेशन सेटिंग्स में संवेदनशीलता बदलें।</string>
+    <string name="zones_os_back_disable_shizuku_button">Shizuku से OS बैक अक्षम करें</string>
+    <string name="zones_os_back_restore_button">OS बैक जेस्चर बहाल करें</string>
+    <string name="zones_open_nav_settings_button">डिवाइस नेविगेशन सेटिंग्स खोलें</string>
+
+    <!-- No-Shizuku HyperOS Control Center Floating Window Macro -->
+    <string name="shizuku_toggle_no_shizuku_cc_float_title">कंट्रोल सेंटर फ़्लोटिंग-विंडो मैक्रो (बिना Shizuku)</string>
+    <string name="shizuku_toggle_no_shizuku_cc_float_desc">Shizuku डिस्कनेक्ट होने पर कंट्रोल सेंटर खोलकर फ़्लोटिंग विंडो टाइल पर स्वतः टैप करता है ताकि असली स्केल्ड मिनी-विंडो खुल सके।</string>
+    <string name="floating_window_cc_tile_not_found">कंट्रोल सेंटर में फ़्लोटिंग विंडो टाइल नहीं मिली। इसे कंट्रोल सेंटर के पहले पृष्ठ पर जोड़ें या Shizuku कनेक्ट करें।</string>
+
+    <string name="shizuku_card_title_coloros">ColorOS / realme UI नेविगेशन नियंत्रण (Shizuku)</string>
+    <string name="shizuku_card_title_originos">OriginOS नेविगेशन नियंत्रण (Shizuku)</string>
+    <string name="shizuku_card_title_oneui">One UI नेविगेशन नियंत्रण (Shizuku)</string>
+    <string name="shizuku_card_title_aosp">सिस्टम बैक और नेविगेशन नियंत्रण (Shizuku)</string>
+    <string name="shizuku_card_subtitle_coloros">ColorOS, OxygenOS या realme UI पर 3-बटन बार छिपाएँ या सिस्टम एज बैक जेस्चर अक्षम करें।</string>
+    <string name="shizuku_card_subtitle_originos">vivo / iQOO OriginOS पर बिना रूट के नेविगेशन बार छिपाएँ या सिस्टम बैक जेस्चर रोकें।</string>
+    <string name="shizuku_card_subtitle_oneui">Samsung One UI पर बिना रूट के जेस्चर हिंट / नेविगेशन बार छिपाएँ या सिस्टम बैक जेस्चर रोकें।</string>
+    <string name="shizuku_card_subtitle_aosp">Pixel, Xperia, Nothing, Motorola और मानक Android पर बाएँ/दाएँ सिस्टम बैक जेस्चर या नेविगेशन बार नियंत्रित करें।</string>
+    <string name="shizuku_safety_guard_note">एंटी-लॉकआउट सुरक्षा सक्रिय: OS नेविगेशन रोकने से पहले Hinata अपनी एक्सेसिबिलिटी सेवा की जाँच करता है और आप कभी भी डिफ़ॉल्ट बहाल कर सकते हैं।</string>
+    <string name="shizuku_snackbar_accessibility_required">लॉकआउट से बचने के लिए पहले Hinata एक्सेसिबिलिटी सेवा चालू करें।</string>
+    <string name="shizuku_button_suppress_back">OS बैक जेस्चर अक्षम करें</string>
+    <string name="shizuku_snackbar_back_suppressed">सिस्टम एज बैक जेस्चर अक्षम कर दिए गए।</string>
+    <string name="shizuku_button_hide_navbar_generic">सिस्टम नेविगेशन बार छिपाएँ</string>
+    <string name="shizuku_button_restore_all_defaults">सभी सिस्टम डिफ़ॉल्ट पुनर्स्थापित करें</string>
+
+    <!-- Mission 2: No-Shizuku Floating Window Setup, Reload, OCR Fallback & Warning -->
+    <string name="floating_window_cc_tile_not_found_setup">कंट्रोल सेंटर के पहले पृष्ठ पर \"फ़्लोटिंग विंडो\" रखें, फिर सेटिंग्स से \"बटन स्थिति पुनः लोड करें\" या OCR स्कैन चलाएँ।</string>
+    <string name="cc_float_scan_internal_success">नई बटन स्थिति लोड और सहेज ली गई।</string>
+    <string name="cc_float_scan_internal_failed">बटन अपने-आप नहीं मिला। कृपया वैकल्पिक OCR स्कैन आज़माएँ।</string>
+    <string name="cc_float_scan_ocr_success">OCR द्वारा बटन स्थिति याद कर ली गई!</string>
+    <string name="cc_float_scan_ocr_failed">OCR से बटन नहीं मिला। सुनिश्चित करें कि \"फ़्लोटिंग विंडो\" कंट्रोल सेंटर के पहले पृष्ठ पर है।</string>
+    <string name="cc_float_scan_manual_success">आपके टैप से बटन स्थिति सहेज ली गई!</string>
+    <string name="cc_float_manual_tap_prompt">इसकी स्थिति सहेजने के लिए \"फ़्लोटिंग विंडो\" बटन पर एक बार टैप करें।</string>
+    <string name="cc_float_scan_service_required">कंट्रोल सेंटर पढ़ने के लिए पहले Hinata एक्सेसिबिलिटी सेवा चालू करें।</string>
+    <string name="cc_float_status_auto">स्वतः पढ़ा गया</string>
+    <string name="cc_float_status_ocr">OCR द्वारा सहेजा गया</string>
+    <string name="cc_float_status_manual">टैप द्वारा सहेजा गया</string>
+    <string name="cc_float_status_unset">सेट नहीं</string>
+    <string name="cc_float_setup_dialog_title">फ़्लोटिंग विंडो सेटअप और सावधानी</string>
+    <string name="cc_float_setup_shizuku_on_title">जब Shizuku चालू हो (अनुशंसित)</string>
+    <string name="cc_float_setup_shizuku_on_desc">बिना किसी सेटअप के किसी भी स्क्रीन से सीधे और स्थिर रूप से काम करता है।</string>
+    <string name="cc_float_setup_shizuku_off_title">जब Shizuku बंद हो</string>
+    <string name="cc_float_setup_shizuku_off_desc">कंट्रोल सेंटर (क्विक सेटिंग्स) के पहले पृष्ठ पर \"फ़्लोटिंग विंडो\" बटन रखना आवश्यक है।</string>
+    <string name="cc_float_macro_warning_full">सावधानी: Shizuku बंद होने पर यह कंट्रोल सेंटर के बटन की स्थिति याद करके अपने-आप टैप करने वाला मैक्रो उपयोग करता है। यदि आप बाद में कंट्रोल सेंटर के बटन की जगह बदलते हैं, तो गलती से कोई दूसरा बटन दब सकता है। बटन की जगह बदलने के बाद हमेशा \"बटन स्थिति पुनः लोड करें\" दबाएँ।</string>
+    <string name="cc_float_macro_warning_short">सावधानी: Shizuku बंद होने पर कंट्रोल सेंटर के बटन बदलने से दूसरा बटन दब सकता है। लेआउट बदलने पर हमेशा पुनः लोड करें।</string>
+    <string name="cc_float_setup_step1">चरण 1: कंट्रोल सेंटर के पहले पृष्ठ पर \"फ़्लोटिंग विंडो\" बटन रखें</string>
+    <string name="cc_float_btn_read_internal">चरण 2: बटन स्थिति पढ़ें (स्वतः)</string>
+    <string name="cc_float_btn_read_ocr">विकल्प: स्क्रीन से OCR द्वारा पढ़ें</string>
+    <string name="cc_float_calibration_title">कंट्रोल सेंटर बटन स्थिति (बिना Shizuku)</string>
+    <string name="cc_float_btn_reload_internal">बटन स्थिति पुनः लोड करें (लेआउट बदलने पर)</string>
+    <string name="cc_float_btn_reload_ocr">विकल्प: OCR से बटन स्थिति पढ़ें (स्वतः काम न करे तो)</string>
+
+    <!-- Task 1: Opt-In High-Quality Online Translation Engine -->
+    <string name="translate_section_engine">अनुवाद इंजन</string>
+    <string name="translate_engine_offline">ऑफ़लाइन (स्थानीय)</string>
+    <string name="translate_engine_online">ऑनलाइन (उच्च गुणवत्ता)</string>
+    <string name="translate_engine_offline_desc">डाउनलोड किए गए ML Kit भाषा पैक से 100% डिवाइस पर ही अनुवाद करता है। कोई भी टेक्स्ट या चित्र बाहर नहीं भेजा जाता।</string>
+    <string name="translate_engine_online_desc">स्वाभाविक और सटीक अनुच्छेद अनुवाद के लिए केवल निकाला गया टेक्स्ट भेजता है। नेटवर्क न होने पर स्वतः ऑफ़लाइन अनुवाद पर लौट आता है।</string>
+    <string name="translate_online_consent_title">ऑनलाइन उच्च गुणवत्ता अनुवाद चालू करें?</string>
+    <string name="translate_online_consent_body">• अनुवाद सर्वर पर केवल स्क्रीन से निकाला गया टेक्स्ट ही भेजा जाता है — स्क्रीनशॉट या चित्र कभी नहीं भेजे जाते।\n• पासवर्ड फ़ील्ड और सुरक्षित स्क्रीन (FLAG_SECURE) स्वतः बाहर रखी जाती हैं।\n• सभी नेटवर्क अनुरोध पूरी तरह बंद करने के लिए आप कभी भी \"ऑफ़लाइन (स्थानीय)\" पर वापस जा सकते हैं।\n• ऑफ़लाइन होने या सीमा पार होने पर ऐप स्वतः डिवाइस के ऑफ़लाइन अनुवाद पर स्विच हो जाता है।</string>
+    <string name="translate_online_consent_confirm">सहमत होकर चालू करें</string>
+    <string name="translate_online_consent_cancel">रद्द करें</string>
+
+    <!-- Task 3 & Live Translate Overhaul -->
+    <string name="cc_float_method_node">नोड</string>
+    <string name="cc_float_method_ocr">OCR</string>
+    <string name="cc_float_method_manual">टैप</string>
+    <string name="cc_float_method_auto">स्वतः</string>
+    <string name="cc_float_error_service_disabled">Hinata एक्सेसिबिलिटी सेवा बंद है। कृपया एक्सेसिबिलिटी सेटिंग्स से इसे चालू करें।</string>
+    <string name="cc_float_error_service_not_bound">एक्सेसिबिलिटी सेवा प्रतिक्रिया नहीं दे रही है। कृपया इसे बंद करके फिर से चालू करें।</string>
+    <string name="cc_float_action_open_accessibility">सेटिंग्स खोलें</string>
+    <string name="cc_float_btn_dont_show_again">समझ गया, फिर न दिखाएँ</string>
+    <string name="cc_float_calibration_shizuku_summary">Shizuku चालू: सीधा फ़्लोटिंग विंडो। Shizuku बंद: याद किए गए कंट्रोल सेंटर टाइल पर स्वतः टैप करता है।</string>
+    <string name="cc_float_saved_coords_format">सहेजा गया: X %1$d%% · Y %2$d%% (%3$s)</string>
+    <string name="cc_float_saved_coords_unset">सहेजी गई स्थिति: अभी सेट नहीं</string>
+    <string name="cc_float_btn_reset_coords">रीसेट करें</string>
+    <string name="translate_toast_switched_online">ऑनलाइन (उच्च गुणवत्ता) अनुवाद पर स्विच किया गया</string>
+    <string name="translate_toast_switched_offline">ऑफ़लाइन (स्थानीय) अनुवाद पर स्विच किया गया</string>
+    <string name="translate_toast_online_consent_required">ऑनलाइन अनुवाद के लिए कृपया पहले स्क्रीन अनुवाद सेटिंग्स में सहमति दें।</string>
+
+    <!-- PART 3: Beginner Visual Guide & Control Center First-Page Animation -->
+    <string name="cc_demo_phase1_caption">1. कंट्रोल सेंटर खोलने के लिए ऊपर-दाएँ कोने से नीचे स्वाइप करें</string>
+    <string name="cc_demo_phase2_caption">2. \"फ़्लोटिंग विंडो\" को पृष्ठ 1 (पहला बिंदु सक्रिय) पर रखें</string>
+    <string name="cc_demo_phase3_caption">3. बाद में बटन बदलने पर \"बटन स्थिति पुनः लोड करें\" दबाएँ</string>
+    <string name="cc_demo_tile_floating_short">फ़्लोट</string>
+    <string name="cc_demo_page1_label">पृष्ठ 1</string>
+    <string name="cc_demo_toggle_show_guide">एनिमेशन डेमो और 3-चरण गाइड देखें</string>
+    <string name="cc_demo_toggle_hide_guide">गाइड छिपाएँ</string>
+    <string name="cc_guide_what_is_cc_title">कंट्रोल सेंटर क्या है?</string>
+    <string name="cc_guide_what_is_cc_desc">यह वह क्विक-टॉगल पैनल है जो स्क्रीन के ऊपर-दाएँ किनारे से नीचे स्वाइप करने पर खुलता है।</string>
+    <string name="cc_guide_what_is_page1_title">\"पृष्ठ 1\" का क्या मतलब है?</string>
+    <string name="cc_guide_what_is_page1_desc">यह टाइलों की सबसे पहली स्क्रीन है जो दाएँ-बाएँ स्वाइप किए बिना तुरंत दिखती है। कंट्रोल सेंटर में एडिट (पेंसिल) आइकन दबाकर \"फ़्लोटिंग विंडो\" को पृष्ठ 1 पर लाएँ।</string>
+    <string name="cc_guide_reorder_caution_title">टाइल क्रम बदलने पर ध्यान दें</string>
+    <string name="cc_guide_reorder_caution_desc">Shizuku बंद होने पर Hinata याद की गई स्थिति पर स्वतः टैप करता है। यदि आप बाद में कंट्रोल सेंटर के बटन बदलते हैं, तो \"बटन स्थिति पुनः लोड करें\" दोबारा चलाएँ। (Shizuku चालू होने पर कंट्रोल सेंटर का उपयोग नहीं होता।)</string>
+
+    <!-- PART 4: Strict HyperOS Capability Gating & Diagnostics -->
+    <string name="floating_window_hyperos_or_shizuku_only">इस डिवाइस पर फ़्लोटिंग विंडो के लिए HyperOS या सक्रिय Shizuku कनेक्शन आवश्यक है।</string>
+    <string name="floating_window_requires_hyperos_or_shizuku_badge">Shizuku आवश्यक</string>
+    <string name="floating_window_toggle_restricted_desc">केवल HyperOS डिवाइस या Shizuku जुड़े होने पर उपलब्ध।</string>
+    <string name="shizuku_floating_window_non_hyperos_note">इस डिवाइस पर फ़्लोटिंग विंडो Shizuku के माध्यम से मानक Android फ़्रीफ़ॉर्म का उपयोग करता है। सक्षम करने के लिए ऊपर Shizuku कनेक्ट करें।</string>
+    <string name="diag_os_environment">पहचाना गया OS वातावरण</string>
+    <string name="diag_os_hyperos_full">%1$s (पूर्ण HyperOS मोड)</string>
+    <string name="diag_os_standard_mode">%1$s (मानक Android मोड)</string>
+
+    <!-- One-Tap Translate Button & Bottom Bar During IME -->
+    <string name="translate_section_button_behavior">अनुवाद बटन व्यवहार</string>
+    <string name="translate_button_behavior_desc">केवल फ़्लोटिंग एज बटन पर टैप करने पर ही सटीक अनुवाद करता है—कोई बैकग्राउंड पोलिंग, बैटरी खपत या झिलमिलाहट नहीं।</string>
+    <string name="translate_toggle_auto_clear_scroll_title">स्क्रॉल करने पर अनुवाद स्वतः हटाएँ</string>
+    <string name="translate_toggle_auto_clear_scroll_desc">स्क्रॉल करते ही अनुवादित टेक्स्ट स्वतः छिपा देता है ताकि पुराना टेक्स्ट नई सामग्री पर न दिखे।</string>
+    <string name="translate_toast_no_text_found">इस स्क्रीन पर अनुवाद योग्य टेक्स्ट नहीं मिला।</string>
+    <string name="label_show_bottom_bar_during_ime">कीबोर्ड खुला होने पर भी निचला बार सक्रिय रखें</string>
+    <string name="desc_show_bottom_bar_during_ime">ऑन-स्क्रीन कीबोर्ड खुले होने पर भी निचले किनारे से स्वाइप की अनुमति दें। टाइप करते समय अनचाहे ट्रिगर से बचने के लिए बंद रखें।</string>
+
+    <!-- 4-Layer Safety, Shizuku Auto-Revive & Quick Settings Recovery -->
+    <string name="qs_tile_recovery_label">Hinata रिकवरी</string>
+    <string name="qs_tile_recovery_subtitle_active">रीलोड / नैव पुनर्स्थापना के लिए टैप करें</string>
+    <string name="qs_tile_recovery_subtitle_inactive">आपातकालीन रिकवरी के लिए टैप करें</string>
+    <string name="shortcut_revive_short">जेस्चर रीस्टार्ट</string>
+    <string name="shortcut_revive_long">एज जेस्चर फिर से शुरू करें</string>
+    <string name="shortcut_restore_nav_short">स्टैंडर्ड नैव वापस लाएँ</string>
+    <string name="shortcut_restore_nav_long">3-बटन और सिस्टम नैव आपातकालीन पुनर्स्थापना</string>
+    <string name="notification_keep_alive_channel_name">कीप-अलाइव सुरक्षा (मौन)</string>
+    <string name="notification_keep_alive_title">Hinata जेस्चर सुरक्षित हैं</string>
+    <string name="notification_keep_alive_text">बैकग्राउंड में बंद होने से सुरक्षा जारी है। 1-टैप रिकवरी के लिए नीचे दिए बटन उपयोग करें।</string>
+    <string name="notification_action_reload">🔄 रीलोड</string>
+    <string name="notification_action_restore_nav">🛟 नैव वापस लाएँ</string>
+    <string name="recovery_toast_revive_success">Hinata पुनः प्रारंभ हो गया है</string>
+    <string name="recovery_toast_nav_restored">सिस्टम नेविगेशन पुनर्स्थापित कर दिया गया है</string>
+    <string name="recovery_toast_open_accessibility_manual">एक्सेसिबिलिटी सेटिंग्स में Hinata को एक बार बंद करके फिर चालू करें</string>
+    <string name="recovery_toast_open_nav_settings_manual">सिस्टम नेविगेशन सेटिंग्स खोली गईं। 3-बटन या जेस्चर नेविगेशन चुनें।</string>
+    <string name="recovery_toast_revive_failed_open_settings">Shizuku रीबाइंड विफल रहा। एक्सेसिबिलिटी सेटिंग्स खोली जा रही हैं।</string>
+    <string name="recovery_toast_nav_restore_failed_open_settings">Shizuku नेविगेशन पुनर्स्थापना विफल रही। सिस्टम सेटिंग्स खोली जा रही हैं।</string>
+    <string name="recovery_card_title">🛟 ऑटो-रिकवरी और आपातकालीन बचाव</string>
+    <string name="recovery_card_badge">4-लेयर सुरक्षा</string>
+    <string name="recovery_toggle_keep_alive_title">टास्क-किल रोधी सुरक्षा सूचना दिखाएँ (अनुशंसित)</string>
+    <string name="recovery_toggle_keep_alive_desc">सिस्टम द्वारा बैकग्राउंड में बंद होने से रोकता है और सूचना से 1-टैप रीस्टार्ट व 3-बटन पुनर्स्थापना देता है।</string>
+    <string name="recovery_toggle_auto_revive_title">Shizuku से ऑटो-रीस्टार्ट व बंद होने पर नैव स्वतः पुनर्स्थापना</string>
+    <string name="recovery_toggle_auto_revive_desc">बैकग्राउंड में बंद होने पर स्वतः रीस्टार्ट का प्रयास करता है, और विफल होने पर लॉकआउट रोकने हेतु 3-बटन नैव वापस लाता है।</string>
+    <string name="recovery_button_rebind_now">जेस्चर अभी रीबाइंड (रीस्टार्ट) करें</string>
+    <string name="recovery_qs_tile_tip">💡 किसी भी स्क्रीन से 1-टैप रिकवरी के लिए क्विक सेटिंग्स / कंट्रोल सेंटर में \"Hinata रिकवरी\" टाइल जोड़ें। होम स्क्रीन पर Hinata आइकन को दबाए रखकर भी आपातकालीन शॉर्टकट उपयोग कर सकते हैं।</string>
+
+    <!-- Emergency Accessibility Off Escape Notification (ID 4199) -->
+    <string name="notification_emergency_off_channel_name">Hinata आपातकालीन रिकवरी अलर्ट</string>
+    <string name="notification_emergency_off_title">⚠️ Hinata एक्सेसिबिलिटी बंद हो गई</string>
+    <string name="notification_emergency_off_text">एज जेस्चर रुके हुए हैं। एक्सेसिबिलिटी फिर से चालू करने या तुरंत 3-बटन नेविगेशन वापस लाने के लिए नीचे टैप करें।</string>
+    <string name="notification_emergency_action_open_accessibility">एक्सेसिबिलिटी खोलें</string>
+    <string name="notification_emergency_action_restore_nav">3-बटन वापस लाएँ</string>
+
+    <!-- Mandatory Onboarding & QS Tile Safety Step -->
+    <string name="onboarding_a11y_mandatory_agree">मैं सहमत हूँ कि Hinata उपयोग करने के लिए Android एक्सेसिबिलिटी को हमेशा चालू रखना अनिवार्य है</string>
+    <string name="onboarding_qs_tile_title">🛟 क्विक पैनल में \"Hinata रिकवरी\" जोड़ें (अत्यधिक अनुशंसित)</string>
+    <string name="onboarding_qs_tile_desc">यदि एज जेस्चर कभी काम करना बंद कर दें, तब भी ऊपर से स्वाइप करके क्विक पैनल (कंट्रोल सेंटर) हमेशा खुलता है। वहाँ \"Hinata रिकवरी\" टाइल रखने से आप 1 टैप में रीस्टार्ट या 3-बटन पुनर्स्थापित कर सकते हैं और कभी नहीं फँसेंगे।</string>
+    <string name="onboarding_qs_tile_add_now_button">+ क्विक पैनल में \"Hinata रिकवरी\" टाइल अभी जोड़ें</string>
+    <string name="onboarding_qs_tile_manual_title">मैन्युअल रूप से जोड़ने के लिए</string>
+    <string name="onboarding_qs_tile_manual_steps">ऊपर-दाएँ से नीचे स्वाइप करें → संपादित करें (पेंसिल आइकन) → \"Hinata रिकवरी\" को पेज 1 पर जोड़ें।</string>
+    <string name="onboarding_qs_tile_open_panel_button">क्विक सेटिंग्स पैनल खोलें</string>
+    <string name="onboarding_qs_tile_countdown_button">कृपया निर्देश पढ़ें (%1$d सेकंड शेष)</string>
+    <string name="onboarding_qs_tile_next_button">मैं समझ गया — आगे बढ़ें</string>
+    <string name="onboarding_qs_tile_added_toast">क्विक पैनल में \"Hinata रिकवरी\" टाइल जोड़ी गई</string>
+    <string name="onboarding_qs_tile_manual_hint_toast">ऊपर से स्वाइप करके संपादित करें खोलें और \"Hinata रिकवरी\" को पेज 1 पर जोड़ें।</string>
+
+    <!-- Post-Onboarding Mandatory Accessibility Hard Gate -->
+    <string name="a11y_gate_title">एक्सेसिबिलिटी बंद है — Hinata अनुपलब्ध</string>
+    <string name="a11y_gate_desc">Hinata के जेस्चर और सुरक्षा सुविधाएँ (जैसे क्रैश होने पर 3-बटन स्वतः पुनर्स्थापना) चलाने के लिए एक्सेसिबिलिटी चालू होना आवश्यक है। बंद रहने पर सेटिंग्स और जेस्चर लॉक रहेंगे। (एक्सेसिबिलिटी बंद होने से होने वाली किसी भी असुविधा की ज़िम्मेदारी उपयोगकर्ता की स्वयं की होगी।)</string>
+    <string name="a11y_gate_open_accessibility_button">एक्सेसिबिलिटी सेटिंग्स खोलें और चालू करें</string>
+    <string name="a11y_gate_shizuku_auto_enable_button">⚡ Shizuku से अभी एक्सेसिबिलिटी स्वतः चालू करें</string>
+    <string name="a11y_gate_emergency_restore_nav_button">🛟 3-बटन / मानक नेविगेशन अभी आपातकालीन पुनर्स्थापित करें</string>
+    <string name="a11y_gate_add_qs_tile_button">क्विक पैनल में \"Hinata रिकवरी\" टाइल जोड़ें</string>
+</resources>
+
+
+
