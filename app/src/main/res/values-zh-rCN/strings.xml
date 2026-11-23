@@ -1,0 +1,826 @@
+<resources>
+    <string name="app_name">Hinata</string>
+    <string name="accessibility_service_label">Hinata 边缘手势</string>
+    <string name="accessibility_service_description">从屏幕左右和底部边缘顺畅触发返回、主屏幕、最近任务、画圈搜索和快捷菜单。不会读取任何屏幕内容。</string>
+    <string name="toast_circle_to_search_fallback">请将默认数字助理设为 Google</string>
+
+    <!-- Navigation tabs (5 tabs, concise single-line) -->
+    <string name="tab_zones">区域</string>
+    <string name="tab_arc">菜单</string>
+    <string name="tab_actions">手势</string>
+    <string name="tab_blacklist">排除</string>
+    <string name="tab_guide">HyperOS</string>
+
+    <!-- Service status -->
+    <string name="status_service_active">已开启</string>
+    <string name="status_service_inactive">已关闭</string>
+    <string name="status_enable_now">立即开启</string>
+
+    <!-- Edges & Appearance -->
+    <string name="section_trigger_zones">触发区域</string>
+    <string name="section_appearance">外观与振动</string>
+    <string name="section_bottom_cts">底部条与画圈搜索</string>
+    <string name="label_left_edge">左侧边缘</string>
+    <string name="label_right_edge">右侧边缘</string>
+    <string name="label_bottom_bar">底部条</string>
+    <string name="label_bottom_long_press">长按底部条</string>
+    <string name="label_bottom_long_press_duration">长按时长</string>
+    <string name="label_bottom_long_press_action">长按操作</string>
+    <string name="button_test_cts">体验画圈搜索</string>
+    <string name="button_assistant_settings">默认助理设置</string>
+    <string name="label_edge_width">边缘宽度</string>
+    <string name="label_edge_height">区域高度</string>
+    <string name="label_edge_offset">底部距离</string>
+    <string name="label_bottom_width">底部条宽度</string>
+    <string name="label_swipe_threshold">滑动触发距离</string>
+    <string name="label_hold_duration">停顿时长</string>
+    <string name="label_diagonal_angle">斜滑角度</string>
+    <string name="label_feedback_style">指示器样式</string>
+    <string name="label_visual_theme">指示器配色</string>
+    <string name="label_feedback_alpha">指示器透明度</string>
+    <string name="label_edge_guide_alpha">边缘条透明度</string>
+    <string name="label_bottom_pill_alpha">底部条透明度</string>
+    <string name="label_haptic_strength">振动反馈</string>
+    <string name="label_reset_defaults">恢复默认设置</string>
+    <string name="preview_sandbox_hint">从任意边缘拖动以预览手势</string>
+    <string name="preview_stage2_guideline_hint">滑过虚线即可触发第二操作</string>
+    <string name="metric_width_short">宽 %1$ddp</string>
+    <string name="metric_opacity_short">透明 %1$d%%</string>
+    <string name="metric_side_short">侧滑 %1$d%%</string>
+    <string name="metric_bottom_short">底滑 %1$d%%</string>
+    <string name="metric_range_short">范围 %1$d%%–%2$d%%</string>
+    <string name="preview_deep_side_focus">侧边滑动距离 · %1$d%%</string>
+    <string name="preview_deep_bottom_focus">底部滑动距离 · %1$d%%</string>
+    <string name="preview_deep_action_prefix">长滑操作: %1$s</string>
+
+    <!-- Deep Swipe -->
+    <string name="section_long_swipe">长滑操作</string>
+    <string name="desc_long_swipe">从边缘向内滑得更远，即可立即执行第二操作。</string>
+    <string name="label_secondary_trigger_mode">触发方式</string>
+    <string name="mode_distance">距离</string>
+    <string name="mode_hold">停顿</string>
+    <string name="mode_both">两者</string>
+    <string name="label_horizontal_long_swipe">侧边滑动距离</string>
+    <string name="label_bottom_long_swipe">底部滑动距离</string>
+
+    <!-- Quick Menu -->
+    <string name="arc_title">快捷菜单</string>
+    <string name="arc_subtitle">从屏幕边缘滑出扇形菜单，不松手直接选择常用操作。</string>
+    <string name="arc_section_trigger_method">呼出方式</string>
+    <string name="arc_method_dedicated_title">独立边缘区域</string>
+    <string name="arc_method_dedicated_badge">推荐</string>
+    <string name="arc_method_dedicated_desc">从独立边缘区域向内滑动立即打开，不与返回手势冲突。</string>
+    <string name="arc_method_edge_hold_title">边缘轻按停顿</string>
+    <string name="arc_method_edge_hold_badge">无需额外区域</string>
+    <string name="arc_method_edge_hold_desc">手指停留在边缘片刻即可打开，直接滑动仍执行常规手势。</string>
+    <string name="arc_method_pull_return_title">拉出后折返</string>
+    <string name="arc_method_pull_return_badge">无需额外区域</string>
+    <string name="arc_method_pull_return_desc">从边缘略微拉出并折返即可打开，随后滑向对应选项。</string>
+    <string name="arc_method_gesture_title">绑定到手势</string>
+    <string name="arc_method_gesture_badge">手动</string>
+    <string name="arc_method_gesture_desc">在“手势”页面中将其分配给任意滑动或停顿手势。</string>
+    <string name="arc_zone_side_label">生效边缘</string>
+    <string name="arc_zone_side_both">两侧</string>
+    <string name="arc_zone_side_left">仅左侧</string>
+    <string name="arc_zone_side_right">仅右侧</string>
+    <string name="arc_zone_height_label">区域高度</string>
+    <string name="arc_zone_offset_label">底部距离</string>
+    <string name="arc_zone_legend_main">常规区域</string>
+    <string name="arc_zone_legend_arc">快捷菜单</string>
+    <string name="arc_zone_overlap_hint">重叠部分优先响应快捷菜单，调整底部距离可完全分开。</string>
+    <string name="menu_zone_range_format">底部 %1$d%%–%2$d%%</string>
+    <string name="menu_zone_bottom_label">底部 0%</string>
+    <string name="menu_zone_top_label">顶部 100%</string>
+    <string name="arc_edge_hold_ms_label">停顿时长</string>
+    <string name="arc_pull_return_step1">1. 轻拉</string>
+    <string name="arc_pull_return_step2">2. 折返边缘</string>
+    <string name="arc_pull_return_step3">3. 滑动选择</string>
+    <string name="arc_free_long_swipe_title">释放侧边长滑手势</string>
+    <string name="arc_free_long_swipe_desc">侧边长滑当前也绑定了快捷菜单，可改为“上一个应用”提升切换效率。</string>
+    <string name="arc_free_long_swipe_button">将侧边长滑设为“上一个应用”</string>
+    <string name="arc_section_geometry">菜单布局</string>
+    <string name="arc_section_slots">菜单项</string>
+    <string name="arc_label_slot_count">项目数量</string>
+    <string name="arc_slot_count_format">%1$d 项</string>
+    <string name="arc_label_radius">菜单大小</string>
+    <string name="arc_label_dim_alpha">背景压暗</string>
+    <string name="arc_preview_hint">从左右边缘向内拖动测试快捷菜单</string>
+    <string name="menu_preview_metrics">大小 %1$ddp · 压暗 %2$d%%</string>
+    <string name="arc_slot_number">选项 %1$d</string>
+    <string name="arc_deadzone_cancel">回到边缘取消</string>
+    <string name="arc_trigger_active_title">已绑定手势</string>
+    <string name="arc_trigger_unassigned_title">尚未绑定手势</string>
+    <string name="arc_trigger_unassigned_desc">可一键绑定到侧边长滑，方便从左右边缘快速打开。</string>
+    <string name="arc_trigger_assign_button">绑定到侧边长滑</string>
+    <string name="arc_assigned_side_short">侧边短滑</string>
+    <string name="arc_assigned_side_deep_distance">侧边长滑 (%1$d%%)</string>
+    <string name="arc_assigned_side_deep_hold">侧边停顿 (%1$dms)</string>
+    <string name="arc_assigned_side_deep_both">侧边长滑 (%1$d%% / %2$dms)</string>
+    <string name="arc_assigned_diag_up">斜上滑动</string>
+    <string name="arc_assigned_diag_down">斜下滑动</string>
+    <string name="arc_assigned_bottom_up">底部短滑</string>
+    <string name="arc_assigned_bottom_deep">底部长滑</string>
+    <string name="arc_assigned_bottom_hold">长按底部条</string>
+
+    <!-- Actions & Task Switching -->
+    <string name="section_side_actions">左右边缘</string>
+    <string name="section_bottom_actions">底部条</string>
+    <string name="section_task_switching">应用切换</string>
+    <string name="section_smart_avoidance">智能防误触</string>
+    <string name="gesture_horizontal">短滑</string>
+    <string name="gesture_horizontal_hold">长滑操作</string>
+    <string name="gesture_diagonal_up">斜上滑动</string>
+    <string name="gesture_diagonal_down">斜下滑动</string>
+    <string name="gesture_bottom_up">向上短滑</string>
+    <string name="gesture_bottom_hold">向上长滑</string>
+    <string name="gesture_bottom_long_press">长按底部条</string>
+    <string name="label_hyperos_recents_compat">HyperOS 任务切换修复</string>
+    <string name="desc_hyperos_recents_compat">解决在 HyperOS 上使用第三方桌面时难以打开系统多任务的问题。</string>
+    <string name="label_hyperos_recents_delay">切换间隔</string>
+    <string name="label_usage_stats_permission">使用情况访问权限（可选）</string>
+    <string name="desc_usage_stats_permission">重启后可立即补全最近应用列表。不开启也可正常记录。</string>
+    <string name="status_usage_granted">已允许</string>
+    <string name="status_usage_optional">可选</string>
+    <string name="button_open_usage_access">前往权限设置</string>
+    <string name="button_test_recent_history">查看最近应用</string>
+    <string name="dialog_recent_history_title">最近应用</string>
+    <string name="dialog_recent_history_subtitle">点击任意应用测试快速切换</string>
+    <string name="recent_history_empty">暂无记录，打开一两个应用后会自动显示。</string>
+    <string name="recent_history_prev_badge">上一个</string>
+    <string name="label_ime_avoidance">键盘弹出时</string>
+    <string name="label_landscape_mode">横屏使用时</string>
+    <string name="dialog_pick_action_title">选择操作</string>
+    <string name="picker_tab_system">系统操作</string>
+    <string name="picker_tab_apps">打开应用</string>
+
+    <!-- Action names (Official Glossary) -->
+    <string name="action_back">返回</string>
+    <string name="action_home">主屏幕</string>
+    <string name="action_recents">系统多任务</string>
+    <string name="action_previous_app">上一个应用</string>
+    <string name="action_notifications">通知中心</string>
+    <string name="action_quick_settings">控制中心</string>
+    <string name="action_lock_screen">锁屏</string>
+    <string name="action_screenshot">截屏</string>
+    <string name="action_split_screen">分屏</string>
+    <string name="action_circle_to_search">画圈搜索</string>
+    <string name="action_open_quick_menu">快捷菜单</string>
+    <string name="action_open_recent_switcher">最近应用</string>
+    <string name="action_toggle_torch">手电筒</string>
+    <string name="action_launch_app">打开应用</string>
+    <string name="action_none">无</string>
+
+    <!-- Styles / themes / haptics / avoidance -->
+    <string name="style_bezier">水滴</string>
+    <string name="style_minimal">简约</string>
+    <string name="style_hidden">隐藏</string>
+    <string name="theme_auto">自动</string>
+    <string name="theme_dark_glass">深色</string>
+    <string name="theme_light_glass">浅色</string>
+    <string name="theme_material_you">动态取色</string>
+    <string name="haptic_off">关</string>
+    <string name="haptic_light">轻</string>
+    <string name="haptic_medium">适中</string>
+    <string name="haptic_strong">强</string>
+    <string name="ime_shift_up">上移避让</string>
+    <string name="ime_disable">暂时停用</string>
+    <string name="ime_none">保持开启</string>
+    <string name="landscape_double_swipe">滑动两次</string>
+    <string name="landscape_disable">暂时停用</string>
+    <string name="landscape_keep">保持开启</string>
+
+    <!-- Excluded Apps -->
+    <string name="blacklist_title">排除应用</string>
+    <string name="blacklist_subtitle">使用所选应用时自动暂停边缘手势。</string>
+    <string name="blacklist_search_placeholder">搜索应用</string>
+    <string name="blacklist_empty">未找到匹配的应用</string>
+    <string name="blacklist_selected_count">已排除 %1$d 个</string>
+
+    <!-- HyperOS Setup Guide -->
+    <string name="guide_title">HyperOS 设置指南</string>
+    <string name="guide_subtitle">完成以下建议设置，确保手势服务在后台稳定运行。</string>
+    <string name="guide_step1_title">1. 开启无障碍服务</string>
+    <string name="guide_step1_desc">前往“已下载的应用”开启 Hinata。本应用不会读取屏幕内容。</string>
+    <string name="guide_step1_action">打开无障碍设置</string>
+    <string name="guide_step2_title">2. 将省电策略设为“无限制”</string>
+    <string name="guide_step2_desc">避免系统省电策略在后台停止边缘手势服务。</string>
+    <string name="guide_step2_action">打开电池设置</string>
+    <string name="guide_step3_title">3. 允许后台自启动</string>
+    <string name="guide_step3_desc">手机重启后可自动恢复手势功能。</string>
+    <string name="guide_step3_action">打开自启动设置</string>
+    <string name="guide_step_done">已设置</string>
+    <string name="guide_step_pending">未设置</string>
+    <string name="guide_architecture_title">运行状态</string>
+
+    <!-- General Settings Screen -->
+    <string name="settings_title">设置</string>
+    <string name="settings_section_language">语言</string>
+    <string name="settings_language_label">应用语言</string>
+    <string name="settings_language_sheet_title">选择语言</string>
+    <string name="lang_system_default">跟随系统</string>
+    <string name="settings_section_appearance">外观与主题</string>
+    <string name="settings_theme_mode">颜色主题</string>
+    <string name="settings_theme_system">系统</string>
+    <string name="settings_theme_dark">深色</string>
+    <string name="settings_theme_light">浅色</string>
+    <string name="settings_dynamic_color">Material You 动态取色</string>
+    <string name="settings_dynamic_color_desc">在 Android 12 及以上版本中自动匹配壁纸色调。</string>
+    <string name="settings_dynamic_color_unavailable">需要 Android 12 及以上版本。</string>
+    <string name="settings_section_privacy">隐私与安全</string>
+    <string name="settings_privacy_title">100% 本地端侧处理</string>
+    <string name="settings_privacy_desc">绝无追踪、广告或屏幕截图上传。Hinata 默认完全在本地运行；HTTPS 网络通信仅限于 Google ML Kit 离线模型的获取与管理，以及您明确同意启用在线翻译时（仅发送文本）。</string>
+    <string name="settings_section_diagnostics">系统诊断</string>
+    <string name="settings_diagnostics_subtitle">服务状态、进程隔离与权限详情</string>
+    <string name="diag_settings_process">设置进程</string>
+    <string name="diag_settings_process_value">独立隔离 (:settings · PID %1$d)</string>
+    <string name="diag_resident_process">手势服务</string>
+    <string name="diag_resident_running">运行中 (PID %1$d)</string>
+    <string name="diag_resident_standby">待机</string>
+    <string name="diag_accessibility">无障碍服务</string>
+    <string name="diag_usage_access">使用情况访问</string>
+    <string name="diag_ime_state">键盘状态</string>
+    <string name="diag_ime_visible">显示中</string>
+    <string name="diag_ime_hidden">已隐藏</string>
+    <string name="diag_orientation">屏幕方向</string>
+    <string name="diag_orientation_landscape">横屏</string>
+    <string name="diag_orientation_portrait">竖屏</string>
+    <string name="settings_section_about">关于</string>
+    <string name="settings_version_label">版本</string>
+    <string name="settings_licenses_label">开源许可</string>
+    <string name="settings_licenses_desc">GNU General Public License v3.0 (GPLv3) · Jetpack Compose、AndroidX、Kotlin、Shizuku API、Inter、Plus Jakarta Sans、JetBrains Mono</string>
+    <string name="settings_licenses_dialog_title">开源许可</string>
+    <string name="settings_licenses_dialog_body">Hinata — GNU General Public License v3.0 (GPLv3)（开源许可）\nCopyright (C) 2026 rengix-x\n\n开源致谢与许可：\n• Shizuku API / Provider（RikkaApps）— Apache License 2.0\n• AndroidHiddenApiBypass（LSPosed）— Apache License 2.0\n• Google ML Kit（文字识别 v2、语言识别、本地翻译）— Google APIs 服务条款\n• AndroidX、Jetpack Compose、Material 3 与 Kotlin — Apache License 2.0\n• Inter、Plus Jakarta Sans 与 JetBrains Mono — SIL Open Font License 1.1\n\n免责声明：Hinata 是由 rengix-x 开发的独立开源（GPLv3）项目，与 Google LLC、Apple Inc.、Xiaomi Corporation（HyperOS / POCO）、Samsung Electronics、OPPO 或 vivo 无任何关联或背书关系。</string>
+    <string name="button_close">关闭</string>
+
+    <!-- Shizuku 3-button navigation bar control -->
+    <string name="shizuku_card_title">隐藏三键导航栏 (Shizuku)</string>
+    <string name="shizuku_card_subtitle">在 HyperOS 搭配第三方桌面时，无需电脑即可一键隐藏三键导航栏。</string>
+    <string name="shizuku_status_not_installed">未安装</string>
+    <string name="shizuku_status_stopped">未启动</string>
+    <string name="shizuku_status_permission_required">需要授权</string>
+    <string name="shizuku_status_connected">已连接</string>
+    <string name="shizuku_action_open_app">打开 Shizuku</string>
+    <string name="shizuku_action_grant_permission">授予 Shizuku 权限</string>
+    <string name="shizuku_action_setup_guide">查看 Shizuku 配置步骤</string>
+    <string name="shizuku_button_hide_navbar">隐藏三键导航栏</string>
+    <string name="shizuku_button_restore_navbar">恢复三键导航栏</string>
+    <string name="shizuku_toggle_auto_hide_title">自动重新隐藏</string>
+    <string name="shizuku_toggle_auto_hide_desc">若 HyperOS 重置回三键导航，将在解锁或变更时自动再次隐藏。</string>
+    <string name="shizuku_toggle_hide_gesture_line_title">同时隐藏底部小白条</string>
+    <string name="shizuku_toggle_hide_gesture_line_desc">隐藏三键导航栏时一并隐藏屏幕底部的手势提示条。</string>
+    <string name="shizuku_reboot_note">重启手机后，请先启动 Shizuku 再点击按钮。</string>
+    <string name="shizuku_guide_dialog_title">配置 Shizuku</string>
+    <string name="shizuku_guide_dialog_body">1. 从 Google Play 或 GitHub 安装官方 Shizuku 应用。\n2. 打开 Shizuku，通过“无线调试”启动服务（无需电脑）。\n3. 返回此页面授予权限，然后点击“隐藏三键导航栏”。</string>
+    <string name="shizuku_snackbar_hide_success">已隐藏三键导航栏。</string>
+    <string name="shizuku_snackbar_restore_success">已恢复三键导航栏。</string>
+    <string name="shizuku_snackbar_failed">无法修改导航栏设置。</string>
+    <string name="shizuku_snackbar_failed_detail">无法修改设置（%1$s）。</string>
+    <string name="shizuku_snackbar_not_ready">请先启动 Shizuku 并授予权限。</string>
+    <string name="shizuku_snackbar_permission_granted">Shizuku 已连接。</string>
+    <string name="shizuku_snackbar_permission_denied">Shizuku 权限已被拒绝。</string>
+    <string name="shizuku_snackbar_open_failed">无法打开 Shizuku。</string>
+    <string name="shizuku_auto_hide_disabled_toast">Hinata：Shizuku 连续出错，已自动暂停自动重新隐藏。</string>
+
+    <!-- Accessibility content descriptions -->
+    <string name="cd_open_settings">打开设置</string>
+    <string name="cd_back">返回</string>
+    <string name="cd_change">更改</string>
+    <string name="cd_selected">已选中</string>
+    <string name="cd_clear_search">清除搜索</string>
+    <string name="cd_refresh_status">刷新状态</string>
+    <string name="cd_move_up">上移</string>
+    <string name="cd_move_down">下移</string>
+    <string name="cd_test_launch">打开应用</string>
+    <string name="cd_expand">展开</string>
+    <string name="cd_collapse">收起</string>
+    <!-- 三段式调节、顶部固定预览与自定义GIF/图片反馈 -->
+    <string name="preview_live_title">实时预览</string>
+    <string name="preview_side_stage2_focus">侧边 第2段 · %1$d%%</string>
+    <string name="preview_side_stage3_focus">侧边 第3段 · %1$d%%</string>
+    <string name="preview_bottom_stage2_focus">底部 第2段 · %1$d%%</string>
+    <string name="preview_bottom_stage3_focus">底部 第3段 · %1$d%%</string>
+    <string name="preview_stage3_action_prefix">第3段：%1$s</string>
+    <string name="preview_sticky_hint">在机身模型边缘拖动，可实时测试第 1–3 段与底部指示条回弹效果。</string>
+    <string name="metric_side_s2_short">侧2 %1$d%%</string>
+    <string name="metric_side_s3_short">侧3 %1$d%%</string>
+    <string name="metric_side_hold_short">侧 %1$dms</string>
+    <string name="metric_bottom_s2_short">底2 %1$d%%</string>
+    <string name="metric_bottom_s3_short">底3 %1$d%%</string>
+    <string name="metric_bottom_hold_short">底 %1$dms</string>
+
+    <string name="section_side_edge_tuning">左右侧边设置</string>
+    <string name="label_side_trigger_mode">侧边触发方式</string>
+    <string name="label_side_stage2_distance">第2段触发距离（深滑）</string>
+    <string name="label_side_stage3_distance">第3段触发距离（超深滑）</string>
+    <string name="label_side_stage2_hold">第2段悬停时间</string>
+    <string name="label_side_stage3_hold">第3段悬停时间</string>
+
+    <string name="label_bottom_trigger_mode">底部触发方式</string>
+    <string name="label_bottom_stage2_distance">底部 第2段距离</string>
+    <string name="label_bottom_stage3_distance">底部 第3段距离</string>
+    <string name="label_bottom_stage2_hold">底部 第2段悬停时间</string>
+    <string name="label_bottom_stage3_hold">底部 第3段悬停时间</string>
+    <string name="hint_stage3_unassigned">在“操作”页签中分配第3段操作前，将自动保持简洁的二段式触发。</string>
+
+    <string name="gesture_left_stage3">左侧边缘 第3段（超深滑）</string>
+    <string name="gesture_right_stage3">右侧边缘 第3段（超深滑）</string>
+    <string name="gesture_bottom_stage3">底部 第3段（超深滑）</string>
+
+    <string name="section_custom_media">侧边视觉样式（自定义 GIF / 图片）</string>
+    <string name="desc_custom_media">支持透明 GIF、动图 WebP 或 PNG 作为侧滑指示动画，待机时 CPU 占用 0%。</string>
+    <string name="label_edge_visual_style">视觉样式</string>
+    <string name="visual_style_default">默认水滴</string>
+    <string name="visual_style_custom_only">GIF / 图片</string>
+    <string name="visual_style_droplet_media">水滴 + 图片</string>
+    <string name="button_pick_custom_media">选择图片 / GIF</string>
+    <string name="button_change_custom_media">更换图片 / GIF</string>
+    <string name="button_reset_custom_media">恢复默认</string>
+    <string name="hint_custom_media_fallback">请先点击上方按钮选择 GIF、WebP 或 PNG 文件。</string>
+    <string name="label_custom_media_size">显示尺寸</string>
+    <string name="label_custom_media_alpha">不透明度</string>
+    <string name="label_custom_media_mirror_right">右侧边缘自动镜像</string>
+    <string name="desc_custom_media_mirror_right">从右侧滑出时自动水平翻转图片或 GIF，使朝向更自然。</string>
+    <string name="custom_media_saved">已应用自定义侧边图片 / GIF。</string>
+    <string name="custom_media_error_too_large">文件过大（最大支持 15 MB）。</string>
+    <string name="custom_media_error_invalid">不支持或无法解码该图片格式。</string>
+    <string name="custom_media_error_io">无法读取所选文件。</string>
+    <string name="custom_media_reset_done">已恢复为默认玻璃水滴。</string>
+    <string name="cd_custom_media_empty">尚未选择自定义图片</string>
+
+    <!-- Floating Window Shortcuts -->
+    <string name="action_float_current_app">当前应用小窗化</string>
+    <string name="action_launch_app_floating">小窗打开应用</string>
+    <string name="action_launch_app_floating_format">%1$s（小窗）</string>
+    <string name="floating_window_toggle_title">小窗打开</string>
+    <string name="floating_window_toggle_desc">以可自由调节的自由窗口模式直接启动所选应用。</string>
+    <string name="floating_window_badge_short">小窗</string>
+    <string name="floating_window_need_shizuku">请先启动 Shizuku 以使用小窗功能。</string>
+    <string name="floating_window_cannot_float_current">当前页面不支持小窗化。</string>
+    <string name="shizuku_floating_window_note">连接 Shizuku 后，除隐藏底部三键导航栏外，还可稳定使用手势与快捷菜单的小窗启动功能。</string>
+
+    <!-- First-Launch 30-Second Onboarding -->
+    <string name="onboarding_language_chip">语言</string>
+    <string name="onboarding_step1_tagline">从屏幕边缘出发，单手自如掌控。</string>
+    <string name="onboarding_privacy_title">100% 本地处理 · 隐私优先</string>
+    <string name="onboarding_privacy_desc">绝无追踪、广告或屏幕截图上传。Hinata 默认完全在本地运行；HTTPS 网络通信仅限于 Google ML Kit 离线模型的获取与管理，以及您明确同意启用在线翻译时（仅发送文本）。</string>
+    <string name="onboarding_button_start">开始使用</string>
+    <string name="onboarding_step2_title">开启边缘手势</string>
+    <string name="onboarding_step2_desc">请在无障碍设置中开启 Hinata，以便从屏幕边缘滑动触发返回、桌面和快捷操作。</string>
+    <string name="onboarding_step2_status_enabled">已启用</string>
+    <string name="onboarding_step2_status_waiting">尚未启用</string>
+    <string name="onboarding_step2_open_settings">前往无障碍设置</string>
+    <string name="onboarding_button_next">下一步</string>
+    <string name="onboarding_button_skip">稍后设置</string>
+    <string name="onboarding_step3_title">准备就绪！</string>
+    <string name="onboarding_step3_try_hint">已完成准备！现在就从屏幕边缘向内滑动试试效果吧。</string>
+    <string name="onboarding_step3_battery_title">无限制省电策略（推荐）</string>
+    <string name="onboarding_step3_battery_desc">避免 HyperOS 后台暂停边缘手势，可随时跳过此步。</string>
+    <string name="onboarding_step3_battery_done">已设为无限制</string>
+    <string name="onboarding_button_finish">进入设置</string>
+    <string name="settings_replay_onboarding_title">重新查看首次引导</string>
+    <string name="settings_replay_onboarding_desc">随时回顾三步快速上手指南</string>
+
+    <!-- 棱镜玻璃、旋转快捷菜单、快捷方式与链接启动、底部栏自定义 -->
+    <string name="action_launch_shortcut">应用快捷方式</string>
+    <string name="action_open_url">打开链接</string>
+    <string name="toast_url_open_failed">无法打开该链接。</string>
+    <string name="toast_shortcut_launch_failed">无法启动该快捷方式。</string>
+
+    <string name="tab_shortcuts">快捷方式</string>
+    <string name="tab_link">链接</string>
+    <string name="label_url_input">网址 URL</string>
+    <string name="hint_url_input">https://example.com</string>
+    <string name="label_custom_name_optional">自定义名称（可选）</string>
+    <string name="button_test_link">测试打开</string>
+    <string name="button_save_link">保存</string>
+    <string name="search_shortcuts_hint">搜索快捷方式或应用…</string>
+    <string name="section_app_shortcuts">应用内快捷方式</string>
+    <string name="section_create_shortcut_apps">从应用创建快捷方式</string>
+    <string name="empty_shortcuts_found">未找到匹配的快捷方式。</string>
+    <string name="shortcut_create_failed">无法创建快捷方式。</string>
+
+    <string name="label_liquid_glass">棱镜玻璃</string>
+    <string name="desc_liquid_glass">在 Android 13 及以上提供实时光学折射与磨砂玻璃质感，支持一键开关。</string>
+    <string name="desc_liquid_glass_unsupported">需要 Android 13 或更高版本。</string>
+    <string name="label_liquid_glass_refraction">折射强度</string>
+
+    <string name="button_add_slot">添加槽位</string>
+    <string name="label_slot_count_ratio">%1$d / %2$d</string>
+    <string name="cd_delete_slot">删除槽位</string>
+    <string name="hint_quick_menu_rotary">超过 6 个槽位时，手指滑过扇形上端或下端即可平滑旋转滚轮切换。</string>
+
+    <string name="label_bottom_height">底部触控高度</string>
+    <string name="label_bottom_offset">底部边距</string>
+    <string name="label_bottom_horizontal_offset">底部左右偏移</string>
+    <string name="button_center_reset">居中</string>
+
+    <string name="arc_section_feel_boundary">手感与返回边界</string>
+    <string name="arc_retreat_mode_label">退回下级手势方式</string>
+    <string name="arc_retreat_mode_radial">圆弧</string>
+    <string name="arc_retreat_mode_edge">边缘</string>
+    <string name="arc_retreat_mode_custom">自定义线</string>
+    <string name="arc_retreat_desc_radial">仅在手指沿径向拉回起点时退回下级手势，选择上下端槽位或旋转滚轮时零误取消。</string>
+    <string name="arc_retreat_desc_edge">仅在进入边缘原点死区时退回下级手势，为大角度圆弧操作提供最高防误触保护。</string>
+    <string name="arc_retreat_desc_custom">水平拉回超过自定义边界线时退回下级手势，并内置大角度圆弧保护。</string>
+    <string name="arc_label_retreat_radial">返回圆弧大小</string>
+    <string name="arc_label_retreat_custom">自定义返回线位置</string>
+    <string name="arc_label_dead_zone">取消死区半径</string>
+    <string name="arc_label_rotary_speed">滚轮旋转速度</string>
+
+    <string name="button_watch_animation">查看动画</string>
+    <string name="demo_sheet_guide_dedicated">从屏幕边缘的专属区域向内轻滑即可 0 延迟展开扇形菜单，松手前滑动即可直接选用。</string>
+    <string name="demo_sheet_guide_edge_hold">在屏幕边缘按住不动，待进度环蓄满后自动展开扇形菜单，随后滑向目标项即可。</string>
+    <string name="demo_sheet_guide_pull_return">先向内滑过第一阶段，再顺势折返至屏幕边缘，折返瞬间即可展开扇形菜单。</string>
+    <string name="demo_sheet_guide_gesture">从常规边缘区域拉至第二阶段（或长按触发），即可流畅衔接展开扇形菜单。</string>
+    <string name="demo_badge_instant_0ms">零延迟 0ms</string>
+    <string name="demo_badge_hold_ms">长按 %1$dms</string>
+    <string name="demo_badge_uturn">滑入折返</string>
+    <string name="demo_badge_distance_pct">距离 %1$d%%</string>
+    <string name="demo_retreat_preview_title">实时手感预览</string>
+    <string name="demo_badge_arc_safe">圆弧流畅选择</string>
+    <string name="demo_badge_rotary_speed">滚轮 %1$d%%</string>
+    <string name="demo_badge_retreat_demo">拉回边界内取消</string>
+    <string name="demo_badge_returned_previous">已退回上级操作</string>
+    <string name="demo_badge_bottom_long_press">底栏长按</string>
+
+    <!-- 通用标签与操作 -->
+    <string name="badge_beta">Beta</string>
+    <string name="button_cancel">取消</string>
+
+    <!-- 全应用 棱镜玻璃 UI -->
+
+    <!-- HyperOS 手机分身隐藏三键技巧与紧急恢复 -->
+    <string name="guide_second_space_title">手机分身隐藏三键小技巧</string>
+    <string name="guide_second_space_badge">无需电脑 · 重启保留</string>
+    <string name="guide_second_space_desc">在许多 HyperOS 机型上，通过创建手机分身并开启全面屏手势，可以在主空间继续使用第三方桌面且隐藏三键导航栏。</string>
+    <string name="guide_second_space_step1">打开系统“设置”→“更多设置”→“手机分身”，新建一个手机分身。</string>
+    <string name="guide_second_space_step2">进入手机分身，将系统默认桌面设为默认并切换为“全面屏手势”。</string>
+    <string name="guide_second_space_step3">切回主空间后，即使使用第三方桌面，三键导航栏通常也会保持隐藏。</string>
+    <string name="guide_second_space_step4">不同 HyperOS 版本表现可能有所差异；如系统更新后恢复显示，可使用上方 Shizuku 一键隐藏。</string>
+    <string name="guide_emergency_badge">安全恢复</string>
+    <string name="guide_emergency_settings_title">紧急恢复①：在系统设置中恢复三键</string>
+    <string name="guide_emergency_settings_desc">若在隐藏三键期间手势暂时无响应，您随时可以从系统设置直接切回经典三键导航。</string>
+    <string name="guide_emergency_settings_path">设置 → 桌面 → 系统导航方式 → 经典导航键</string>
+    <string name="guide_emergency_safemode_title">紧急恢复②：进入 Android 安全模式</string>
+    <string name="guide_emergency_safemode_desc">安全模式会临时停用所有第三方无障碍服务与桌面，方便您安全恢复系统导航。</string>
+    <string name="guide_emergency_safemode_step1">将手机关机（或长按电源键重启设备）。</string>
+    <string name="guide_emergency_safemode_step2">屏幕出现 Xiaomi / HyperOS 标志瞬间，持续按住“音量减”键直至进入锁屏界面。</string>
+    <string name="guide_emergency_safemode_step3">左下角显示“安全模式”后，恢复三键导航或关闭 Hinata，随后正常重启即可。</string>
+
+    <!-- 5步交互式引导 -->
+    <string name="onboarding_disclaimer_title">⚠️ 使用前重要警告（无法操作风险与自负其责）</string>
+    <string name="onboarding_disclaimer_body">本应用需要长期保持「无障碍服务」开启以接管屏幕边缘操作。在隐藏系统导航栏（三键等）的状态下，如果因系统省电策略、内存清理或异常导致本应用后台停止或无障碍关闭，可能会无法使用「返回」「桌面」等操作而陷入无法操作的困境。尽管内置了自动恢复和快捷面板应急恢复功能，但若应用停止或断开导致设备无法使用或出现故障，开发者不承担任何责任，一切后果由用户自行承担。</string>
+    <string name="onboarding_disclaimer_agree">我已理解应用停止时可能导致无法操作的风险，并同意即使意外断开或失效也完全由本人自行承担责任</string>
+    <string name="onboarding_button_agree_start">同意并开始</string>
+    <string name="onboarding_sandbox_title">先在这里亲自试滑</string>
+    <string name="onboarding_sandbox_desc">无需开启任何权限，直接在下方模拟屏幕体验边缘手感。</string>
+    <string name="onboarding_sandbox_tab_side">左右边缘</string>
+    <string name="onboarding_sandbox_tab_menu">快捷菜单</string>
+    <string name="onboarding_sandbox_tab_bottom">底部手势条</string>
+    <string name="onboarding_sandbox_side_hint">从模拟屏左侧或右侧边缘向内滑动</string>
+    <string name="onboarding_sandbox_menu_hint">从边缘拉出并沿着扇形圆弧滑动选择</string>
+    <string name="onboarding_sandbox_bottom_hint">从底栏向上轻滑，或在底栏上原地长按</string>
+    <string name="onboarding_sandbox_stage1">第1阶段 · 返回</string>
+    <string name="onboarding_sandbox_stage2">第2阶段 · 上一个应用</string>
+    <string name="onboarding_sandbox_stage3">第3阶段 · 截屏</string>
+    <string name="onboarding_sandbox_menu_selected">快捷菜单 · %1$s</string>
+    <string name="onboarding_sandbox_bottom_home">轻滑上拉 · 回到桌面</string>
+    <string name="onboarding_sandbox_bottom_recents">深度上拉 · 最近任务</string>
+    <string name="onboarding_sandbox_bottom_cts">长按微光 · 画圈搜索</string>
+    <string name="onboarding_shizuku_title">隐藏三键导航栏（可选）</string>
+    <string name="onboarding_shizuku_desc">在第三方桌面下隐藏 HyperOS 三键栏可搭配免费工具 Shizuku，也可稍后在 HyperOS 标签页查看手机分身免电脑技巧。</string>
+    <string name="onboarding_shizuku_connected">Shizuku 已连接</string>
+    <string name="onboarding_shizuku_not_connected">未连接（可稍后设置）</string>
+    <string name="onboarding_shizuku_return_hint">链接将在外部浏览器或应用商店打开，返回本页后会自动刷新状态。</string>
+    <string name="onboarding_shizuku_link_play">前往 Google Play 获取 Shizuku</string>
+    <string name="onboarding_shizuku_link_github">从 GitHub Releases 下载</string>
+    <string name="onboarding_shizuku_link_fdroid">F-Droid / IzzyOnDroid</string>
+    <string name="onboarding_shizuku_link_apkmirror">APKMirror</string>
+    <string name="onboarding_button_try_ab_wizard">体验新手 A/B 自动调校（Beta）</string>
+    <string name="onboarding_button_start_now">直接开始使用</string>
+
+    <!-- 新手 A/B 自动调校向导 (Beta) -->
+    <string name="ab_wizard_entry_title">新手 A/B 自动调校</string>
+    <string name="ab_wizard_entry_desc">勾选常用功能并对比 A / B 手感，自动为您生成顺手的边缘参数。</string>
+    <string name="ab_wizard_title">新手 A/B 自动调校</string>
+    <string name="ab_wizard_apply_button">应用我的专属配置</string>
+    <string name="ab_step_features_title">您希望开启哪些功能？</string>
+    <string name="ab_step_features_desc">关闭不需要的功能可保持清爽体验，之后随时可重新开启。</string>
+    <string name="ab_feat_quick_menu_title">扇形快捷菜单</string>
+    <string name="ab_feat_quick_menu_desc">从屏幕边缘顺手展开扇形快捷方式菜单。</string>
+    <string name="ab_feat_recent_switcher_title">最近应用切换条</string>
+    <string name="ab_feat_recent_switcher_desc">滑动即可在最近使用过的应用间无缝切换。</string>
+    <string name="ab_feat_bottom_bar_title">底部手势条</string>
+    <string name="ab_feat_bottom_bar_desc">上滑回到桌面或最近任务，长按唤起画圈搜索。</string>
+    <string name="ab_feat_three_stage_title">三段深滑动作</string>
+    <string name="ab_feat_three_stage_desc">进一步向内深拉，解锁第三个快捷动作。</string>
+    <string name="ab_feat_liquid_glass_title">棱镜玻璃效果</string>
+    <string name="ab_feat_liquid_glass_desc">在 Android 13 及以上设备上开启实时光学折射玻璃效果。</string>
+    <string name="ab_q1_title">Q1 · 侧边热区高度与宽度</string>
+    <string name="ab_q1_desc">在下方测试区自然滑动以测量拇指高度，再选择偏好的边缘宽度。</string>
+    <string name="ab_q1_opt_a_title">A · 纤细防误触 (14 dp)</string>
+    <string name="ab_q1_opt_a_desc">不易遮挡贴边按钮，适合裸机或轻薄壳。</string>
+    <string name="ab_q1_opt_b_title">B · 宽大易触发 (24 dp)</string>
+    <string name="ab_q1_opt_b_desc">佩戴厚手机壳也能轻松滑出。</string>
+    <string name="ab_q1_pad_hint">用平时的握姿自然向内滑动 2–3 次</string>
+    <string name="ab_q1_calibrated_status">已测量 %1$d 次滑动 · 底部偏移 %2$d%%</string>
+    <string name="ab_q1_uncalibrated_status">可选：在上方滑动即可自动校准拇指高度</string>
+    <string name="ab_q2_title">Q2 · 底部手势条手感</string>
+    <string name="ab_q2_desc">选择更适合您握持习惯的底栏触控高度。</string>
+    <string name="ab_q2_opt_a_title">A · 贴边纤薄</string>
+    <string name="ab_q2_opt_a_desc">紧贴屏幕底部，视觉与触控都更克制。</string>
+    <string name="ab_q2_opt_b_title">B · 加高防顶壳</string>
+    <string name="ab_q2_opt_b_desc">略微抬高并加厚触控带，厚壳也很好上拉。</string>
+    <string name="ab_q2_pad_hint">试试从底部小横条向上拖动</string>
+    <string name="ab_q3_title">Q3 · 视觉质感与形状</string>
+    <string name="ab_q3_desc">选择喜欢的表面质感与边缘指示器轮廓。</string>
+    <string name="ab_q3_surface_a_title">质感 A · 棱镜玻璃</string>
+    <string name="ab_q3_surface_a_desc">柔和光学折射与晶莹高光。</string>
+    <string name="ab_q3_surface_b_title">质感 B · 纯净磨砂</string>
+    <string name="ab_q3_surface_b_desc">无折射的利落磨砂对比度。</string>
+    <string name="ab_q3_shape_a_title">形状 A · 柔性水滴</string>
+    <string name="ab_q3_shape_a_desc">尖端随拇指自然弯折的贝塞尔水滴。</string>
+    <string name="ab_q3_shape_b_title">形状 B · 极简箭头</string>
+    <string name="ab_q3_shape_b_desc">占用极小视觉面积的精致小箭头。</string>
+    <string name="ab_q3_pad_hint">从左右任一侧滑动即可实时对比视觉效果</string>
+    <string name="ab_q4_title">Q4 · 第2阶段触发方式</string>
+    <string name="ab_q4_desc">在下方滑动体验，选择“拉得更远”还是“稍作停顿”更顺手。</string>
+    <string name="ab_q4_opt_a_title">A · 拉得更远（距离触发）</string>
+    <string name="ab_q4_opt_a_desc">一气呵成，滑过中线即可快速进入第2阶段。</string>
+    <string name="ab_q4_opt_b_title">B · 稍作停顿（长按触发）</string>
+    <string name="ab_q4_opt_b_desc">拉动距离更短，单手操作更省力。</string>
+    <string name="ab_q4_pad_hint">向内滑动感受第1阶段 → 第2阶段的过渡</string>
+    <string name="ab_q4_stage1_lit">第1阶段 · 返回</string>
+    <string name="ab_q4_stage2_lit">第2阶段 · 已触发</string>
+    <string name="ab_summary_title">专属配置已生成</string>
+    <string name="ab_summary_desc">确认后一键应用，您随时仍可在各个页面微调细节。</string>
+    <string name="ab_summary_calibrated_tag">已根据您的实测滑动自动校准拇指位置</string>
+    <string name="ab_summary_on">开启</string>
+    <string name="ab_summary_off">关闭</string>
+
+    <!-- HyperOS 小窗 API 诊断 -->
+    <string name="diag_copy_freeform_api_button">复制小窗 API 诊断日志</string>
+    <string name="diag_copy_freeform_api_copied">已将小窗 API 诊断日志复制到剪贴板</string>
+    <string name="diag_copy_freeform_api_failed">无法获取 API 诊断日志，请确认 Shizuku 已连接。</string>
+
+    <!-- URL 校验提示 -->
+    <string name="hint_url_validation_guide">请输入 https://example.com 或 example.com 格式的有效网址</string>
+
+    <!-- 实时屏幕翻译 -->
+    <string name="action_toggle_screen_translate">显示/隐藏翻译按钮</string>
+    <string name="action_translate_screen_once">立即翻译当前屏幕</string>
+    <string name="translate_toast_unsupported_android">屏幕翻译需要 Android 11 或更高版本。</string>
+    <string name="translate_toast_secure_screen">当前页面受隐私保护，无法截取画面进行翻译。</string>
+    <string name="translate_toast_downloading_model">正在下载离线翻译语言包…</string>
+    <string name="translate_toast_wifi_required">请连接 Wi-Fi，或在翻译设置中关闭“仅 Wi-Fi 下载”。</string>
+    <string name="translate_toast_model_download_failed">离线语言包下载失败，请检查网络后重试。</string>
+
+    <string name="translate_settings_entry_title">屏幕翻译</string>
+    <string name="translate_settings_entry_desc">适用于游戏、漫画与应用的屏幕边缘一键悬浮翻译按钮</string>
+    <string name="translate_settings_title">屏幕翻译</string>
+
+    <string name="translate_section_languages">翻译语言</string>
+    <string name="translate_label_source">源语言</string>
+    <string name="translate_label_target">目标语言</string>
+    <string name="translate_source_auto_short">自动检测</string>
+    <string name="translate_source_auto_title">自动检测（推荐）</string>
+    <string name="translate_source_auto_desc">自动识别屏幕上的文字体系与语言</string>
+    <string name="translate_languages_note">OCR 支持 42 种可识别语言（拉丁文、日文、中文、韩文、天城文），目标语言支持全部 59 种 ML Kit 离线语言。</string>
+    <string name="cd_swap_languages">互换源语言与目标语言</string>
+    <string name="translate_picker_source_title">选择源语言</string>
+    <string name="translate_picker_target_title">选择目标语言</string>
+    <string name="translate_search_language_hint">搜索语言名称或代码…</string>
+    <string name="translate_lang_section_popular">常用语言</string>
+    <string name="translate_lang_section_all">全部语言</string>
+    <string name="translate_pack_ready_short">已就绪</string>
+
+    <string name="translate_section_tracking">追踪与刷新模式</string>
+    <string name="translate_mode_smart_auto">智能自动</string>
+    <string name="translate_mode_smart_auto_desc">自动检测画面变化并跳过静止帧，兼顾实时性与省电。</string>
+    <string name="translate_mode_game_continuous">游戏 / 连续</string>
+    <string name="translate_mode_game_continuous_desc">持续轮询游戏界面与视频字幕，即使应用不发送滚动事件也能及时更新。</string>
+    <string name="translate_mode_manual_once">手动单次</string>
+    <string name="translate_mode_manual_once_desc">仅翻译当前画面一次，点击悬浮控制条刷新按钮即可重新翻译。</string>
+    <string name="translate_label_refresh_speed">刷新频率</string>
+    <string name="translate_speed_power_saver">省电</string>
+    <string name="translate_speed_balanced">均衡</string>
+    <string name="translate_speed_fast">快速</string>
+
+    <string name="translate_section_display">悬浮译文样式</string>
+    <string name="translate_style_inplace">原位融合</string>
+    <string name="translate_style_frosted">磨砂卡片</string>
+    <string name="translate_label_overlay_alpha">译文背景不透明度</string>
+    <string name="translate_toggle_skip_target_title">跳过已是目标语言的文本</string>
+    <string name="translate_toggle_skip_target_desc">保留已经是目标语言的原文字，不重复覆盖。</string>
+
+    <string name="translate_section_packs">离线语言包管理</string>
+    <string name="translate_toggle_wifi_only_title">仅在 Wi-Fi 下下载</string>
+    <string name="translate_toggle_wifi_only_desc">避免使用移动数据下载约 30 MB 的离线语言包。</string>
+    <string name="translate_search_pack_hint">筛选语言包…</string>
+    <string name="translate_pack_size_hint">约 30 MB 离线</string>
+    <string name="translate_packs_show_all">展开全部 %1$d 种语言</string>
+    <string name="translate_packs_show_popular">仅显示常用语言</string>
+    <string name="cd_download_language_pack">下载离线语言包</string>
+    <string name="cd_delete_language_pack">删除离线语言包</string>
+
+    <string name="translate_section_guide">使用步骤</string>
+    <string name="translate_guide_step1">将“显示/隐藏翻译按钮”或“立即翻译当前屏幕”绑定到任意边缘手势或快捷菜单槽位。</string>
+    <string name="translate_guide_step2">轻点屏幕边缘的悬浮“文A”按钮即可清晰翻译整屏内容，再次轻点即可立即清除译文。</string>
+    <string name="translate_guide_step3">轻点按钮下方的小“⋯”标签，可展开重新翻译、按住查看原文、互换语言、切换引擎或关闭。</string>
+
+    <!-- Spec 66: ML Kit safe init & smooth droplet shape sliders -->
+    <string name="translate_mlkit_unavailable_notice">当前设备环境无法使用离线翻译模型管理器，您仍可安全调整语言偏好设置。</string>
+    <string name="label_droplet_peak_width">水滴山峰高度（凸起）</string>
+    <string name="label_droplet_base_width">水滴底部跨度</string>
+
+    <!-- Native Circle to Search & CN ROM Assistant Repair -->
+    <string name="cts_card_title">画圈搜索（原生＆国行 ROM 修复）</string>
+    <string name="cts_card_subtitle">直接调用系统原生 Google 画圈搜索会话；在国行 ROM 重置助理时可通过 Shizuku 自动修复。</string>
+    <string name="cts_toggle_auto_repair_title">通过 Shizuku 自动修复 Google 助理</string>
+    <string name="cts_toggle_auto_repair_desc">若国行 ROM 重置了语音交互服务，在 Shizuku 已连接时自动修复并重试原生画圈搜索。</string>
+    <string name="cts_shizuku_repair_button">强制设置 Google 助理（Shizuku）</string>
+    <string name="cts_shizuku_reset_button">还原系统助理默认设置</string>
+    <string name="cts_shizuku_repair_success">已为画圈搜索恢复 Google 助理设置。</string>
+    <string name="cts_shizuku_reset_success">已还原系统默认助理设置。</string>
+    <string name="cts_cn_rom_checklist_title">国行 ROM 检查清单（OriginOS / ColorOS / realme UI / HyperOS 国行）</string>
+    <string name="cts_cn_rom_step1">安装并登录 Google 应用，并在系统设置中开启“Google 基础服务”。</string>
+    <string name="cts_cn_rom_step2">为 Google 应用开启“自启动 / 关联启动”并将电池策略设为“无限制”。</string>
+    <string name="cts_cn_rom_step3">若原生画圈搜索无法弹出，请点击上方“强制设置 Google 助理（Shizuku）”。</string>
+    <string name="cts_cn_rom_step4">保持 Google 应用为最新版本，并在系统设置中将其设为默认数字助理。</string>
+    <string name="cts_open_google_app_info_button">打开 Google 应用详情</string>
+    <string name="cts_google_app_not_found">本设备未安装 Google 应用。</string>
+
+    <!-- OS Back Gesture Conflict Mitigation & Shizuku Control -->
+    <string name="zones_os_back_mitigation_title">系统返回手势冲突缓解</string>
+    <string name="zones_os_back_mitigation_desc">若触发区顶部容易误触系统侧滑返回，可通过 Shizuku 一键屏蔽系统返回手势，或在系统导航设置中调低边缘灵敏度。</string>
+    <string name="zones_os_back_disable_shizuku_button">通过 Shizuku 屏蔽系统返回</string>
+    <string name="zones_os_back_restore_button">恢复系统返回手势</string>
+    <string name="zones_open_nav_settings_button">打开设备导航设置</string>
+
+    <!-- No-Shizuku HyperOS Control Center Floating Window Macro -->
+    <string name="shizuku_toggle_no_shizuku_cc_float_title">控制中心小窗自动宏（免 Shizuku）</string>
+    <string name="shizuku_toggle_no_shizuku_cc_float_desc">未连接 Shizuku 时自动展开控制中心并点击“小窗 / 悬浮窗”磁贴，触发系统原生缩放小窗。</string>
+    <string name="floating_window_cc_tile_not_found">控制中心未找到“小窗 / 悬浮窗”磁贴，请将其添加至控制中心首页或连接 Shizuku。</string>
+
+    <string name="shizuku_card_title_coloros">ColorOS / realme UI 导航控制（Shizuku）</string>
+    <string name="shizuku_card_title_originos">OriginOS 导航控制（Shizuku）</string>
+    <string name="shizuku_card_title_oneui">One UI 导航控制（Shizuku）</string>
+    <string name="shizuku_card_title_aosp">系统返回与导航栏控制（Shizuku）</string>
+    <string name="shizuku_card_subtitle_coloros">在 ColorOS / OxygenOS / realme UI 上隐藏三键导航栏或屏蔽系统侧滑返回，彻底消除手势冲突。</string>
+    <string name="shizuku_card_subtitle_originos">在 vivo / iQOO OriginOS 上免 Root 隐藏导航栏或屏蔽系统侧边返回手势。</string>
+    <string name="shizuku_card_subtitle_oneui">在三星 One UI 上免 Root 隐藏手势提示条 / 导航栏或屏蔽系统侧滑返回。</string>
+    <string name="shizuku_card_subtitle_aosp">在 Pixel / Xperia / Nothing / Motorola 等原生 Android 设备上屏蔽左右系统返回手势或隐藏导航栏。</string>
+    <string name="shizuku_safety_guard_note">防误锁安全保护已启用：在屏蔽系统导航前会检查 Hinata 无障碍服务是否开启，且随时可一键还原全部默认设置。</string>
+    <string name="shizuku_snackbar_accessibility_required">为防止无法操作，请先开启 Hinata 无障碍服务。</string>
+    <string name="shizuku_button_suppress_back">屏蔽系统边缘返回手势</string>
+    <string name="shizuku_snackbar_back_suppressed">已屏蔽系统边缘返回手势。</string>
+    <string name="shizuku_button_hide_navbar_generic">隐藏系统导航栏</string>
+    <string name="shizuku_button_restore_all_defaults">还原全部系统默认导航</string>
+
+    <!-- Mission 2: No-Shizuku Floating Window Setup, Reload, OCR Fallback & Warning -->
+    <string name="floating_window_cc_tile_not_found_setup">请将“小窗 / 悬浮窗”按钮放到控制中心第1页，然后在设置中运行“重新读取按钮位置”或 OCR 扫描。</string>
+    <string name="cc_float_scan_internal_success">已成功读取并记住新的按钮位置。</string>
+    <string name="cc_float_scan_internal_failed">内部读取未找到按钮，请尝试备选的 OCR 识别方式。</string>
+    <string name="cc_float_scan_ocr_success">已通过 OCR 记住按钮位置！</string>
+    <string name="cc_float_scan_ocr_failed">OCR 未能识别到按钮，请确认“小窗 / 悬浮窗”位于控制中心第1页。</string>
+    <string name="cc_float_scan_manual_success">已记住您点击的按钮位置！</string>
+    <string name="cc_float_manual_tap_prompt">请轻点一次“小窗 / 悬浮窗”按钮以登记它的位置。</string>
+    <string name="cc_float_scan_service_required">请先开启 Hinata 无障碍服务，再读取控制中心按钮位置。</string>
+    <string name="cc_float_status_auto">已内部读取</string>
+    <string name="cc_float_status_ocr">已 OCR 记忆</string>
+    <string name="cc_float_status_manual">已手动登记</string>
+    <string name="cc_float_status_unset">未设置</string>
+    <string name="cc_float_setup_dialog_title">小窗功能设置与注意事项</string>
+    <string name="cc_float_setup_shizuku_on_title">开启 Shizuku 时（推荐）</string>
+    <string name="cc_float_setup_shizuku_on_desc">无需额外设置，在任意界面都能直接、稳定地启动小窗。</string>
+    <string name="cc_float_setup_shizuku_off_title">未开启 Shizuku 时</string>
+    <string name="cc_float_setup_shizuku_off_desc">需要将“小窗 / 悬浮窗”按钮放在控制中心（快捷开关）的第1页。</string>
+    <string name="cc_float_macro_warning_full">注意：未开启 Shizuku 时，本功能会记住控制中心按钮的位置并自动点击。如果之后调整了控制中心按钮的顺序，可能会误点其他按钮。更改按钮位置后，请务必点击“重新读取按钮位置”。</string>
+    <string name="cc_float_macro_warning_short">注意：未开启 Shizuku 时调整控制中心按钮位置可能会误点其他开关，移动后请务必重新读取。</string>
+    <string name="cc_float_setup_step1">第1步：将“小窗 / 悬浮窗”按钮放在控制中心第1页</string>
+    <string name="cc_float_btn_read_internal">第2步：读取按钮位置（内部读取）</string>
+    <string name="cc_float_btn_read_ocr">备选方案：使用 OCR 从屏幕读取</string>
+    <string name="cc_float_calibration_title">控制中心按钮位置记忆（免 Shizuku）</string>
+    <string name="cc_float_btn_reload_internal">重新读取按钮位置（调整布局后）</string>
+    <string name="cc_float_btn_reload_ocr">备选方案：用 OCR 读取按钮位置（内部读取无效时）</string>
+
+    <!-- Task 1: Opt-In High-Quality Online Translation Engine -->
+    <string name="translate_section_engine">翻译引擎</string>
+    <string name="translate_engine_offline">离线（完全本地）</string>
+    <string name="translate_engine_online">在线高质量</string>
+    <string name="translate_engine_offline_desc">仅使用已下载的 ML Kit 离线语言包在本地完成翻译，绝不上传任何文本或图像。</string>
+    <string name="translate_engine_online_desc">仅发送提取的纯文本以获得更自然、准确的段落译文；无法联网时自动回退至离线翻译。</string>
+    <string name="translate_online_consent_title">启用在线高质量翻译？</string>
+    <string name="translate_online_consent_body">• 仅将从屏幕提取的纯文本发送至翻译服务器，绝不上传任何屏幕截图或图像。\n• 自动排除密码输入框及受保护页面（FLAG_SECURE）。\n• 您可随时切回“离线（完全本地）”以彻底停止所有网络请求。\n• 断网或触发限流时，将自动无缝回退至本地离线翻译。</string>
+    <string name="translate_online_consent_confirm">同意并启用</string>
+    <string name="translate_online_consent_cancel">取消</string>
+
+    <!-- Task 3 & Live Translate Overhaul -->
+    <string name="cc_float_method_node">节点读取</string>
+    <string name="cc_float_method_ocr">OCR</string>
+    <string name="cc_float_method_manual">手动点击</string>
+    <string name="cc_float_method_auto">自动</string>
+    <string name="cc_float_error_service_disabled">Hinata 无障碍服务尚未开启，请先前往无障碍设置开启。</string>
+    <string name="cc_float_error_service_not_bound">无障碍服务暂未响应，请在系统无障碍设置中将其关闭后重新开启。</string>
+    <string name="cc_float_action_open_accessibility">前往设置</string>
+    <string name="cc_float_btn_dont_show_again">知道了，不再提示</string>
+    <string name="cc_float_calibration_shizuku_summary">开启 Shizuku：直接原生小窗。关闭 Shizuku：自动点击已记忆的控制中心开关位置。</string>
+    <string name="cc_float_saved_coords_format">已记忆：X %1$d%% · Y %2$d%% (%3$s)</string>
+    <string name="cc_float_saved_coords_unset">记忆位置：尚未设置</string>
+    <string name="cc_float_btn_reset_coords">重置</string>
+    <string name="translate_toast_switched_online">已切换为在线高质量翻译</string>
+    <string name="translate_toast_switched_offline">已切换为离线（完全本地）翻译</string>
+    <string name="translate_toast_online_consent_required">请先在屏幕翻译设置中同意并启用在线高质量翻译。</string>
+
+    <!-- PART 3: Beginner Visual Guide & Control Center First-Page Animation -->
+    <string name="cc_demo_phase1_caption">1. 从屏幕右上角向下滑动打开控制中心</string>
+    <string name="cc_demo_phase2_caption">2. 将“小窗 / 悬浮窗”开关放在第 1 页（左侧圆点亮起）</string>
+    <string name="cc_demo_phase3_caption">3. 以后若调整了开关位置，请点击“重新读取按钮位置”</string>
+    <string name="cc_demo_tile_floating_short">小窗</string>
+    <string name="cc_demo_page1_label">第 1 页</string>
+    <string name="cc_demo_toggle_show_guide">查看动画演示与新手说明</string>
+    <string name="cc_demo_toggle_hide_guide">收起图示说明</string>
+    <string name="cc_guide_what_is_cc_title">什么是控制中心？</string>
+    <string name="cc_guide_what_is_cc_desc">从屏幕右上角向下滑动后弹出的快捷开关面板（包含 Wi-Fi、亮度等开关）。</string>
+    <string name="cc_guide_what_is_page1_title">什么是“第 1 页”？</string>
+    <string name="cc_guide_what_is_page1_desc">指无需左右翻页、下拉后立刻就能看到的第一屏开关。请点击控制中心的编辑（铅笔）图标，将“小窗 / 悬浮窗”拖动到第 1 页。</string>
+    <string name="cc_guide_reorder_caution_title">调整开关顺序后的注意事项</string>
+    <string name="cc_guide_reorder_caution_desc">未开启 Shizuku 时，Hinata 会自动点击已记忆的按钮位置。若之后重新排列了控制中心开关，请再次执行“重新读取按钮位置”。（开启 Shizuku 后将直接原生小窗，无需控制中心）</string>
+
+    <!-- PART 4: Strict HyperOS Capability Gating & Diagnostics -->
+    <string name="floating_window_hyperos_or_shizuku_only">此设备使用小窗功能需要连接 Shizuku（不支持 HyperOS 专属控制中心宏）。</string>
+    <string name="floating_window_requires_hyperos_or_shizuku_badge">需 Shizuku</string>
+    <string name="floating_window_toggle_restricted_desc">仅支持 HyperOS 设备或已连接 Shizuku 时使用。</string>
+    <string name="shizuku_floating_window_non_hyperos_note">此设备通过 Shizuku 调用 Android 标准自由窗口实现小窗。请在上方连接 Shizuku 后启用小窗操作。</string>
+    <string name="diag_os_environment">检测到的系统环境</string>
+    <string name="diag_os_hyperos_full">%1$s（HyperOS 完整模式）</string>
+    <string name="diag_os_standard_mode">%1$s（标准 Android 模式）</string>
+
+    <!-- One-Tap Translate Button & Bottom Bar During IME -->
+    <string name="translate_section_button_behavior">翻译按钮行为</string>
+    <string name="translate_button_behavior_desc">仅在轻点悬浮翻译按钮时执行一次高质量翻译，无后台轮询、更省电且不闪烁。</string>
+    <string name="translate_toggle_auto_clear_scroll_title">滚动时自动清除译文</string>
+    <string name="translate_toggle_auto_clear_scroll_desc">滚动页面时自动隐藏悬浮译文，防止旧文字错位残留。</string>
+    <string name="translate_toast_no_text_found">当前屏幕未检测到可翻译的文字。</string>
+    <string name="label_show_bottom_bar_during_ime">键盘弹出时保持底部手势条可用</string>
+    <string name="desc_show_bottom_bar_during_ime">允许在输入法弹出时继续触发底部边缘手势。若想防止打字误触请保持关闭。</string>
+
+    <!-- 4-Layer Safety, Shizuku Auto-Revive & Quick Settings Recovery -->
+    <string name="qs_tile_recovery_label">Hinata 恢复</string>
+    <string name="qs_tile_recovery_subtitle_active">轻点重新加载／恢复导航</string>
+    <string name="qs_tile_recovery_subtitle_inactive">轻点紧急恢复</string>
+    <string name="shortcut_revive_short">重启手势</string>
+    <string name="shortcut_revive_long">重新启动边缘手势</string>
+    <string name="shortcut_restore_nav_short">恢复标准导航</string>
+    <string name="shortcut_restore_nav_long">紧急恢复三键与系统导航</string>
+    <string name="notification_keep_alive_channel_name">常驻保护（静音）</string>
+    <string name="notification_keep_alive_title">Hinata 手势保护中</string>
+    <string name="notification_keep_alive_text">正在防止后台被杀。点击下方按钮即可一键恢复。</string>
+    <string name="notification_action_reload">🔄 重新加载</string>
+    <string name="notification_action_restore_nav">🛟 恢复导航</string>
+    <string name="recovery_toast_revive_success">已重新启动 Hinata</string>
+    <string name="recovery_toast_nav_restored">已紧急恢复系统导航</string>
+    <string name="recovery_toast_open_accessibility_manual">请在无障碍设置中将 Hinata 先关闭再重新开启</string>
+    <string name="recovery_toast_open_nav_settings_manual">已打开系统导航设置，请选择三键或手势导航</string>
+    <string name="recovery_toast_revive_failed_open_settings">Shizuku 重新绑定失败，正在打开无障碍设置</string>
+    <string name="recovery_toast_nav_restore_failed_open_settings">Shizuku 恢复导航失败，正在打开系统设置</string>
+    <string name="recovery_card_title">🛟 异常停止自动恢复与紧急脱出</string>
+    <string name="recovery_card_badge">四重防护</string>
+    <string name="recovery_toggle_keep_alive_title">显示防杀后台保护通知（推荐）</string>
+    <string name="recovery_toggle_keep_alive_desc">防止系统强制清理后台，并可在通知栏一键重启手势或恢复三键导航。</string>
+    <string name="recovery_toggle_auto_revive_title">通过 Shizuku 自动复活并在停止时自动恢复导航</string>
+    <string name="recovery_toggle_auto_revive_desc">后台意外停止时自动尝试重启，若失败则自动恢复三键导航，彻底避免无法操作。</string>
+    <string name="recovery_button_rebind_now">立即重新绑定并重启手势</string>
+    <string name="recovery_qs_tile_tip">💡 在控制中心（快捷开关）编辑中添加「Hinata 恢复」磁贴，即可在任意界面一键复活；长按桌面 Hinata 图标也可直接使用紧急恢复快捷方式。</string>
+
+    <!-- Emergency Accessibility Off Escape Notification (ID 4199) -->
+    <string name="notification_emergency_off_channel_name">Hinata 紧急恢复警报</string>
+    <string name="notification_emergency_off_title">⚠️ Hinata 无障碍服务已关闭</string>
+    <string name="notification_emergency_off_text">边缘手势已暂停。点击下方按钮即可重新开启无障碍或立即恢复三键导航。</string>
+    <string name="notification_emergency_action_open_accessibility">打开无障碍设置</string>
+    <string name="notification_emergency_action_restore_nav">恢复三键导航</string>
+
+    <!-- Mandatory Onboarding & QS Tile Safety Step -->
+    <string name="onboarding_a11y_mandatory_agree">我同意使用本应用必须长期开启「无障碍服务」</string>
+    <string name="onboarding_qs_tile_title">🛟 在快捷面板添加「Hinata 恢复」（强烈推荐）</string>
+    <string name="onboarding_qs_tile_desc">即使边缘手势意外失效，从屏幕顶部下拉打开快捷面板（控制中心）也始终可用。提前放入「Hinata 恢复」磁贴，随时都能一键重启或恢复三键导航，绝不卡死。</string>
+    <string name="onboarding_qs_tile_add_now_button">＋ 立即将「Hinata 恢复」磁贴添加到快捷面板</string>
+    <string name="onboarding_qs_tile_manual_title">手动添加方法</string>
+    <string name="onboarding_qs_tile_manual_steps">从屏幕右上角下拉 → 点击「编辑（铅笔图标）」→ 将「Hinata 恢复」拖至第一页。</string>
+    <string name="onboarding_qs_tile_open_panel_button">打开快捷设置面板</string>
+    <string name="onboarding_qs_tile_countdown_button">请阅读说明（还剩 %1$d 秒可继续）</string>
+    <string name="onboarding_qs_tile_next_button">我已了解推荐内容，继续</string>
+    <string name="onboarding_qs_tile_added_toast">已将「Hinata 恢复」磁贴添加到快捷面板</string>
+    <string name="onboarding_qs_tile_manual_hint_toast">请从屏幕顶部下拉点击「编辑」，将「Hinata 恢复」添加到第一页。</string>
+
+    <!-- Post-Onboarding Mandatory Accessibility Hard Gate -->
+    <string name="a11y_gate_title">无障碍服务已关闭，无法使用 Hinata</string>
+    <string name="a11y_gate_desc">运行 Hinata 手势与安全保护功能（如意外停止时自动恢复三键导航）必须开启无障碍服务。关闭状态下将无法修改设置或使用手势。（※若因无障碍断开导致无法操作，相关责任由用户自行承担）</string>
+    <string name="a11y_gate_open_accessibility_button">打开无障碍设置并开启</string>
+    <string name="a11y_gate_shizuku_auto_enable_button">⚡ 通过 Shizuku 立即自动开启无障碍</string>
+    <string name="a11y_gate_emergency_restore_nav_button">🛟 立即紧急恢复三键 / 标准导航</string>
+    <string name="a11y_gate_add_qs_tile_button">将「Hinata 恢复」磁贴添加到快捷面板</string>
+</resources>
+
+
+
