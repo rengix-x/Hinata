@@ -1,0 +1,101 @@
+name: Android CI & Release
+
+on:
+  push:
+    branches: [ main, master ]
+    tags:
+      - 'v*'
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Unit Tests & Architecture Checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Verify zero Compose imports in resident service package
+        run: |
+          if grep -rI "androidx.compose" app/src/main/java/com/edgeflow/service/; then
+            echo "::error::Jetpack Compose import detected in resident service package!"
+            exit 1
+          fi
+
+      - name: Run unit tests
+        run: ./gradlew testDebugUnitTest
+
+  release:
+    name: Build & Publish Split Release APKs
+    needs: test
+    if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Decode Release Keystore (if configured)
+        id: keystore
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 --decode > "${{ github.workspace }}/my-upload-key.jks"
+            echo "signed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "signed=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::KEYSTORE_BASE64 secret not set; generating temporary CI verification keystore."
+            keytool -genkeypair -v \
+              -keystore "${{ github.workspace }}/my-upload-key.jks" \
+              -keyalg RSA -keysize 2048 -validity 30 \
+              -alias upload \
+              -storepass ci-temp-store-pass \
+              -keypass ci-temp-key-pass \
+              -dname "CN=Hinata CI, O=Hinata, C=JP"
+          fi
+
+      - name: Build ABI-split Release APKs
+        env:
+          KEYSTORE_PATH: ${{ github.workspace }}/my-upload-key.jks
+          STORE_PASSWORD: ${{ secrets.STORE_PASSWORD || 'ci-temp-store-pass' }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS || 'upload' }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD || 'ci-temp-key-pass' }}
+        run: ./gradlew assembleRelease -PsplitAbi=true
+
+      - name: Print APK sizes
+        run: ls -lh app/build/outputs/apk/release/*.apk
+
+      - name: Upload APK build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: hinata-release-apks
+          path: app/build/outputs/apk/release/*.apk
+
+      - name: Publish GitHub Release (on v* tag with real keystore)
+        if: startsWith(github.ref, 'refs/tags/v') && steps.keystore.outputs.signed == 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: app/build/outputs/apk/release/*.apk
+          generate_release_notes: true
