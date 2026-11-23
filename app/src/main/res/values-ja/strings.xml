@@ -1,0 +1,826 @@
+<resources>
+    <string name="app_name">Hinata</string>
+    <string name="accessibility_service_label">Hinata エッジジェスチャー</string>
+    <string name="accessibility_service_description">画面の左右と下端から、戻る・ホーム・アプリ履歴・かこって検索・クイックメニューを素早く実行します。画面の内容は一切読み取りません。</string>
+    <string name="toast_circle_to_search_fallback">デフォルトのデジタルアシスタントをGoogleに設定してください</string>
+
+    <!-- Navigation tabs (5 tabs, concise single-line) -->
+    <string name="tab_zones">エリア</string>
+    <string name="tab_arc">メニュー</string>
+    <string name="tab_actions">操作</string>
+    <string name="tab_blacklist">除外</string>
+    <string name="tab_guide">HyperOS</string>
+
+    <!-- Service status -->
+    <string name="status_service_active">オン</string>
+    <string name="status_service_inactive">オフ</string>
+    <string name="status_enable_now">有効にする</string>
+
+    <!-- Edges & Appearance -->
+    <string name="section_trigger_zones">反応エリア</string>
+    <string name="section_appearance">見た目と振動</string>
+    <string name="section_bottom_cts">下バーとかこって検索</string>
+    <string name="label_left_edge">左端</string>
+    <string name="label_right_edge">右端</string>
+    <string name="label_bottom_bar">下バー</string>
+    <string name="label_bottom_long_press">下バーの長押し</string>
+    <string name="label_bottom_long_press_duration">長押しの時間</string>
+    <string name="label_bottom_long_press_action">長押し時の操作</string>
+    <string name="button_test_cts">かこって検索を試す</string>
+    <string name="button_assistant_settings">アシスタント設定を開く</string>
+    <string name="label_edge_width">端の反応幅</string>
+    <string name="label_edge_height">反応エリアの高さ</string>
+    <string name="label_edge_offset">下からの位置</string>
+    <string name="label_bottom_width">下バーの幅</string>
+    <string name="label_swipe_threshold">スワイプの反応距離</string>
+    <string name="label_hold_duration">長押しの時間</string>
+    <string name="label_diagonal_angle">斜め判定の角度</string>
+    <string name="label_feedback_style">表示スタイル</string>
+    <string name="label_visual_theme">表示カラー</string>
+    <string name="label_feedback_alpha">表示の濃さ</string>
+    <string name="label_edge_guide_alpha">端ガイドの濃さ</string>
+    <string name="label_bottom_pill_alpha">下バーの濃さ</string>
+    <string name="label_haptic_strength">振動の強さ</string>
+    <string name="label_reset_defaults">初期設定に戻す</string>
+    <string name="preview_sandbox_hint">画面の端からスワイプして動きを試せます</string>
+    <string name="preview_stage2_guideline_hint">点線まで引くと2つ目の操作が発動します</string>
+    <string name="metric_width_short">幅 %1$ddp</string>
+    <string name="metric_opacity_short">濃さ %1$d%%</string>
+    <string name="metric_side_short">横 %1$d%%</string>
+    <string name="metric_bottom_short">下 %1$d%%</string>
+    <string name="metric_range_short">高さ %1$d%%–%2$d%%</string>
+    <string name="preview_deep_side_focus">横の引き距離 · %1$d%%</string>
+    <string name="preview_deep_bottom_focus">下の引き距離 · %1$d%%</string>
+    <string name="preview_deep_action_prefix">深くスワイプ: %1$s</string>
+
+    <!-- Deep Swipe -->
+    <string name="section_long_swipe">深くスワイプ</string>
+    <string name="desc_long_swipe">端から深く引くと、2つ目の操作をすぐ実行します。</string>
+    <string name="label_secondary_trigger_mode">発動方法</string>
+    <string name="mode_distance">距離</string>
+    <string name="mode_hold">長押し</string>
+    <string name="mode_both">両方</string>
+    <string name="label_horizontal_long_swipe">横の引き距離</string>
+    <string name="label_bottom_long_swipe">下の引き距離</string>
+
+    <!-- Quick Menu -->
+    <string name="arc_title">クイックメニュー</string>
+    <string name="arc_subtitle">端からメニューを開き、指を離さずそのまま目的の操作を選べます。</string>
+    <string name="arc_section_trigger_method">開き方</string>
+    <string name="arc_method_dedicated_title">専用エリアから引く</string>
+    <string name="arc_method_dedicated_badge">おすすめ</string>
+    <string name="arc_method_dedicated_desc">通常の戻るエリアとは別の端から引いてすぐ開きます。誤操作がありません。</string>
+    <string name="arc_method_edge_hold_title">端を軽く長押し</string>
+    <string name="arc_method_edge_hold_badge">専用エリア不要</string>
+    <string name="arc_method_edge_hold_desc">端に触れたまま一瞬待つと開きます。すぐ引けば通常の操作になります。</string>
+    <string name="arc_method_pull_return_title">引いて戻す</string>
+    <string name="arc_method_pull_return_badge">専用エリア不要</string>
+    <string name="arc_method_pull_return_desc">端から少し引いて戻すと開きます。そのまま指を滑らせて選べます。</string>
+    <string name="arc_method_gesture_title">操作に割り当てる</string>
+    <string name="arc_method_gesture_badge">手動</string>
+    <string name="arc_method_gesture_desc">「操作」タブで好きなスワイプや長押しに割り当てて開きます。</string>
+    <string name="arc_zone_side_label">使う端</string>
+    <string name="arc_zone_side_both">両方</string>
+    <string name="arc_zone_side_left">左のみ</string>
+    <string name="arc_zone_side_right">右のみ</string>
+    <string name="arc_zone_height_label">エリアの高さ</string>
+    <string name="arc_zone_offset_label">下からの位置</string>
+    <string name="arc_zone_legend_main">通常エリア</string>
+    <string name="arc_zone_legend_arc">メニュー専用</string>
+    <string name="arc_zone_overlap_hint">重なる部分はクイックメニューが優先されます。位置をずらすと分離できます。</string>
+    <string name="menu_zone_range_format">下から %1$d%%〜%2$d%%</string>
+    <string name="menu_zone_bottom_label">下端 0%</string>
+    <string name="menu_zone_top_label">上端 100%</string>
+    <string name="arc_edge_hold_ms_label">長押しの時間</string>
+    <string name="arc_pull_return_step1">1. 少し引く</string>
+    <string name="arc_pull_return_step2">2. 端へ戻す</string>
+    <string name="arc_pull_return_step3">3. 滑らせて選択</string>
+    <string name="arc_free_long_swipe_title">横の深くスワイプを空けられます</string>
+    <string name="arc_free_long_swipe_desc">現在、横の深くスワイプにもクイックメニューが設定されています。「直前のアプリ」に変えるとより便利です。</string>
+    <string name="arc_free_long_swipe_button">横の深くスワイプを「直前のアプリ」にする</string>
+    <string name="arc_section_geometry">メニューの見た目</string>
+    <string name="arc_section_slots">登録する操作</string>
+    <string name="arc_label_slot_count">項目の数</string>
+    <string name="arc_slot_count_format">%1$d個</string>
+    <string name="arc_label_radius">メニューの大きさ</string>
+    <string name="arc_label_dim_alpha">背景の暗さ</string>
+    <string name="arc_preview_hint">左右の端から内側へ引いてクイックメニューを試せます</string>
+    <string name="menu_preview_metrics">大きさ %1$ddp · 暗さ %2$d%%</string>
+    <string name="arc_slot_number">項目 %1$d</string>
+    <string name="arc_deadzone_cancel">端へ戻すとキャンセル</string>
+    <string name="arc_trigger_active_title">割り当て済み</string>
+    <string name="arc_trigger_unassigned_title">まだ割り当てられていません</string>
+    <string name="arc_trigger_unassigned_desc">横の深くスワイプに割り当てると、左右どちらの端からでもすぐ開けます。</string>
+    <string name="arc_trigger_assign_button">横の深くスワイプに割り当てる</string>
+    <string name="arc_assigned_side_short">横に短くスワイプ</string>
+    <string name="arc_assigned_side_deep_distance">横の深くスワイプ（%1$d%%）</string>
+    <string name="arc_assigned_side_deep_hold">横の長押し（%1$dms）</string>
+    <string name="arc_assigned_side_deep_both">横の深くスワイプ（%1$d%% / %2$dms）</string>
+    <string name="arc_assigned_diag_up">斜め上にスワイプ</string>
+    <string name="arc_assigned_diag_down">斜め下にスワイプ</string>
+    <string name="arc_assigned_bottom_up">下から短くスワイプ</string>
+    <string name="arc_assigned_bottom_deep">下から深くスワイプ</string>
+    <string name="arc_assigned_bottom_hold">下バーの長押し</string>
+
+    <!-- Actions & Task Switching -->
+    <string name="section_side_actions">左右の端</string>
+    <string name="section_bottom_actions">下バー</string>
+    <string name="section_task_switching">アプリの切り替え</string>
+    <string name="section_smart_avoidance">自動調整</string>
+    <string name="gesture_horizontal">短くスワイプ</string>
+    <string name="gesture_horizontal_hold">深くスワイプ</string>
+    <string name="gesture_diagonal_up">斜め上にスワイプ</string>
+    <string name="gesture_diagonal_down">斜め下にスワイプ</string>
+    <string name="gesture_bottom_up">短く上へスワイプ</string>
+    <string name="gesture_bottom_hold">深く上へスワイプ</string>
+    <string name="gesture_bottom_long_press">下バーの長押し</string>
+    <string name="label_hyperos_recents_compat">HyperOS向けタスク修正</string>
+    <string name="desc_hyperos_recents_compat">アプリ履歴が開きにくいHyperOS端末向けの安定化オプションです。</string>
+    <string name="label_hyperos_recents_delay">切り替えの待ち時間</string>
+    <string name="label_usage_stats_permission">使用状況へのアクセス（任意）</string>
+    <string name="desc_usage_stats_permission">端末の再起動直後でも最近使ったアプリをすぐ表示できます。オフのままでも通常どおり動作します。</string>
+    <string name="status_usage_granted">許可済み</string>
+    <string name="status_usage_optional">任意</string>
+    <string name="button_open_usage_access">使用状況アクセスを開く</string>
+    <string name="button_test_recent_history">最近使ったアプリを確認</string>
+    <string name="dialog_recent_history_title">最近使ったアプリ</string>
+    <string name="dialog_recent_history_subtitle">タップして切り替えを試せます</string>
+    <string name="recent_history_empty">履歴がまだありません。他のアプリを1〜2個開くと自動で記録されます。</string>
+    <string name="recent_history_prev_badge">直前</string>
+    <string name="label_ime_avoidance">キーボード表示中</string>
+    <string name="label_landscape_mode">横画面のとき</string>
+    <string name="dialog_pick_action_title">操作を選択</string>
+    <string name="picker_tab_system">操作</string>
+    <string name="picker_tab_apps">アプリ</string>
+
+    <!-- Action names (Official Glossary) -->
+    <string name="action_back">戻る</string>
+    <string name="action_home">ホーム</string>
+    <string name="action_recents">アプリ履歴（純正）</string>
+    <string name="action_previous_app">直前のアプリ</string>
+    <string name="action_notifications">通知を開く</string>
+    <string name="action_quick_settings">クイック設定</string>
+    <string name="action_lock_screen">画面をロック</string>
+    <string name="action_screenshot">スクリーンショット</string>
+    <string name="action_split_screen">分割画面</string>
+    <string name="action_circle_to_search">かこって検索</string>
+    <string name="action_open_quick_menu">クイックメニュー</string>
+    <string name="action_open_recent_switcher">最近使ったアプリ</string>
+    <string name="action_toggle_torch">ライト</string>
+    <string name="action_launch_app">アプリを開く</string>
+    <string name="action_none">なし</string>
+
+    <!-- Styles / themes / haptics / avoidance -->
+    <string name="style_bezier">しずく</string>
+    <string name="style_minimal">シンプル</string>
+    <string name="style_hidden">非表示</string>
+    <string name="theme_auto">自動</string>
+    <string name="theme_dark_glass">ダーク</string>
+    <string name="theme_light_glass">ライト</string>
+    <string name="theme_material_you">ダイナミック</string>
+    <string name="haptic_off">オフ</string>
+    <string name="haptic_light">弱</string>
+    <string name="haptic_medium">標準</string>
+    <string name="haptic_strong">強</string>
+    <string name="ime_shift_up">上へよける</string>
+    <string name="ime_disable">一時停止</string>
+    <string name="ime_none">そのまま</string>
+    <string name="landscape_double_swipe">2回スワイプ</string>
+    <string name="landscape_disable">一時停止</string>
+    <string name="landscape_keep">そのまま</string>
+
+    <!-- Excluded Apps -->
+    <string name="blacklist_title">除外するアプリ</string>
+    <string name="blacklist_subtitle">選んだアプリを使っている間はジェスチャーを一時停止します。</string>
+    <string name="blacklist_search_placeholder">アプリを検索</string>
+    <string name="blacklist_empty">該当するアプリがありません</string>
+    <string name="blacklist_selected_count">%1$d件 除外中</string>
+
+    <!-- HyperOS Setup Guide -->
+    <string name="guide_title">HyperOS 初期設定</string>
+    <string name="guide_subtitle">バックグラウンドで安定して動かすための推奨設定です。</string>
+    <string name="guide_step1_title">1. ユーザー補助をオンにする</string>
+    <string name="guide_step1_desc">「ダウンロードしたアプリ」から Hinata をオンにします。画面の内容は読み取りません。</string>
+    <string name="guide_step1_action">ユーザー補助を開く</string>
+    <string name="guide_step2_title">2. バッテリーを「制限なし」にする</string>
+    <string name="guide_step2_desc">省電力機能によってジェスチャーが途中で止まるのを防ぎます。</string>
+    <string name="guide_step2_action">バッテリー設定を開く</string>
+    <string name="guide_step3_title">3. 自動起動を許可する</string>
+    <string name="guide_step3_desc">端末を再起動したあとも自動でジェスチャーを再開できます。</string>
+    <string name="guide_step3_action">自動起動設定を開く</string>
+    <string name="guide_step_done">設定済み</string>
+    <string name="guide_step_pending">未設定</string>
+    <string name="guide_architecture_title">動作ステータス</string>
+
+    <!-- General Settings Screen -->
+    <string name="settings_title">設定</string>
+    <string name="settings_section_language">言語</string>
+    <string name="settings_language_label">アプリの言語</string>
+    <string name="settings_language_sheet_title">言語を選択</string>
+    <string name="lang_system_default">システムに従う</string>
+    <string name="settings_section_appearance">外観・テーマ</string>
+    <string name="settings_theme_mode">カラーテーマ</string>
+    <string name="settings_theme_system">システム</string>
+    <string name="settings_theme_dark">ダーク</string>
+    <string name="settings_theme_light">ライト</string>
+    <string name="settings_dynamic_color">Material You</string>
+    <string name="settings_dynamic_color_desc">Android 12以降で壁紙の色に合わせてテーマを調整します。</string>
+    <string name="settings_dynamic_color_unavailable">Android 12以降で利用できます。</string>
+    <string name="settings_section_privacy">プライバシーとセキュリティ</string>
+    <string name="settings_privacy_title">完全オンデバイス処理</string>
+    <string name="settings_privacy_desc">トラッキング・広告・画面画像の外部送信は一切ありません。通常は端末内で完結し、通信（HTTPS）は Google ML Kit のオフラインモデル取得・管理通信、または明示的に許可したオンライン翻訳時（テキストのみ送信）に限られます。</string>
+    <string name="settings_section_diagnostics">システム診断</string>
+    <string name="settings_diagnostics_subtitle">サービス接続・プロセス分離・権限状態</string>
+    <string name="diag_settings_process">設定プロセス</string>
+    <string name="diag_settings_process_value">分離中 (:settings · PID %1$d)</string>
+    <string name="diag_resident_process">常駐サービス</string>
+    <string name="diag_resident_running">稼働中 (PID %1$d)</string>
+    <string name="diag_resident_standby">待機中</string>
+    <string name="diag_accessibility">ユーザー補助</string>
+    <string name="diag_usage_access">使用状況アクセス</string>
+    <string name="diag_ime_state">キーボード</string>
+    <string name="diag_ime_visible">表示中</string>
+    <string name="diag_ime_hidden">非表示</string>
+    <string name="diag_orientation">画面の向き</string>
+    <string name="diag_orientation_landscape">横画面</string>
+    <string name="diag_orientation_portrait">縦画面</string>
+    <string name="settings_section_about">このアプリについて</string>
+    <string name="settings_version_label">バージョン</string>
+    <string name="settings_licenses_label">オープンソースライセンス</string>
+    <string name="settings_licenses_desc">GNU General Public License v3.0 (GPLv3) · Jetpack Compose, AndroidX, Kotlin, Shizuku API, Inter, Plus Jakarta Sans, JetBrains Mono</string>
+    <string name="settings_licenses_dialog_title">オープンソースライセンス</string>
+    <string name="settings_licenses_dialog_body">Hinata — GNU General Public License v3.0 (GPLv3)（オープンソース）\nCopyright (C) 2026 rengix-x\n\n使用オープンソース・クレジット：\n• Shizuku API / Provider（RikkaApps）— Apache License 2.0\n• AndroidHiddenApiBypass（LSPosed）— Apache License 2.0\n• Google ML Kit（文字認識 v2・言語判定・端末内翻訳）— Google APIs 利用規約\n• AndroidX・Jetpack Compose・Material 3・Kotlin — Apache License 2.0\n• Inter / Plus Jakarta Sans / JetBrains Mono — SIL Open Font License 1.1\n\n免責事項：Hinata は rengix-x による独立したオープンソース（GPLv3）プロジェクトであり、Google LLC、Apple Inc.、Xiaomi Corporation（HyperOS / POCO）、Samsung Electronics、OPPO、vivo とは一切関係・提携していません。</string>
+    <string name="button_close">閉じる</string>
+
+    <!-- Shizuku 3-button navigation bar control -->
+    <string name="shizuku_card_title">3ボタンナビゲーション非表示（Shizuku）</string>
+    <string name="shizuku_card_subtitle">HyperOS と外部ランチャー環境で、PC を使わずに 3 ボタンバーを隠せます。</string>
+    <string name="shizuku_status_not_installed">未インストール</string>
+    <string name="shizuku_status_stopped">停止中</string>
+    <string name="shizuku_status_permission_required">権限が必要</string>
+    <string name="shizuku_status_connected">接続済み</string>
+    <string name="shizuku_action_open_app">Shizuku を開く</string>
+    <string name="shizuku_action_grant_permission">Shizuku 権限を許可</string>
+    <string name="shizuku_action_setup_guide">Shizuku の導入手順を見る</string>
+    <string name="shizuku_button_hide_navbar">3ボタンナビを隠す</string>
+    <string name="shizuku_button_restore_navbar">3ボタンナビを元に戻す</string>
+    <string name="shizuku_toggle_auto_hide_title">自動再非表示</string>
+    <string name="shizuku_toggle_auto_hide_desc">HyperOS 側で 3 ボタンに戻されたとき、ロック解除時などに自動で再度隠します。</string>
+    <string name="shizuku_toggle_hide_gesture_line_title">下部の白いラインも隠す</string>
+    <string name="shizuku_toggle_hide_gesture_line_desc">非表示にするとき、画面最下部の細いジェスチャーバー表示も消します。</string>
+    <string name="shizuku_reboot_note">端末を再起動したあとは、先に Shizuku を起動してからボタンを押してください。</string>
+    <string name="shizuku_guide_dialog_title">Shizuku のセットアップ</string>
+    <string name="shizuku_guide_dialog_body">1. Google Play または GitHub から公式の Shizuku アプリをインストールします。\n2. Shizuku を開き、ワイヤレスデバッグでサービスを起動します（PC 不要）。\n3. この画面に戻って権限を許可し、「3ボタンナビを隠す」をタップしてください。</string>
+    <string name="shizuku_snackbar_hide_success">3ボタンナビゲーションを非表示にしました。</string>
+    <string name="shizuku_snackbar_restore_success">3ボタンナビゲーションを元に戻しました。</string>
+    <string name="shizuku_snackbar_failed">ナビゲーションバーの設定を変更できませんでした。</string>
+    <string name="shizuku_snackbar_failed_detail">設定を変更できませんでした（%1$s）。</string>
+    <string name="shizuku_snackbar_not_ready">先に Shizuku を起動し、権限を許可してください。</string>
+    <string name="shizuku_snackbar_permission_granted">Shizuku と接続しました。</string>
+    <string name="shizuku_snackbar_permission_denied">Shizuku の権限が拒否されました。</string>
+    <string name="shizuku_snackbar_open_failed">Shizuku を開けませんでした。</string>
+    <string name="shizuku_auto_hide_disabled_toast">Hinata: Shizuku エラーが続いたため自動再非表示をオフにしました。</string>
+
+    <!-- Accessibility content descriptions -->
+    <string name="cd_open_settings">設定を開く</string>
+    <string name="cd_back">戻る</string>
+    <string name="cd_change">変更</string>
+    <string name="cd_selected">選択中</string>
+    <string name="cd_clear_search">検索をクリア</string>
+    <string name="cd_refresh_status">状態を更新</string>
+    <string name="cd_move_up">上へ移動</string>
+    <string name="cd_move_down">下へ移動</string>
+    <string name="cd_test_launch">アプリを開く</string>
+    <string name="cd_expand">展開</string>
+    <string name="cd_collapse">折りたたむ</string>
+    <!-- 3段階チューニング・固定プレビュー・カスタムGIF/画像 -->
+    <string name="preview_live_title">ライブプレビュー</string>
+    <string name="preview_side_stage2_focus">横 第2段階 · %1$d%%</string>
+    <string name="preview_side_stage3_focus">横 第3段階 · %1$d%%</string>
+    <string name="preview_bottom_stage2_focus">下部 第2段階 · %1$d%%</string>
+    <string name="preview_bottom_stage3_focus">下部 第3段階 · %1$d%%</string>
+    <string name="preview_stage3_action_prefix">第3段階: %1$s</string>
+    <string name="preview_sticky_hint">端末枠の端をドラッグして第1〜3段階や下部ピルの動きをテストできます。</string>
+    <string name="metric_side_s2_short">横2 %1$d%%</string>
+    <string name="metric_side_s3_short">横3 %1$d%%</string>
+    <string name="metric_side_hold_short">横 %1$dms</string>
+    <string name="metric_bottom_s2_short">下2 %1$d%%</string>
+    <string name="metric_bottom_s3_short">下3 %1$d%%</string>
+    <string name="metric_bottom_hold_short">下 %1$dms</string>
+
+    <string name="section_side_edge_tuning">横エッジ設定（左右）</string>
+    <string name="label_side_trigger_mode">横エッジのトリガー方式</string>
+    <string name="label_side_stage2_distance">第2段階の距離（深引き）</string>
+    <string name="label_side_stage3_distance">第3段階の距離（超深引き）</string>
+    <string name="label_side_stage2_hold">第2段階の長押し時間</string>
+    <string name="label_side_stage3_hold">第3段階の長押し時間</string>
+
+    <string name="label_bottom_trigger_mode">下部エッジのトリガー方式</string>
+    <string name="label_bottom_stage2_distance">下部 第2段階の距離</string>
+    <string name="label_bottom_stage3_distance">下部 第3段階の距離</string>
+    <string name="label_bottom_stage2_hold">下部 第2段階の長押し時間</string>
+    <string name="label_bottom_stage3_hold">下部 第3段階の長押し時間</string>
+    <string name="hint_stage3_unassigned">「アクション」タブで第3段階アクションを設定するまで、自動で2段階動作になります。</string>
+
+    <string name="gesture_left_stage3">左エッジ 第3段階（超深引き）</string>
+    <string name="gesture_right_stage3">右エッジ 第3段階（超深引き）</string>
+    <string name="gesture_bottom_stage3">下部 第3段階（超深引き）</string>
+
+    <string name="section_custom_media">横エッジの見た目（カスタムGIF / 画像）</string>
+    <string name="desc_custom_media">透過GIF・アニメーションWebP・PNGを横スワイプのフィードバックに設定できます（待機時CPU 0%）。</string>
+    <string name="label_edge_visual_style">表示スタイル</string>
+    <string name="visual_style_default">デフォルト</string>
+    <string name="visual_style_custom_only">GIF・画像</string>
+    <string name="visual_style_droplet_media">水滴＋画像</string>
+    <string name="button_pick_custom_media">画像 / GIF を選択</string>
+    <string name="button_change_custom_media">画像 / GIF を変更</string>
+    <string name="button_reset_custom_media">デフォルトに戻す</string>
+    <string name="hint_custom_media_fallback">上のボタンから GIF / WebP / PNG を選ぶとカスタム表示が有効になります。</string>
+    <string name="label_custom_media_size">表示サイズ</string>
+    <string name="label_custom_media_alpha">不透明度</string>
+    <string name="label_custom_media_mirror_right">右エッジで左右反転</string>
+    <string name="desc_custom_media_mirror_right">右端からスワイプしたとき、画像・GIFを自然に内側向きに反転します。</string>
+    <string name="custom_media_saved">カスタム画像 / GIF を適用しました。</string>
+    <string name="custom_media_error_too_large">ファイルサイズが大きすぎます（最大 15 MB）。</string>
+    <string name="custom_media_error_invalid">対応していない、または読み込めない画像形式です。</string>
+    <string name="custom_media_error_io">選択したファイルを読み込めませんでした。</string>
+    <string name="custom_media_reset_done">デフォルトのガラス水滴に戻しました。</string>
+    <string name="cd_custom_media_empty">カスタム画像未設定</string>
+
+    <!-- Floating Window Shortcuts -->
+    <string name="action_float_current_app">今のアプリを小窓化</string>
+    <string name="action_launch_app_floating">アプリを小窓で開く</string>
+    <string name="action_launch_app_floating_format">%1$s（小窓）</string>
+    <string name="floating_window_toggle_title">小窓で開く</string>
+    <string name="floating_window_toggle_desc">選択したアプリをフリーフォームの小窓として直接起動します。</string>
+    <string name="floating_window_badge_short">小窓</string>
+    <string name="floating_window_need_shizuku">小窓機能を使うにはShizukuを開始してください</string>
+    <string name="floating_window_cannot_float_current">現在の画面は小窓化できません</string>
+    <string name="shizuku_floating_window_note">Shizukuを接続すると、3ボタン非表示に加えてジェスチャーやクイックメニューからの小窓起動も安定動作します。</string>
+
+    <!-- First-Launch 30-Second Onboarding -->
+    <string name="onboarding_language_chip">言語</string>
+    <string name="onboarding_step1_tagline">画面端から、片手で自在に。</string>
+    <string name="onboarding_privacy_title">完全オンデバイス処理・プライバシー保護</string>
+    <string name="onboarding_privacy_desc">トラッキング・広告・画面画像の外部送信は一切ありません。通常は端末内で完結し、通信（HTTPS）は Google ML Kit のオフラインモデル取得・管理通信、または明示的に許可したオンライン翻訳時（テキストのみ送信）に限られます。</string>
+    <string name="onboarding_button_start">はじめる</string>
+    <string name="onboarding_step2_title">ジェスチャーを有効にする</string>
+    <string name="onboarding_step2_desc">画面端のスワイプで戻る・ホーム・ショートカットを動かすため、ユーザー補助でHinataをオンにしてください。</string>
+    <string name="onboarding_step2_status_enabled">有効になりました</string>
+    <string name="onboarding_step2_status_waiting">まだ有効になっていません</string>
+    <string name="onboarding_step2_open_settings">ユーザー補助設定を開く</string>
+    <string name="onboarding_button_next">次へ</string>
+    <string name="onboarding_button_skip">あとで設定する</string>
+    <string name="onboarding_step3_title">準備完了！</string>
+    <string name="onboarding_step3_try_hint">準備完了！画面の端をスワイプして動きを試してみましょう。</string>
+    <string name="onboarding_step3_battery_title">バッテリー制限なし（推奨）</string>
+    <string name="onboarding_step3_battery_desc">HyperOSで裏のジェスチャーが止まらないようにします（スキップ可）。</string>
+    <string name="onboarding_step3_battery_done">バッテリー制限なしに設定済み</string>
+    <string name="onboarding_button_finish">設定画面へ進む</string>
+    <string name="settings_replay_onboarding_title">初回ガイドをもう一度見る</string>
+    <string name="settings_replay_onboarding_desc">3ステップの初期設定ガイドをいつでも確認できます</string>
+
+    <!-- プリズムグラス、回転クイックメニュー、ショートカット・リンク起動、下部バー配置 -->
+    <string name="action_launch_shortcut">ショートカット</string>
+    <string name="action_open_url">リンクを開く</string>
+    <string name="toast_url_open_failed">このリンクを開けませんでした。</string>
+    <string name="toast_shortcut_launch_failed">このショートカットを起動できませんでした。</string>
+
+    <string name="tab_shortcuts">ショートカット</string>
+    <string name="tab_link">リンク</string>
+    <string name="label_url_input">URL</string>
+    <string name="hint_url_input">https://example.com</string>
+    <string name="label_custom_name_optional">表示名（任意）</string>
+    <string name="button_test_link">テスト起動</string>
+    <string name="button_save_link">保存</string>
+    <string name="search_shortcuts_hint">ショートカットやアプリを検索…</string>
+    <string name="section_app_shortcuts">アプリ内ショートカット</string>
+    <string name="section_create_shortcut_apps">アプリからショートカットを作成</string>
+    <string name="empty_shortcuts_found">該当するショートカットが見つかりませんでした。</string>
+    <string name="shortcut_create_failed">ショートカットを作成できませんでした。</string>
+
+    <string name="label_liquid_glass">プリズムグラス</string>
+    <string name="desc_liquid_glass">Android 13以降でリアルタイム光学屈折・すりガラスを描画（ワンタップで切替可）。</string>
+    <string name="desc_liquid_glass_unsupported">Android 13以降で利用できます。</string>
+    <string name="label_liquid_glass_refraction">屈折の強さ</string>
+
+    <string name="button_add_slot">スロットを追加</string>
+    <string name="label_slot_count_ratio">%1$d / %2$d</string>
+    <string name="cd_delete_slot">スロットを削除</string>
+    <string name="hint_quick_menu_rotary">7個以上のスロット：円弧の上端・下端を越えて指を動かすと滑らかに回転スクロールします。</string>
+
+    <string name="label_bottom_height">下部バーの高さ（反応幅）</string>
+    <string name="label_bottom_offset">下端からのオフセット</string>
+    <string name="label_bottom_horizontal_offset">下部バーの左右位置</string>
+    <string name="button_center_reset">中央に戻す</string>
+
+    <string name="arc_section_feel_boundary">操作感と戻り境界</string>
+    <string name="arc_retreat_mode_label">下位ステージへの戻り方式</string>
+    <string name="arc_retreat_mode_radial">円弧</string>
+    <string name="arc_retreat_mode_edge">画面端</string>
+    <string name="arc_retreat_mode_custom">境界線</string>
+    <string name="arc_retreat_desc_radial">メニュー起点へ近づいた時だけ下位ステージに戻ります。上下端スロット選択や回転スクロールでの誤キャンセルを防ぎます。</string>
+    <string name="arc_retreat_desc_edge">画面端のデッドゾーンまで戻した時だけ下位ステージに戻ります。広い円弧操作を最大限保護します。</string>
+    <string name="arc_retreat_desc_custom">指定した境界線より画面端へ引き戻すと下位ステージに戻ります（上下の円弧角度保護付き）。</string>
+    <string name="arc_label_retreat_radial">戻り円弧の大きさ</string>
+    <string name="arc_label_retreat_custom">戻り境界の位置</string>
+    <string name="arc_label_dead_zone">キャンセル無効半径</string>
+    <string name="arc_label_rotary_speed">回転スクロール速度</string>
+
+    <string name="button_watch_animation">アニメーションで見る</string>
+    <string name="demo_sheet_guide_dedicated">画面端の専用エリアから内側へサッと引くだけで待ち時間なく扇形メニューが開き、そのまま項目を選べます。</string>
+    <string name="demo_sheet_guide_edge_hold">画面端に指を当ててリングが満タンになるまで待つと扇形メニューが開きます。そのまま滑らせて選びます。</string>
+    <string name="demo_sheet_guide_pull_return">一度内側へ引いてから画面端へUターンすると、折り返した瞬間に扇形メニューが開きます。</string>
+    <string name="demo_sheet_guide_gesture">通常の画面端から第2段階まで引く（または長押しする）ことで、そのまま扇形メニューへつながります。</string>
+    <string name="demo_badge_instant_0ms">待ち時間 0ms</string>
+    <string name="demo_badge_hold_ms">長押し %1$dms</string>
+    <string name="demo_badge_uturn">引いてUターン</string>
+    <string name="demo_badge_distance_pct">距離 %1$d%%</string>
+    <string name="demo_retreat_preview_title">動きのライブプレビュー</string>
+    <string name="demo_badge_arc_safe">端まで快適選択</string>
+    <string name="demo_badge_rotary_speed">回転 %1$d%%</string>
+    <string name="demo_badge_retreat_demo">境界の内側へ戻す</string>
+    <string name="demo_badge_returned_previous">前の操作へ復帰</string>
+    <string name="demo_badge_bottom_long_press">下バー長押し</string>
+
+    <!-- 共通バッジ・ボタン -->
+    <string name="badge_beta">Beta</string>
+    <string name="button_cancel">キャンセル</string>
+
+    <!-- アプリ全体のプリズムグラス UI -->
+
+    <!-- HyperOS セカンドスペース裏ワザ・緊急復旧ガイド -->
+    <string name="guide_second_space_title">セカンドスペースで3ボタンを消す裏ワザ</string>
+    <string name="guide_second_space_badge">PC不要・再起動後も維持</string>
+    <string name="guide_second_space_desc">多くの HyperOS 端末では、セカンドスペースを作成してジェスチャー設定を行うことで、サードパーティ製ランチャーのまま3ボタンを非表示にできます。</string>
+    <string name="guide_second_space_step1">端末の「設定」→「追加設定」→「セカンドスペース」を開き、セカンドスペースを作成します。</string>
+    <string name="guide_second_space_step2">セカンドスペース内で標準ランチャーを選び、システムナビゲーションを「ジェスチャー」に切り替えます。</string>
+    <string name="guide_second_space_step3">メインスペースへ戻ると、お好みのランチャーのまま3ボタンバーが非表示で維持される場合があります。</string>
+    <string name="guide_second_space_step4">OSバージョンにより挙動が異なる場合があります。戻ってしまった場合は上の Shizuku 連携をご利用ください。</string>
+    <string name="guide_emergency_badge">緊急時</string>
+    <string name="guide_emergency_settings_title">緊急復旧①：設定から3ボタンへ戻す</string>
+    <string name="guide_emergency_settings_desc">3ボタン非表示中にジェスチャーが効かなくなっても、端末の設定アプリからいつでも3ボタンナビゲーションへ戻せます。</string>
+    <string name="guide_emergency_settings_path">設定 → ホーム画面 → システムナビゲーション → ボタン</string>
+    <string name="guide_emergency_safemode_title">緊急復旧②：Android セーフモードで起動</string>
+    <string name="guide_emergency_safemode_desc">セーフモードではすべてのサードパーティ製アプリやユーザー補助が一時停止されるため、確実に元の状態へ戻せます。</string>
+    <string name="guide_emergency_safemode_step1">端末の電源を切る（または電源ボタン長押しで再起動する）操作を行います。</string>
+    <string name="guide_emergency_safemode_step2">Xiaomi / HyperOS のロゴが表示された直後から、ロック画面が出るまで「音量ダウン」ボタンを押し続けます。</string>
+    <string name="guide_emergency_safemode_step3">画面左下に「セーフモード」と表示されたら、3ボタンへ戻すか Hinata をオフにし、通常どおり再起動してください。</string>
+
+    <!-- 5ステップ体験型オンボーディング -->
+    <string name="onboarding_disclaimer_title">⚠️ ご利用前の重要警告（操作不能リスクと自己責任について）</string>
+    <string name="onboarding_disclaimer_body">本アプリは『ユーザー補助（アクセシビリティ）』を常時オンにして画面端の操作を制御します。システムのナビゲーション（3ボタン等）を非表示にした状態で、OSの省電力機能・メモリ解放・不具合等により本アプリが裏で落ちたりユーザー補助がオフになった場合、『戻る』『ホーム』等の操作ができなくなり大変困る（操作不能になる）恐れがあります。自動復元やクイックパネル復旧機能を備えていますが、万が一アプリが停止・切断されて端末が使えなくなったり不具合が生じた場合でも、開発者は一切の責任を負わず、すべてユーザーご自身の責任（自己責任）となります。</string>
+    <string name="onboarding_disclaimer_agree">アプリが落ちた際に操作不能になって困るリスクを理解し、万が一切れて使えなくなってもすべて自己責任で利用することに同意します</string>
+    <string name="onboarding_button_agree_start">同意してはじめる</string>
+    <string name="onboarding_sandbox_title">まずはここで動きを体験</string>
+    <string name="onboarding_sandbox_desc">権限をオンにする前に、下のミニ画面でスワイプの感触を試せます。</string>
+    <string name="onboarding_sandbox_tab_side">左右エッジ</string>
+    <string name="onboarding_sandbox_tab_menu">クイックメニュー</string>
+    <string name="onboarding_sandbox_tab_bottom">下バー</string>
+    <string name="onboarding_sandbox_side_hint">左右どちらかの端から内側へスワイプしてみてください</string>
+    <string name="onboarding_sandbox_menu_hint">端から引き出して扇形の弧をなぞってみてください</string>
+    <string name="onboarding_sandbox_bottom_hint">下バーを上に引くか、そのまま少し長押ししてみてください</string>
+    <string name="onboarding_sandbox_stage1">第1段階・戻る</string>
+    <string name="onboarding_sandbox_stage2">第2段階・直前のアプリ</string>
+    <string name="onboarding_sandbox_stage3">第3段階・スクリーンショット</string>
+    <string name="onboarding_sandbox_menu_selected">クイックメニュー・%1$s</string>
+    <string name="onboarding_sandbox_bottom_home">短く引き上げ・ホーム</string>
+    <string name="onboarding_sandbox_bottom_recents">深く引き上げ・履歴</string>
+    <string name="onboarding_sandbox_bottom_cts">長押し発光・かこって検索</string>
+    <string name="onboarding_shizuku_title">3ボタンバーを隠す（任意）</string>
+    <string name="onboarding_shizuku_desc">外部ランチャー使用時に HyperOS の3ボタンバーを消すには、無料アプリ「Shizuku」の連携が便利です。後から HyperOS タブのセカンドスペース裏ワザも確認できます。</string>
+    <string name="onboarding_shizuku_connected">Shizuku 接続済み</string>
+    <string name="onboarding_shizuku_not_connected">未接続（あとで設定可能）</string>
+    <string name="onboarding_shizuku_return_hint">リンクは外部ブラウザやストアで開きます。戻ると状態が自動で更新されます。</string>
+    <string name="onboarding_shizuku_link_play">Google Play で Shizuku を開く</string>
+    <string name="onboarding_shizuku_link_github">GitHub Releases から入手</string>
+    <string name="onboarding_shizuku_link_fdroid">F-Droid / IzzyOnDroid</string>
+    <string name="onboarding_shizuku_link_apkmirror">APKMirror</string>
+    <string name="onboarding_button_try_ab_wizard">初心者A/B自動調整を試す（Beta）</string>
+    <string name="onboarding_button_start_now">このまま使いはじめる</string>
+
+    <!-- 初心者向け A/B 自動チューニングウィザード (Beta) -->
+    <string name="ab_wizard_entry_title">初心者向け A/B 自動チューニング</string>
+    <string name="ab_wizard_entry_desc">使いたい機能を選び、AとBを触り比べるだけで最適なエッジ設定を自動で仕上げます。</string>
+    <string name="ab_wizard_title">初心者 A/B 自動チューニング</string>
+    <string name="ab_wizard_apply_button">この設定を適用する</string>
+    <string name="ab_step_features_title">使いたい機能を選びましょう</string>
+    <string name="ab_step_features_desc">不要な機能はオフにしてシンプルに保てます。後からいつでも変更できます。</string>
+    <string name="ab_feat_quick_menu_title">クイックメニュー（扇形）</string>
+    <string name="ab_feat_quick_menu_desc">画面端から扇形のショートカットメニューを開きます。</string>
+    <string name="ab_feat_recent_switcher_title">最近使ったアプリ帯</string>
+    <string name="ab_feat_recent_switcher_desc">直近のアプリをスライド操作ですばやく切り替えます。</string>
+    <string name="ab_feat_bottom_bar_title">下バー ジェスチャー</string>
+    <string name="ab_feat_bottom_bar_desc">上に引いてホーム・履歴、長押しでかこって検索を起動します。</string>
+    <string name="ab_feat_three_stage_title">3段階の奥引きスワイプ</string>
+    <string name="ab_feat_three_stage_desc">さらに奥まで引くことで第3のアクションを割り当てられます。</string>
+    <string name="ab_feat_liquid_glass_title">プリズムグラス エフェクト</string>
+    <string name="ab_feat_liquid_glass_desc">Android 13 以降でリアルタイムの光学ガラス屈折を表示します。</string>
+    <string name="ab_q1_title">Q1・左右エッジの高さと幅</string>
+    <string name="ab_q1_desc">下のパッドで普段どおりスワイプすると親指の高さを自動計測します。好みの反応幅も選んでください。</string>
+    <string name="ab_q1_opt_a_title">A・スリムで邪魔にならない (14 dp)</string>
+    <string name="ab_q1_opt_a_desc">画面端のボタンと干渉しにくい細めの反応幅です。</string>
+    <string name="ab_q1_opt_b_title">B・広めで反応しやすい (24 dp)</string>
+    <string name="ab_q1_opt_b_desc">厚めのケースを着けていても確実に引き出せます。</string>
+    <string name="ab_q1_pad_hint">普段の持ち方で2〜3回、内側にスワイプしてみてください</string>
+    <string name="ab_q1_calibrated_status">%1$d回計測済み・下オフセット %2$d%%</string>
+    <string name="ab_q1_uncalibrated_status">任意：上でスワイプすると親指の高さを自動計測します</string>
+    <string name="ab_q2_title">Q2・下バーの引き出しやすさ</string>
+    <string name="ab_q2_desc">画面下部の反応エリアの好みを選んでください。</string>
+    <string name="ab_q2_opt_a_title">A・すっきり薄型</string>
+    <string name="ab_q2_opt_a_desc">画面最下部にぴたりと収まる控えめな高さです。</string>
+    <string name="ab_q2_opt_b_title">B・ゆったりケース対応</string>
+    <string name="ab_q2_opt_b_desc">少し高めに浮かせて厚手ケースでも引き上げやすくします。</string>
+    <string name="ab_q2_pad_hint">下のバーから上にスワイプして感触を確認できます</string>
+    <string name="ab_q3_title">Q3・見た目と質感の好み</string>
+    <string name="ab_q3_desc">ガラス質感とインジケーターの形の組み合わせを選んでください。</string>
+    <string name="ab_q3_surface_a_title">質感A・プリズムグラス</string>
+    <string name="ab_q3_surface_a_desc">背景が柔らかく屈折して透ける立体ガラス表現です。</string>
+    <string name="ab_q3_surface_b_title">質感B・すっきりフロスト</string>
+    <string name="ab_q3_surface_b_desc">屈折を抑えた軽快で見やすい半透明表現です。</string>
+    <string name="ab_q3_shape_a_title">形状A・しなるしずく型</string>
+    <string name="ab_q3_shape_a_desc">指の動きに合わせて先端がなめらかにしなるベジェ曲線です。</string>
+    <string name="ab_q3_shape_b_title">形状B・ミニマル矢印</string>
+    <string name="ab_q3_shape_b_desc">主張を抑えたコンパクトな矢印アイコンです。</string>
+    <string name="ab_q3_pad_hint">左右からスワイプして見た目をリアルタイムに確認できます</string>
+    <string name="ab_q4_title">Q4・第2段階の発動方法</string>
+    <string name="ab_q4_desc">下のパッドで試しながら、奥まで引く操作と少し止める操作のどちらが好みか選んでください。</string>
+    <string name="ab_q4_opt_a_title">A・奥まで引く（距離で発動）</string>
+    <string name="ab_q4_opt_a_desc">テンポよく一気に奥へ引いて第2段階へ進めます。</string>
+    <string name="ab_q4_opt_b_title">B・少し止める（長押しで発動）</string>
+    <string name="ab_q4_opt_b_desc">短い移動量で片手でも楽に第2段階を呼び出せます。</string>
+    <string name="ab_q4_pad_hint">内側へ引いて第1段階→第2段階の切り替わりを試せます</string>
+    <string name="ab_q4_stage1_lit">第1段階・戻る</string>
+    <string name="ab_q4_stage2_lit">第2段階・発動</string>
+    <string name="ab_summary_title">おすすめ設定が完成しました</string>
+    <string name="ab_summary_desc">下の内容で一括適用できます。あとから各タブで細かく調整することも可能です。</string>
+    <string name="ab_summary_calibrated_tag">スワイプ計測から親指位置を自動最適化</string>
+    <string name="ab_summary_on">オン</string>
+    <string name="ab_summary_off">オフ</string>
+
+    <!-- HyperOS 小窓API診断 -->
+    <string name="diag_copy_freeform_api_button">小窓API診断ログをコピー</string>
+    <string name="diag_copy_freeform_api_copied">小窓API診断ログをクリップボードにコピーしました</string>
+    <string name="diag_copy_freeform_api_failed">API診断ログを取得できませんでした。Shizukuの接続を確認してください。</string>
+
+    <!-- URL検証ガイド -->
+    <string name="hint_url_validation_guide">https://example.com または example.com 形式で入力してください</string>
+
+    <!-- ライブ画面翻訳 -->
+    <string name="action_toggle_screen_translate">翻訳ボタンを表示／非表示</string>
+    <string name="action_translate_screen_once">今すぐ画面を翻訳</string>
+    <string name="translate_toast_unsupported_android">画面翻訳は Android 11 以降で利用できます。</string>
+    <string name="translate_toast_secure_screen">この画面は保護されているため翻訳用キャプチャができません。</string>
+    <string name="translate_toast_downloading_model">オフライン翻訳言語パックをダウンロード中…</string>
+    <string name="translate_toast_wifi_required">Wi-Fi に接続するか、翻訳設定で「Wi-Fi のみ」をオフにしてください。</string>
+    <string name="translate_toast_model_download_failed">言語パックのダウンロードに失敗しました。通信環境を確認してください。</string>
+
+    <string name="translate_settings_entry_title">画面翻訳</string>
+    <string name="translate_settings_entry_desc">ゲーム・漫画・アプリを画面端のワンタップボタンでシンプルに翻訳</string>
+    <string name="translate_settings_title">画面翻訳</string>
+
+    <string name="translate_section_languages">翻訳言語</string>
+    <string name="translate_label_source">翻訳元</string>
+    <string name="translate_label_target">翻訳先</string>
+    <string name="translate_source_auto_short">自動検出</string>
+    <string name="translate_source_auto_title">自動検出（おすすめ）</string>
+    <string name="translate_source_auto_desc">画面上の文字体系と言語を自動で判別します</string>
+    <string name="translate_languages_note">文字認識（OCR）は42言語（ラテン文字・日本語・中国語・韓国語・デーヴァナーガリー文字）に対応。翻訳先は ML Kit オフライン全59言語に対応しています。</string>
+    <string name="cd_swap_languages">翻訳元と翻訳先を入れ替え</string>
+    <string name="translate_picker_source_title">翻訳元の言語を選択</string>
+    <string name="translate_picker_target_title">翻訳先の言語を選択</string>
+    <string name="translate_search_language_hint">言語名またはコードで検索…</string>
+    <string name="translate_lang_section_popular">よく使う言語</string>
+    <string name="translate_lang_section_all">すべての言語</string>
+    <string name="translate_pack_ready_short">準備完了</string>
+
+    <string name="translate_section_tracking">追従・更新モード</string>
+    <string name="translate_mode_smart_auto">スマート自動</string>
+    <string name="translate_mode_smart_auto_desc">画面の変化を検知して自動更新し、静止中は処理を省いてバッテリーを節約します。</string>
+    <string name="translate_mode_game_continuous">ゲーム・連続</string>
+    <string name="translate_mode_game_continuous_desc">スクロール通知を出さないゲーム画面や動画字幕も一定間隔で継続追従します。</string>
+    <string name="translate_mode_manual_once">手動1回</string>
+    <string name="translate_mode_manual_once_desc">現在の画面を1回だけ翻訳し、フローティングバーの更新ボタンで再翻訳します。</string>
+    <string name="translate_label_refresh_speed">更新速度</string>
+    <string name="translate_speed_power_saver">省電力</string>
+    <string name="translate_speed_balanced">標準</string>
+    <string name="translate_speed_fast">高速</string>
+
+    <string name="translate_section_display">オーバーレイ表示</string>
+    <string name="translate_style_inplace">背景なじみ（置換）</string>
+    <string name="translate_style_frosted">半透明カード</string>
+    <string name="translate_label_overlay_alpha">オーバーレイ不透明度</string>
+    <string name="translate_toggle_skip_target_title">翻訳先と同じ言語はスキップ</string>
+    <string name="translate_toggle_skip_target_desc">すでに翻訳先の言語で書かれているテキストは上書きせずそのまま表示します。</string>
+
+    <string name="translate_section_packs">オフライン言語パック</string>
+    <string name="translate_toggle_wifi_only_title">Wi-Fi 接続時のみダウンロード</string>
+    <string name="translate_toggle_wifi_only_desc">モバイル回線での約30MB言語パックのダウンロードを防ぎます。</string>
+    <string name="translate_search_pack_hint">言語パックを絞り込み…</string>
+    <string name="translate_pack_size_hint">約30 MB オフライン</string>
+    <string name="translate_packs_show_all">全 %1$d 言語を表示</string>
+    <string name="translate_packs_show_popular">主要言語のみ表示</string>
+    <string name="cd_download_language_pack">オフライン言語パックをダウンロード</string>
+    <string name="cd_delete_language_pack">オフライン言語パックを削除</string>
+
+    <string name="translate_section_guide">使い方</string>
+    <string name="translate_guide_step1">エッジスワイプやクイックメニューに「翻訳ボタンを表示／非表示」または「今すぐ画面を翻訳」を割り当てます。</string>
+    <string name="translate_guide_step2">画面端に常駐する「文A」ボタンを1回タップすると画面全体をくっきり翻訳し、もう一度タップすると即座に消去できます。</string>
+    <string name="translate_guide_step3">ボタン下の小さな「⋯」タブから、再翻訳・長押しで原文を見る・言語入れ替え・エンジン切替・終了を操作できます。</string>
+
+    <!-- Spec 66: ML Kit safe init & smooth droplet shape sliders -->
+    <string name="translate_mlkit_unavailable_notice">この端末環境ではオフライン翻訳モデル管理を利用できませんが、翻訳言語などの設定は安全に変更できます。</string>
+    <string name="label_droplet_peak_width">水滴の山の高さ（張り出し）</string>
+    <string name="label_droplet_base_width">水滴の裾野の広さ</string>
+
+    <!-- Native Circle to Search & CN ROM Assistant Repair -->
+    <string name="cts_card_title">かこって検索（純正＆大陸版ROM修復）</string>
+    <string name="cts_card_subtitle">OS 標準の純正 Google かこって検索を直接呼び出します。大陸版 ROM でアシスタントがリセットされる場合は Shizuku で自動修復できます。</string>
+    <string name="cts_toggle_auto_repair_title">Shizuku で Google アシスタントを自動修復</string>
+    <string name="cts_toggle_auto_repair_desc">大陸版 ROM により音声アシスタント設定がリセットされた場合、Shizuku 接続時に自動修復して再試行します。</string>
+    <string name="cts_shizuku_repair_button">Google アシスタントを強制設定（Shizuku）</string>
+    <string name="cts_shizuku_reset_button">アシスタント設定を初期状態に戻す</string>
+    <string name="cts_shizuku_repair_success">かこって検索用に Google アシスタントを設定しました。</string>
+    <string name="cts_shizuku_reset_success">システムのアシスタント設定を初期化しました。</string>
+    <string name="cts_cn_rom_checklist_title">大陸版 ROM チェックリスト（OriginOS / ColorOS / realme UI / HyperOS CN）</string>
+    <string name="cts_cn_rom_step1">Google アプリをインストールしてログインし、端末設定で「Google 基本サービス」をオンにしてください。</string>
+    <string name="cts_cn_rom_step2">Google アプリの「自動起動 / 関連起動」を許可し、バッテリー制限を「制限なし」に設定してください。</string>
+    <string name="cts_cn_rom_step3">純正かこって検索が起動しない場合は、上の「Google アシスタントを強制設定（Shizuku）」をお試しください。</string>
+    <string name="cts_cn_rom_step4">Google アプリを最新版に更新し、端末のデフォルトデジタルアシスタントに設定してください。</string>
+    <string name="cts_open_google_app_info_button">Google アプリ情報を開く</string>
+    <string name="cts_google_app_not_found">この端末に Google アプリがインストールされていません。</string>
+
+    <!-- OS Back Gesture Conflict Mitigation & Shizuku Control -->
+    <string name="zones_os_back_mitigation_title">OS 戻るジェスチャー競合対策</string>
+    <string name="zones_os_back_mitigation_desc">トリガー領域の上部で OS の画面端戻るジェスチャーが誤爆する場合は、Shizuku で OS 戻るを無効化するか端末のナビゲーション設定で感度を調整してください。</string>
+    <string name="zones_os_back_disable_shizuku_button">Shizuku で OS 戻るを無効化</string>
+    <string name="zones_os_back_restore_button">OS 戻るジェスチャーを元に戻す</string>
+    <string name="zones_open_nav_settings_button">端末のナビゲーション設定を開く</string>
+
+    <!-- No-Shizuku HyperOS Control Center Floating Window Macro -->
+    <string name="shizuku_toggle_no_shizuku_cc_float_title">コントロールセンター小窓マクロ（Shizuku 不要）</string>
+    <string name="shizuku_toggle_no_shizuku_cc_float_desc">Shizuku 未接続時にコントロールセンターの「フローティングウィンドウ」タイルを自動タップして純正縮小フローティングを起動します。</string>
+    <string name="floating_window_cc_tile_not_found">コントロールセンターに「フローティングウィンドウ」タイルが見つかりません。1ページ目に追加するか Shizuku を接続してください。</string>
+
+    <string name="shizuku_card_title_coloros">ColorOS / realme UI ナビ制御（Shizuku）</string>
+    <string name="shizuku_card_title_originos">OriginOS ナビ制御（Shizuku）</string>
+    <string name="shizuku_card_title_oneui">One UI ナビ制御（Shizuku）</string>
+    <string name="shizuku_card_title_aosp">システム戻る・ナビ制御（Shizuku）</string>
+    <string name="shizuku_card_subtitle_coloros">ColorOS / OxygenOS / realme UI で 3ボタンバーを非表示にしたり、OS の画面端戻るジェスチャーを無効化して誤爆を防ぎます。</string>
+    <string name="shizuku_card_subtitle_originos">vivo / iQOO OriginOS で root 不要のままナビゲーションバー非表示や OS 端戻るジェスチャー抑制を行います。</string>
+    <string name="shizuku_card_subtitle_oneui">Samsung One UI のジェスチャーヒント・ナビバー非表示や OS 端戻るジェスチャー抑制を root 不要で実行します。</string>
+    <string name="shizuku_card_subtitle_aosp">Pixel / Xperia / Nothing / Motorola などの Android 標準環境で、左右の OS 戻るジェスチャー抑制やナビバー非表示を実行します。</string>
+    <string name="shizuku_safety_guard_note">操作不能防止ガード有効：OS ナビを無効化する前に Hinata ユーザー補助の稼働を自動確認します。いつでも下のボタンで標準状態に戻せます。</string>
+    <string name="shizuku_snackbar_accessibility_required">操作不能を防ぐため、先に Hinata のユーザー補助サービスを有効にしてください。</string>
+    <string name="shizuku_button_suppress_back">OS の画面端「戻る」を無効化</string>
+    <string name="shizuku_snackbar_back_suppressed">OS の画面端戻るジェスチャーを無効化しました。</string>
+    <string name="shizuku_button_hide_navbar_generic">システムナビゲーションバーを非表示</string>
+    <string name="shizuku_button_restore_all_defaults">すべてのシステム設定を標準に戻す</string>
+
+    <!-- Mission 2: No-Shizuku Floating Window Setup, Reload, OCR Fallback & Warning -->
+    <string name="floating_window_cc_tile_not_found_setup">コントロールセンターの1ページ目に「フローティングウィンドウ」を置き、設定から「ボタン位置を再読み込み（またはOCR読み取り）」を実行してください。</string>
+    <string name="cc_float_scan_internal_success">新しいボタン位置を読み込みました。</string>
+    <string name="cc_float_scan_internal_failed">内部読み取りで見つかりませんでした。代案のOCR読み取りをお試しください。</string>
+    <string name="cc_float_scan_ocr_success">OCRでボタン位置を記憶しました！</string>
+    <string name="cc_float_scan_ocr_failed">OCRでボタンを読み取れませんでした。コントロールセンター1ページ目に「フローティングウィンドウ」があるか確認してください。</string>
+    <string name="cc_float_scan_manual_success">タップしたボタン位置を記憶しました！</string>
+    <string name="cc_float_manual_tap_prompt">「フローティングウィンドウ」のボタンを1回タップして位置を登録してください。</string>
+    <string name="cc_float_scan_service_required">コントロールセンターを読み取るには、先に Hinata のユーザー補助サービスを有効にしてください。</string>
+    <string name="cc_float_status_auto">内部読み取り済み</string>
+    <string name="cc_float_status_ocr">OCR記憶済み</string>
+    <string name="cc_float_status_manual">タップ登録済み</string>
+    <string name="cc_float_status_unset">未設定</string>
+    <string name="cc_float_setup_dialog_title">小窓機能のセットアップとご注意</string>
+    <string name="cc_float_setup_shizuku_on_title">Shizuku オンの場合（推奨）</string>
+    <string name="cc_float_setup_shizuku_on_desc">事前設定なしで、どの画面からでも直接・安定して小窓化できます。</string>
+    <string name="cc_float_setup_shizuku_off_title">Shizuku オフの場合</string>
+    <string name="cc_float_setup_shizuku_off_desc">コントロールセンター（クイック設定）の1ページ目に「フローティングウィンドウ」ボタンを配置する必要があります。</string>
+    <string name="cc_float_macro_warning_full">ご注意：Shizuku オフ時は、コントロールセンターのボタン位置を記憶して自動タップする「マクロ動作」になります。あとからコントロールセンターのボタン配置を入れ替えると、入れ替わった別のボタンが押されてしまうためご注意ください。ボタンの位置を変えた場合は、必ず「ボタン位置を再読み込み」を押してください。</string>
+    <string name="cc_float_macro_warning_short">ご注意：Shizuku オフ時にコントロールセンターのボタン配置を入れ替えると別のボタンが押されます。配置を変えたら必ず再読み込みしてください。</string>
+    <string name="cc_float_setup_step1">Step 1：コントロールセンターの1ページ目に「フローティングウィンドウ」を配置する</string>
+    <string name="cc_float_btn_read_internal">Step 2：ボタン位置を読み込む（内部読み取り）</string>
+    <string name="cc_float_btn_read_ocr">代案：OCRで画面から読み取る</string>
+    <string name="cc_float_calibration_title">小窓ボタン位置の記憶（Shizuku オフ用）</string>
+    <string name="cc_float_btn_reload_internal">ボタン位置を再読み込み（配置を変えたとき）</string>
+    <string name="cc_float_btn_reload_ocr">代案：OCRでボタン位置を読み取る（内部読み取りが効かないとき）</string>
+
+    <!-- Task 1: Opt-In High-Quality Online Translation Engine -->
+    <string name="translate_section_engine">翻訳エンジン</string>
+    <string name="translate_engine_offline">オフライン（完全ローカル）</string>
+    <string name="translate_engine_online">オンライン高品質</string>
+    <string name="translate_engine_offline_desc">ダウンロード済みの ML Kit 言語パックを使い、端末内のみで完結して翻訳します。テキストや画像は一切外部送信されません。</string>
+    <string name="translate_engine_online_desc">画面から抽出したテキストのみを送信し、自然で高精度な段落翻訳を行います。通信できない時は自動でオフライン翻訳へフォールバックします。</string>
+    <string name="translate_online_consent_title">オンライン高品質翻訳を有効にしますか？</string>
+    <string name="translate_online_consent_body">• 画面から抽出したテキストのみを翻訳サーバーへ送信します（スクリーンショット画像自体は一切送信しません）。\n• パスワード入力欄や保護された画面（FLAG_SECURE）は自動的に除外されます。\n• いつでも「オフライン（完全ローカル）」に戻すことで、通信を完全に停止できます。\n• オフライン時や通信エラー時は、自動的に端末内のオフライン翻訳へフォールバックします。</string>
+    <string name="translate_online_consent_confirm">同意して有効にする</string>
+    <string name="translate_online_consent_cancel">キャンセル</string>
+
+    <!-- Task 3 & Live Translate Overhaul -->
+    <string name="cc_float_method_node">内部読取</string>
+    <string name="cc_float_method_ocr">OCR</string>
+    <string name="cc_float_method_manual">手動タップ</string>
+    <string name="cc_float_method_auto">自動</string>
+    <string name="cc_float_error_service_disabled">Hinata のユーザー補助サービスがオフです。設定画面から有効にしてください。</string>
+    <string name="cc_float_error_service_not_bound">ユーザー補助サービスが待機状態ではありません。設定で一度オフ→オンにし直してください。</string>
+    <string name="cc_float_action_open_accessibility">設定を開く</string>
+    <string name="cc_float_btn_dont_show_again">了解（今後表示しない）</string>
+    <string name="cc_float_calibration_shizuku_summary">Shizuku オン：直接小窓化（推奨）。Shizuku オフ：記憶したコントロールセンターのタイル位置を自動タップします。</string>
+    <string name="cc_float_saved_coords_format">記憶済み: X %1$d%% · Y %2$d%% (%3$s)</string>
+    <string name="cc_float_saved_coords_unset">記憶位置：未設定</string>
+    <string name="cc_float_btn_reset_coords">リセット</string>
+    <string name="translate_toast_switched_online">オンライン高品質翻訳に切り替えました</string>
+    <string name="translate_toast_switched_offline">オフライン（完全ローカル）翻訳に切り替えました</string>
+    <string name="translate_toast_online_consent_required">オンライン翻訳を使うには、先に画面翻訳設定で同意してください。</string>
+
+    <!-- PART 3: Beginner Visual Guide & Control Center First-Page Animation -->
+    <string name="cc_demo_phase1_caption">1. 画面の右上から下へスワイプしてコントロールセンターを開く</string>
+    <string name="cc_demo_phase2_caption">2. 「フローティングウィンドウ」を1ページ目（左の●）に配置</string>
+    <string name="cc_demo_phase3_caption">3. タイルを並び替えたら必ず「ボタン位置を再読み込み」</string>
+    <string name="cc_demo_tile_floating_short">小窓</string>
+    <string name="cc_demo_page1_label">1ページ目</string>
+    <string name="cc_demo_toggle_show_guide">図解アニメーションと初心者向け説明を見る</string>
+    <string name="cc_demo_toggle_hide_guide">図解ガイドを閉じる</string>
+    <string name="cc_guide_what_is_cc_title">コントロールセンターとは？</string>
+    <string name="cc_guide_what_is_cc_desc">画面の右上から下にスワイプすると開く、Wi-Fiや明るさなどのボタンが並んだ操作パネルのことです。</string>
+    <string name="cc_guide_what_is_page1_title">「1ページ目」とは？</string>
+    <string name="cc_guide_what_is_page1_desc">横にスワイプせずに開いてすぐ見える最初のページのことです。コントロールセンター内の編集（鉛筆）ボタンから「フローティングウィンドウ」を1ページ目へ移動しておいてください。</string>
+    <string name="cc_guide_reorder_caution_title">ボタンを並び替えたときの注意</string>
+    <string name="cc_guide_reorder_caution_desc">Shizuku オフ時は記憶したボタン位置を自動タップする仕組みのため、後からタイルを並び替えた場合は「ボタン位置を再読み込み」を実行してください。（Shizuku オン時はコントロールセンターを使わず直接小窓化できます）</string>
+
+    <!-- PART 4: Strict HyperOS Capability Gating & Diagnostics -->
+    <string name="floating_window_hyperos_or_shizuku_only">この端末でフローティングウィンドウを使うには Shizuku 接続が必要です（HyperOS 専用マクロは非対応）。</string>
+    <string name="floating_window_requires_hyperos_or_shizuku_badge">要Shizuku</string>
+    <string name="floating_window_toggle_restricted_desc">HyperOS 端末、または Shizuku 接続時のみ利用できます。</string>
+    <string name="shizuku_floating_window_non_hyperos_note">この端末のフローティングウィンドウは Shizuku 経由の Android 標準フリーフォームで動作します。利用するには上で Shizuku を接続してください。</string>
+    <string name="diag_os_environment">検出された OS 環境</string>
+    <string name="diag_os_hyperos_full">%1$s（HyperOS フルモード）</string>
+    <string name="diag_os_standard_mode">%1$s（標準 Android モード）</string>
+
+    <!-- One-Tap Translate Button & Bottom Bar During IME -->
+    <string name="translate_section_button_behavior">翻訳ボタンの動作</string>
+    <string name="translate_button_behavior_desc">画面端の翻訳ボタンをタップした時だけ正確に1回翻訳します。常時バックグラウンド処理を行わないため、省電力でちらつきもありません。</string>
+    <string name="translate_toggle_auto_clear_scroll_title">スクロール時に訳文を自動で消去</string>
+    <string name="translate_toggle_auto_clear_scroll_desc">画面をスクロールすると重なった訳文を自動で消し、前の文字が残るズレを防ぎます。</string>
+    <string name="translate_toast_no_text_found">翻訳できるテキストが見つかりませんでした。</string>
+    <string name="label_show_bottom_bar_during_ime">キーボード表示中も下端バーを有効にする</string>
+    <string name="desc_show_bottom_bar_during_ime">キーボード入力中でも画面下端からのジェスチャーを許可します。文字入力中の誤爆を防ぎたい場合はオフにしてください。</string>
+
+    <!-- 4-Layer Safety, Shizuku Auto-Revive & Quick Settings Recovery -->
+    <string name="qs_tile_recovery_label">Hinata 復旧</string>
+    <string name="qs_tile_recovery_subtitle_active">タップで再読込／ナビ復元</string>
+    <string name="qs_tile_recovery_subtitle_inactive">タップで緊急復旧</string>
+    <string name="shortcut_revive_short">ジェスチャー再起動</string>
+    <string name="shortcut_revive_long">ジェスチャーを再起動</string>
+    <string name="shortcut_restore_nav_short">標準ナビを復元</string>
+    <string name="shortcut_restore_nav_long">3ボタン・標準ナビを緊急復元</string>
+    <string name="notification_keep_alive_channel_name">常駐保護（静音）</string>
+    <string name="notification_keep_alive_title">Hinata ジェスチャー保護中</string>
+    <string name="notification_keep_alive_text">裏での強制終了を防いでいます。ボタンから1タップ復旧できます。</string>
+    <string name="notification_action_reload">🔄 再読込</string>
+    <string name="notification_action_restore_nav">🛟 ナビ復元</string>
+    <string name="recovery_toast_revive_success">Hinata を再起動しました</string>
+    <string name="recovery_toast_nav_restored">システムナビゲーションを緊急復元しました</string>
+    <string name="recovery_toast_open_accessibility_manual">ユーザー補助で Hinata を一度オフ→オンにしてください</string>
+    <string name="recovery_toast_open_nav_settings_manual">システムナビゲーション設定を開きました。3ボタンまたはジェスチャーを選択してください</string>
+    <string name="recovery_toast_revive_failed_open_settings">Shizuku での再バインドに失敗しました。ユーザー補助設定を開きます</string>
+    <string name="recovery_toast_nav_restore_failed_open_settings">Shizuku でのナビ復元に失敗しました。システム設定を開きます</string>
+    <string name="recovery_card_title">🛟 万が一止まったときの自動復旧＆緊急脱出</string>
+    <string name="recovery_card_badge">4重セーフティ</string>
+    <string name="recovery_toggle_keep_alive_title">タスクキル防止・保護通知を表示（推奨）</string>
+    <string name="recovery_toggle_keep_alive_desc">HyperOS による強制終了を防ぎ、通知から1タップで再起動や3ボタン復元ができます</string>
+    <string name="recovery_toggle_auto_revive_title">Shizuku で自動蘇生＆停止時にナビを自動復元</string>
+    <string name="recovery_toggle_auto_revive_desc">裏で停止した際に自動で再起動を試み、失敗時は3ボタンを自動復元して操作不能を防ぎます</string>
+    <string name="recovery_button_rebind_now">今すぐジェスチャーを再バインド（再起動）</string>
+    <string name="recovery_qs_tile_tip">💡 コントロールセンター（クイック設定）の編集から『Hinata 復旧』タイルを追加しておくと、どの画面からでも1タップで復活できます。ホーム画面のアイコン長押しからも緊急復元が可能です。</string>
+
+    <!-- Emergency Accessibility Off Escape Notification (ID 4199) -->
+    <string name="notification_emergency_off_channel_name">Hinata 緊急復旧アラート</string>
+    <string name="notification_emergency_off_title">⚠️ Hinata のユーザー補助がオフになりました</string>
+    <string name="notification_emergency_off_text">エッジジェスチャーが停止しています。下のボタンからユーザー補助を再度オンにするか、3ボタンを今すぐ復元できます。</string>
+    <string name="notification_emergency_action_open_accessibility">ユーザー補助を開く</string>
+    <string name="notification_emergency_action_restore_nav">3ボタンを復元</string>
+
+    <!-- Mandatory Onboarding & QS Tile Safety Step -->
+    <string name="onboarding_a11y_mandatory_agree">本アプリの利用には『ユーザー補助（アクセシビリティ）』の常時オンが必須であることに同意します</string>
+    <string name="onboarding_qs_tile_title">🛟 クイックパネルに『Hinata 復旧』を追加（強く推奨）</string>
+    <string name="onboarding_qs_tile_desc">万が一ジェスチャーが効かなくなっても、画面の上から下にスワイプして開くクイックパネル（コントロールセンター）は必ず動きます。そこに『Hinata 復旧』ボタン（タイル）を置いておけば、いつでも1タップで再起動や3ボタン復元ができて詰みません。</string>
+    <string name="onboarding_qs_tile_add_now_button">＋ クイックパネルに『Hinata 復旧』タイルを今すぐ追加する</string>
+    <string name="onboarding_qs_tile_manual_title">手動で追加する場合</string>
+    <string name="onboarding_qs_tile_manual_steps">画面右上から下にスワイプ →『編集（鉛筆マーク）』→『Hinata 復旧』を1ページ目へ追加</string>
+    <string name="onboarding_qs_tile_open_panel_button">クイック設定パネルを開く</string>
+    <string name="onboarding_qs_tile_countdown_button">説明をご確認ください（あと %1$d 秒で進めます）</string>
+    <string name="onboarding_qs_tile_next_button">推奨内容を理解して次へ進む</string>
+    <string name="onboarding_qs_tile_added_toast">『Hinata 復旧』タイルをクイックパネルに追加しました</string>
+    <string name="onboarding_qs_tile_manual_hint_toast">画面上からスワイプして「編集」を開き、『Hinata 復旧』を1ページ目へ追加してください</string>
+
+    <!-- Post-Onboarding Mandatory Accessibility Hard Gate -->
+    <string name="a11y_gate_title">ユーザー補助（アクセシビリティ）がオフのため利用できません</string>
+    <string name="a11y_gate_desc">Hinata のジェスチャーと安全保護機能（落ちたときの3ボタン自動復元など）を動かすには、ユーザー補助をオンにする必要があります。オフのままでは設定変更やジェスチャー機能は使用できません。（※万が一ユーザー補助が切れて操作不能になった場合の責任はユーザーご自身にあります）</string>
+    <string name="a11y_gate_open_accessibility_button">ユーザー補助の設定を開いてオンにする</string>
+    <string name="a11y_gate_shizuku_auto_enable_button">⚡ Shizuku で今すぐユーザー補助を自動オンにする</string>
+    <string name="a11y_gate_emergency_restore_nav_button">🛟 3ボタン・標準ナビゲーションを今すぐ緊急復元する</string>
+    <string name="a11y_gate_add_qs_tile_button">クイックパネルに『Hinata 復旧』タイルを追加する</string>
+</resources>
+
+
+
