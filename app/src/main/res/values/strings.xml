@@ -1,0 +1,826 @@
+<resources>
+    <string name="app_name">Hinata</string>
+    <string name="accessibility_service_label">Hinata Edge Gestures</string>
+    <string name="accessibility_service_description">Navigate smoothly from the left, right, and bottom edges for Back, Home, Recents, Circle to Search, and Quick Menu. Screen content is never read.</string>
+    <string name="toast_circle_to_search_fallback">Set Google as your default digital assistant</string>
+
+    <!-- Navigation tabs (5 tabs, concise single-line) -->
+    <string name="tab_zones">Edges</string>
+    <string name="tab_arc">Menu</string>
+    <string name="tab_actions">Actions</string>
+    <string name="tab_blacklist">Apps</string>
+    <string name="tab_guide">HyperOS</string>
+
+    <!-- Service status -->
+    <string name="status_service_active">Active</string>
+    <string name="status_service_inactive">Inactive</string>
+    <string name="status_enable_now">Enable</string>
+
+    <!-- Edges & Appearance -->
+    <string name="section_trigger_zones">Edge Area</string>
+    <string name="section_appearance">Appearance</string>
+    <string name="section_bottom_cts">Bottom Bar &amp; Circle to Search</string>
+    <string name="label_left_edge">Left Edge</string>
+    <string name="label_right_edge">Right Edge</string>
+    <string name="label_bottom_bar">Bottom Bar</string>
+    <string name="label_bottom_long_press">Hold Bottom Bar</string>
+    <string name="label_bottom_long_press_duration">Hold Duration</string>
+    <string name="label_bottom_long_press_action">Hold Action</string>
+    <string name="button_test_cts">Try Circle to Search</string>
+    <string name="button_assistant_settings">Default Assistant Settings</string>
+    <string name="label_edge_width">Edge Width</string>
+    <string name="label_edge_height">Edge Height</string>
+    <string name="label_edge_offset">Bottom Offset</string>
+    <string name="label_bottom_width">Bottom Bar Width</string>
+    <string name="label_swipe_threshold">Swipe Distance</string>
+    <string name="label_hold_duration">Hold Duration</string>
+    <string name="label_diagonal_angle">Diagonal Angle</string>
+    <string name="label_feedback_style">Indicator Style</string>
+    <string name="label_visual_theme">Indicator Theme</string>
+    <string name="label_feedback_alpha">Indicator Opacity</string>
+    <string name="label_edge_guide_alpha">Edge Handle Opacity</string>
+    <string name="label_bottom_pill_alpha">Bottom Bar Opacity</string>
+    <string name="label_haptic_strength">Haptic Feedback</string>
+    <string name="label_reset_defaults">Reset to Defaults</string>
+    <string name="preview_sandbox_hint">Drag from any edge to preview gestures</string>
+    <string name="preview_stage2_guideline_hint">Swipe past the dashed line to trigger the second action</string>
+    <string name="metric_width_short">Width %1$ddp</string>
+    <string name="metric_opacity_short">Opacity %1$d%%</string>
+    <string name="metric_side_short">Side %1$d%%</string>
+    <string name="metric_bottom_short">Bottom %1$d%%</string>
+    <string name="metric_range_short">%1$d%%–%2$d%%</string>
+    <string name="preview_deep_side_focus">Side Distance · %1$d%%</string>
+    <string name="preview_deep_bottom_focus">Bottom Distance · %1$d%%</string>
+    <string name="preview_deep_action_prefix">Deep Swipe: %1$s</string>
+
+    <!-- Deep Swipe -->
+    <string name="section_long_swipe">Deep Swipe</string>
+    <string name="desc_long_swipe">Swipe further from an edge to trigger a second action right away.</string>
+    <string name="label_secondary_trigger_mode">Trigger Mode</string>
+    <string name="mode_distance">Distance</string>
+    <string name="mode_hold">Hold</string>
+    <string name="mode_both">Both</string>
+    <string name="label_horizontal_long_swipe">Side Distance</string>
+    <string name="label_bottom_long_swipe">Bottom Distance</string>
+
+    <!-- Quick Menu -->
+    <string name="arc_title">Quick Menu</string>
+    <string name="arc_subtitle">Open a radial menu from the edge and slide to pick an action in one motion.</string>
+    <string name="arc_section_trigger_method">How to Open</string>
+    <string name="arc_method_dedicated_title">Dedicated Edge Area</string>
+    <string name="arc_method_dedicated_badge">Recommended</string>
+    <string name="arc_method_dedicated_desc">Pull inward from a separate edge area to open instantly without interfering with Back.</string>
+    <string name="arc_method_edge_hold_title">Touch &amp; Hold Edge</string>
+    <string name="arc_method_edge_hold_badge">No Extra Area</string>
+    <string name="arc_method_edge_hold_desc">Rest your finger on the edge briefly to open. Quick swipes still work normally.</string>
+    <string name="arc_method_pull_return_title">Pull &amp; Return</string>
+    <string name="arc_method_pull_return_badge">No Extra Area</string>
+    <string name="arc_method_pull_return_desc">Pull slightly inward and return toward the edge to open, then slide to a slot.</string>
+    <string name="arc_method_gesture_title">Assign to Gesture</string>
+    <string name="arc_method_gesture_badge">Manual</string>
+    <string name="arc_method_gesture_desc">Assign Quick Menu to any swipe or hold gesture in the Actions tab.</string>
+    <string name="arc_zone_side_label">Active Sides</string>
+    <string name="arc_zone_side_both">Both</string>
+    <string name="arc_zone_side_left">Left</string>
+    <string name="arc_zone_side_right">Right</string>
+    <string name="arc_zone_height_label">Area Height</string>
+    <string name="arc_zone_offset_label">Bottom Offset</string>
+    <string name="arc_zone_legend_main">Main Edge</string>
+    <string name="arc_zone_legend_arc">Quick Menu</string>
+    <string name="arc_zone_overlap_hint">Where areas overlap, Quick Menu takes priority. Adjust offset to separate them.</string>
+    <string name="menu_zone_range_format">%1$d%%–%2$d%%</string>
+    <string name="menu_zone_bottom_label">Bottom 0%</string>
+    <string name="menu_zone_top_label">Top 100%</string>
+    <string name="arc_edge_hold_ms_label">Hold Duration</string>
+    <string name="arc_pull_return_step1">1. Pull slightly</string>
+    <string name="arc_pull_return_step2">2. Return to edge</string>
+    <string name="arc_pull_return_step3">3. Slide to pick</string>
+    <string name="arc_free_long_swipe_title">Free Up Side Deep Swipe</string>
+    <string name="arc_free_long_swipe_desc">Quick Menu is also assigned to Side Deep Swipe. Switch it to Previous App for faster multitasking.</string>
+    <string name="arc_free_long_swipe_button">Set Side Deep Swipe to Previous App</string>
+    <string name="arc_section_geometry">Menu Layout</string>
+    <string name="arc_section_slots">Menu Slots</string>
+    <string name="arc_label_slot_count">Number of Slots</string>
+    <string name="arc_slot_count_format">%1$d</string>
+    <string name="arc_label_radius">Menu Size</string>
+    <string name="arc_label_dim_alpha">Background Dim</string>
+    <string name="arc_preview_hint">Drag inward from either side to test Quick Menu</string>
+    <string name="menu_preview_metrics">Size %1$ddp · Dim %2$d%%</string>
+    <string name="arc_slot_number">Slot %1$d</string>
+    <string name="arc_deadzone_cancel">Release near edge to cancel</string>
+    <string name="arc_trigger_active_title">Quick Menu Assigned</string>
+    <string name="arc_trigger_unassigned_title">No Gesture Assigned</string>
+    <string name="arc_trigger_unassigned_desc">Assign Quick Menu to Side Deep Swipe to open it quickly from either edge.</string>
+    <string name="arc_trigger_assign_button">Assign to Side Deep Swipe</string>
+    <string name="arc_assigned_side_short">Side Swipe</string>
+    <string name="arc_assigned_side_deep_distance">Side Deep Swipe (%1$d%%)</string>
+    <string name="arc_assigned_side_deep_hold">Side Deep Swipe (%1$dms)</string>
+    <string name="arc_assigned_side_deep_both">Side Deep Swipe (%1$d%% / %2$dms)</string>
+    <string name="arc_assigned_diag_up">Swipe Up-Inward</string>
+    <string name="arc_assigned_diag_down">Swipe Down-Inward</string>
+    <string name="arc_assigned_bottom_up">Bottom Swipe Up</string>
+    <string name="arc_assigned_bottom_deep">Bottom Deep Swipe</string>
+    <string name="arc_assigned_bottom_hold">Hold Bottom Bar</string>
+
+    <!-- Actions & Task Switching -->
+    <string name="section_side_actions">Side Edge Gestures</string>
+    <string name="section_bottom_actions">Bottom Bar Gestures</string>
+    <string name="section_task_switching">App Switching</string>
+    <string name="section_smart_avoidance">Smart Behavior</string>
+    <string name="gesture_horizontal">Short Swipe</string>
+    <string name="gesture_horizontal_hold">Deep Swipe</string>
+    <string name="gesture_diagonal_up">Swipe Up-Inward</string>
+    <string name="gesture_diagonal_down">Swipe Down-Inward</string>
+    <string name="gesture_bottom_up">Short Swipe Up</string>
+    <string name="gesture_bottom_hold">Deep Swipe Up</string>
+    <string name="gesture_bottom_long_press">Hold Bottom Bar</string>
+    <string name="label_hyperos_recents_compat">HyperOS Recents Fix</string>
+    <string name="desc_hyperos_recents_compat">Stabilizes Overview when using a third-party launcher on HyperOS devices.</string>
+    <string name="label_hyperos_recents_delay">Switch Timing</string>
+    <string name="label_usage_stats_permission">Usage Access (Optional)</string>
+    <string name="desc_usage_stats_permission">Improves Recent Apps right after a restart. Regular tracking works without it.</string>
+    <string name="status_usage_granted">Allowed</string>
+    <string name="status_usage_optional">Optional</string>
+    <string name="button_open_usage_access">Open Usage Access</string>
+    <string name="button_test_recent_history">Preview Recent Apps</string>
+    <string name="dialog_recent_history_title">Recent Apps</string>
+    <string name="dialog_recent_history_subtitle">Tap an app to test instant switching</string>
+    <string name="recent_history_empty">No recent apps yet. Open one or two apps and they will appear here automatically.</string>
+    <string name="recent_history_prev_badge">Previous</string>
+    <string name="label_ime_avoidance">When Keyboard Is Open</string>
+    <string name="label_landscape_mode">In Landscape Mode</string>
+    <string name="dialog_pick_action_title">Choose Action</string>
+    <string name="picker_tab_system">Actions</string>
+    <string name="picker_tab_apps">Apps</string>
+
+    <!-- Action names (Official Glossary) -->
+    <string name="action_back">Back</string>
+    <string name="action_home">Home</string>
+    <string name="action_recents">Overview (Recents)</string>
+    <string name="action_previous_app">Previous App</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="action_quick_settings">Quick Settings</string>
+    <string name="action_lock_screen">Lock Screen</string>
+    <string name="action_screenshot">Screenshot</string>
+    <string name="action_split_screen">Split Screen</string>
+    <string name="action_circle_to_search">Circle to Search</string>
+    <string name="action_open_quick_menu">Quick Menu</string>
+    <string name="action_open_recent_switcher">Recent Apps</string>
+    <string name="action_toggle_torch">Flashlight</string>
+    <string name="action_launch_app">Open App</string>
+    <string name="action_none">None</string>
+
+    <!-- Styles / themes / haptics / avoidance -->
+    <string name="style_bezier">Droplet</string>
+    <string name="style_minimal">Minimal</string>
+    <string name="style_hidden">Hidden</string>
+    <string name="theme_auto">Auto</string>
+    <string name="theme_dark_glass">Dark</string>
+    <string name="theme_light_glass">Light</string>
+    <string name="theme_material_you">Dynamic</string>
+    <string name="haptic_off">Off</string>
+    <string name="haptic_light">Light</string>
+    <string name="haptic_medium">Medium</string>
+    <string name="haptic_strong">Strong</string>
+    <string name="ime_shift_up">Move Above</string>
+    <string name="ime_disable">Pause</string>
+    <string name="ime_none">Keep Active</string>
+    <string name="landscape_double_swipe">Swipe Twice</string>
+    <string name="landscape_disable">Pause</string>
+    <string name="landscape_keep">Keep Active</string>
+
+    <!-- Excluded Apps -->
+    <string name="blacklist_title">Excluded Apps</string>
+    <string name="blacklist_subtitle">Pause edge gestures automatically while these apps are open.</string>
+    <string name="blacklist_search_placeholder">Search apps</string>
+    <string name="blacklist_empty">No matching apps</string>
+    <string name="blacklist_selected_count">%1$d excluded</string>
+
+    <!-- HyperOS Setup Guide -->
+    <string name="guide_title">HyperOS Setup</string>
+    <string name="guide_subtitle">Recommended settings to keep Hinata running reliably in the background.</string>
+    <string name="guide_step1_title">1. Enable Accessibility</string>
+    <string name="guide_step1_desc">Open Downloaded Apps and turn on Hinata. Screen content is never read.</string>
+    <string name="guide_step1_action">Accessibility Settings</string>
+    <string name="guide_step2_title">2. Set Battery to Unrestricted</string>
+    <string name="guide_step2_desc">Prevents battery optimization from stopping gestures in the background.</string>
+    <string name="guide_step2_action">Battery Settings</string>
+    <string name="guide_step3_title">3. Allow Autostart</string>
+    <string name="guide_step3_desc">Lets Hinata resume automatically after restarting your phone.</string>
+    <string name="guide_step3_action">Autostart Settings</string>
+    <string name="guide_step_done">Done</string>
+    <string name="guide_step_pending">Not Set</string>
+    <string name="guide_architecture_title">System Status</string>
+
+    <!-- General Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_language">Language</string>
+    <string name="settings_language_label">App Language</string>
+    <string name="settings_language_sheet_title">Choose Language</string>
+    <string name="lang_system_default">System Default</string>
+    <string name="settings_section_appearance">Theme</string>
+    <string name="settings_theme_mode">Color Theme</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_dynamic_color">Material You</string>
+    <string name="settings_dynamic_color_desc">Match colors to your wallpaper on Android 12 and newer.</string>
+    <string name="settings_dynamic_color_unavailable">Requires Android 12 or newer.</string>
+    <string name="settings_section_privacy">Privacy &amp; Security</string>
+    <string name="settings_privacy_title">100% On-Device Processing</string>
+    <string name="settings_privacy_desc">Zero tracking, zero ads, and zero screenshot uploads. Hinata runs locally by default; HTTPS network access is limited to Google ML Kit offline model delivery and management, or online translation when you explicitly opt in (text only).</string>
+    <string name="settings_section_diagnostics">System Diagnostics</string>
+    <string name="settings_diagnostics_subtitle">Service status, process isolation, and permissions</string>
+    <string name="diag_settings_process">Settings Process</string>
+    <string name="diag_settings_process_value">Isolated (:settings · PID %1$d)</string>
+    <string name="diag_resident_process">Gesture Service</string>
+    <string name="diag_resident_running">Running (PID %1$d)</string>
+    <string name="diag_resident_standby">Standby</string>
+    <string name="diag_accessibility">Accessibility</string>
+    <string name="diag_usage_access">Usage Access</string>
+    <string name="diag_ime_state">Keyboard</string>
+    <string name="diag_ime_visible">Visible</string>
+    <string name="diag_ime_hidden">Hidden</string>
+    <string name="diag_orientation">Orientation</string>
+    <string name="diag_orientation_landscape">Landscape</string>
+    <string name="diag_orientation_portrait">Portrait</string>
+    <string name="settings_section_about">About</string>
+    <string name="settings_version_label">Version</string>
+    <string name="settings_licenses_label">Open-Source Licenses</string>
+    <string name="settings_licenses_desc">GNU General Public License v3.0 (GPLv3) · Jetpack Compose, AndroidX, Kotlin, Shizuku API, Inter, Plus Jakarta Sans, JetBrains Mono</string>
+    <string name="settings_licenses_dialog_title">Open-Source Licenses</string>
+    <string name="settings_licenses_dialog_body">Hinata — GNU General Public License v3.0 (GPLv3) (Open Source)\nCopyright (C) 2026 rengix-x\n\nOpen-Source &amp; Third-Party Credits:\n• Shizuku API &amp; Provider (RikkaApps) — Apache License 2.0\n• AndroidHiddenApiBypass (LSPosed) — Apache License 2.0\n• Google ML Kit (Text Recognition v2, Language ID, Translation) — Google APIs Terms of Service\n• AndroidX, Jetpack Compose, Material 3 &amp; Kotlin — Apache License 2.0\n• Inter, Plus Jakarta Sans &amp; JetBrains Mono — SIL Open Font License 1.1\n\nDisclaimer: Hinata is an independent open-source (GPLv3) project by rengix-x and is not affiliated with, endorsed by, or associated with Google LLC, Apple Inc., Xiaomi Corporation (HyperOS / POCO), Samsung Electronics, OPPO, or vivo.</string>
+    <string name="button_close">Close</string>
+
+    <!-- Shizuku 3-button navigation bar control -->
+    <string name="shizuku_card_title">Hide 3-Button Navigation (Shizuku)</string>
+    <string name="shizuku_card_subtitle">Hide the 3-button bar on HyperOS with third-party launchers — no PC needed.</string>
+    <string name="shizuku_status_not_installed">Not Installed</string>
+    <string name="shizuku_status_stopped">Stopped</string>
+    <string name="shizuku_status_permission_required">Permission Needed</string>
+    <string name="shizuku_status_connected">Connected</string>
+    <string name="shizuku_action_open_app">Open Shizuku</string>
+    <string name="shizuku_action_grant_permission">Grant Shizuku Permission</string>
+    <string name="shizuku_action_setup_guide">How to Set Up Shizuku</string>
+    <string name="shizuku_button_hide_navbar">Hide 3-Button Navigation</string>
+    <string name="shizuku_button_restore_navbar">Restore 3-Button Navigation</string>
+    <string name="shizuku_toggle_auto_hide_title">Auto-Hide on Reset</string>
+    <string name="shizuku_toggle_auto_hide_desc">Automatically hides the bar again if HyperOS restores it after unlock.</string>
+    <string name="shizuku_toggle_hide_gesture_line_title">Also Hide Bottom Indicator Line</string>
+    <string name="shizuku_toggle_hide_gesture_line_desc">Removes the thin gesture pill line at the bottom edge when hiding.</string>
+    <string name="shizuku_reboot_note">After rebooting your phone, start Shizuku once before tapping the button.</string>
+    <string name="shizuku_guide_dialog_title">Set Up Shizuku</string>
+    <string name="shizuku_guide_dialog_body">1. Install the official Shizuku app from Google Play or GitHub.\n2. Open Shizuku and start it via Wireless Debugging (no PC required).\n3. Return here, grant permission, and tap Hide 3-Button Navigation.</string>
+    <string name="shizuku_snackbar_hide_success">3-button navigation hidden.</string>
+    <string name="shizuku_snackbar_restore_success">3-button navigation restored.</string>
+    <string name="shizuku_snackbar_failed">Could not apply navigation bar setting.</string>
+    <string name="shizuku_snackbar_failed_detail">Could not apply setting (%1$s).</string>
+    <string name="shizuku_snackbar_not_ready">Start Shizuku and grant permission first.</string>
+    <string name="shizuku_snackbar_permission_granted">Shizuku connected.</string>
+    <string name="shizuku_snackbar_permission_denied">Shizuku permission was denied.</string>
+    <string name="shizuku_snackbar_open_failed">Could not open Shizuku.</string>
+    <string name="shizuku_auto_hide_disabled_toast">Hinata: Auto-hide paused after repeated Shizuku errors.</string>
+
+    <!-- Accessibility content descriptions -->
+    <string name="cd_open_settings">Open Settings</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_change">Change</string>
+    <string name="cd_selected">Selected</string>
+    <string name="cd_clear_search">Clear search</string>
+    <string name="cd_refresh_status">Refresh status</string>
+    <string name="cd_move_up">Move up</string>
+    <string name="cd_move_down">Move down</string>
+    <string name="cd_test_launch">Open app</string>
+    <string name="cd_expand">Expand</string>
+    <string name="cd_collapse">Collapse</string>
+    <!-- 3-stage tuning, sticky preview & custom GIF/image feedback -->
+    <string name="preview_live_title">Live Preview</string>
+    <string name="preview_side_stage2_focus">Side Stage 2 · %1$d%%</string>
+    <string name="preview_side_stage3_focus">Side Stage 3 · %1$d%%</string>
+    <string name="preview_bottom_stage2_focus">Bottom Stage 2 · %1$d%%</string>
+    <string name="preview_bottom_stage3_focus">Bottom Stage 3 · %1$d%%</string>
+    <string name="preview_stage3_action_prefix">Stage 3: %1$s</string>
+    <string name="preview_sticky_hint">Drag any edge inside the mockup to test Stage 1–3 &amp; bottom pill lift.</string>
+    <string name="metric_side_s2_short">S2 %1$d%%</string>
+    <string name="metric_side_s3_short">S3 %1$d%%</string>
+    <string name="metric_side_hold_short">Side %1$dms</string>
+    <string name="metric_bottom_s2_short">B2 %1$d%%</string>
+    <string name="metric_bottom_s3_short">B3 %1$d%%</string>
+    <string name="metric_bottom_hold_short">Btm %1$dms</string>
+
+    <string name="section_side_edge_tuning">Side Edges (Left &amp; Right)</string>
+    <string name="label_side_trigger_mode">Side Edge Trigger Mode</string>
+    <string name="label_side_stage2_distance">Stage 2 Distance (Deep Swipe)</string>
+    <string name="label_side_stage3_distance">Stage 3 Distance (Extra Deep)</string>
+    <string name="label_side_stage2_hold">Stage 2 Hold Duration</string>
+    <string name="label_side_stage3_hold">Stage 3 Hold Duration</string>
+
+    <string name="label_bottom_trigger_mode">Bottom Edge Trigger Mode</string>
+    <string name="label_bottom_stage2_distance">Bottom Stage 2 Distance</string>
+    <string name="label_bottom_stage3_distance">Bottom Stage 3 Distance</string>
+    <string name="label_bottom_stage2_hold">Bottom Stage 2 Hold Duration</string>
+    <string name="label_bottom_stage3_hold">Bottom Stage 3 Hold Duration</string>
+    <string name="hint_stage3_unassigned">Stage 3 stays disabled (smart 2-stage) until you assign a Stage 3 action in the Actions tab.</string>
+
+    <string name="gesture_left_stage3">Left Edge Stage 3 (Extra Deep)</string>
+    <string name="gesture_right_stage3">Right Edge Stage 3 (Extra Deep)</string>
+    <string name="gesture_bottom_stage3">Bottom Stage 3 (Extra Deep)</string>
+
+    <string name="section_custom_media">Side-Edge Visuals (Custom GIF / Image)</string>
+    <string name="desc_custom_media">Use a transparent GIF, Animated WebP, or PNG as your side-edge gesture indicator. Zero CPU when idle.</string>
+    <string name="label_edge_visual_style">Visual Style</string>
+    <string name="visual_style_default">Default</string>
+    <string name="visual_style_custom_only">GIF / Image</string>
+    <string name="visual_style_droplet_media">Droplet + Media</string>
+    <string name="button_pick_custom_media">Choose GIF / Image</string>
+    <string name="button_change_custom_media">Change GIF / Image</string>
+    <string name="button_reset_custom_media">Reset to Default</string>
+    <string name="hint_custom_media_fallback">Choose a GIF, WebP, or PNG above to replace the default droplet.</string>
+    <string name="label_custom_media_size">Display Size</string>
+    <string name="label_custom_media_alpha">Opacity</string>
+    <string name="label_custom_media_mirror_right">Mirror on Right Edge</string>
+    <string name="desc_custom_media_mirror_right">Flips the GIF/image horizontally when swiping from the right edge.</string>
+    <string name="custom_media_saved">Custom edge media applied.</string>
+    <string name="custom_media_error_too_large">File is too large (max 15 MB).</string>
+    <string name="custom_media_error_invalid">Unsupported or unreadable image format.</string>
+    <string name="custom_media_error_io">Could not load the selected file.</string>
+    <string name="custom_media_reset_done">Reverted to default glass droplet.</string>
+    <string name="cd_custom_media_empty">No custom image selected</string>
+
+    <!-- Floating Window Shortcuts -->
+    <string name="action_float_current_app">Float Current App</string>
+    <string name="action_launch_app_floating">Open App in Floating Window</string>
+    <string name="action_launch_app_floating_format">%1$s (Floating)</string>
+    <string name="floating_window_toggle_title">Open in Floating Window</string>
+    <string name="floating_window_toggle_desc">Launches the selected app as a resizable freeform mini window.</string>
+    <string name="floating_window_badge_short">Floating</string>
+    <string name="floating_window_need_shizuku">Start Shizuku to use Floating Window shortcuts.</string>
+    <string name="floating_window_cannot_float_current">Current screen cannot be opened as a floating window.</string>
+    <string name="shizuku_floating_window_note">Connecting Shizuku also powers reliable Floating Window shortcuts from gestures and the Quick Menu.</string>
+
+    <!-- First-Launch 30-Second Onboarding -->
+    <string name="onboarding_language_chip">Language</string>
+    <string name="onboarding_step1_tagline">Effortless one-handed control from every screen edge.</string>
+    <string name="onboarding_privacy_title">100% On-Device · Private by Design</string>
+    <string name="onboarding_privacy_desc">Zero tracking, zero ads, and zero screenshot uploads. Hinata runs locally by default; HTTPS network access is limited to Google ML Kit offline model delivery and management, or online translation when you explicitly opt in (text only).</string>
+    <string name="onboarding_button_start">Get Started</string>
+    <string name="onboarding_step2_title">Enable Edge Gestures</string>
+    <string name="onboarding_step2_desc">Turn on Hinata in Accessibility settings so swipes from screen edges can trigger Back, Home, and shortcuts.</string>
+    <string name="onboarding_step2_status_enabled">Enabled</string>
+    <string name="onboarding_step2_status_waiting">Not enabled yet</string>
+    <string name="onboarding_step2_open_settings">Open Accessibility Settings</string>
+    <string name="onboarding_button_next">Next</string>
+    <string name="onboarding_button_skip">Skip for now</string>
+    <string name="onboarding_step3_title">You\'re Ready</string>
+    <string name="onboarding_step3_try_hint">All set! Swipe inward from either screen edge to try it right now.</string>
+    <string name="onboarding_step3_battery_title">Unrestricted Battery (Recommended)</string>
+    <string name="onboarding_step3_battery_desc">Prevents HyperOS from pausing gestures in the background. You can skip this anytime.</string>
+    <string name="onboarding_step3_battery_done">Battery set to Unrestricted</string>
+    <string name="onboarding_button_finish">Go to Settings</string>
+    <string name="settings_replay_onboarding_title">View Intro Guide Again</string>
+    <string name="settings_replay_onboarding_desc">Revisit the quick 3-step setup walkthrough</string>
+
+    <!-- Prism Glass, Rotary Quick Menu, Shortcuts & Link Actions, Bottom Bar Geometry -->
+    <string name="action_launch_shortcut">App Shortcut</string>
+    <string name="action_open_url">Open Link</string>
+    <string name="toast_url_open_failed">Could not open this link.</string>
+    <string name="toast_shortcut_launch_failed">Could not launch this shortcut.</string>
+
+    <string name="tab_shortcuts">Shortcuts</string>
+    <string name="tab_link">Link</string>
+    <string name="label_url_input">URL</string>
+    <string name="hint_url_input">https://example.com</string>
+    <string name="label_custom_name_optional">Custom Name (Optional)</string>
+    <string name="button_test_link">Test Link</string>
+    <string name="button_save_link">Save</string>
+    <string name="search_shortcuts_hint">Search shortcuts or apps…</string>
+    <string name="section_app_shortcuts">App Shortcuts</string>
+    <string name="section_create_shortcut_apps">Create Shortcut from App</string>
+    <string name="empty_shortcuts_found">No matching shortcuts found.</string>
+    <string name="shortcut_create_failed">Could not create shortcut.</string>
+
+    <string name="label_liquid_glass">Prism Glass</string>
+    <string name="desc_liquid_glass">Real-time optical refraction &amp; frosted glass on Android 13+. Instant 1-tap toggle.</string>
+    <string name="desc_liquid_glass_unsupported">Requires Android 13 or higher.</string>
+    <string name="label_liquid_glass_refraction">Refraction Strength</string>
+
+    <string name="button_add_slot">Add Slot</string>
+    <string name="label_slot_count_ratio">%1$d / %2$d</string>
+    <string name="cd_delete_slot">Delete slot</string>
+    <string name="hint_quick_menu_rotary">7+ slots active: slide past the top or bottom edge of the arc to scroll smoothly.</string>
+
+    <string name="label_bottom_height">Bottom Bar Height</string>
+    <string name="label_bottom_offset">Bottom Margin</string>
+    <string name="label_bottom_horizontal_offset">Bottom Horizontal Position</string>
+    <string name="button_center_reset">Center</string>
+
+    <string name="arc_section_feel_boundary">Feel &amp; Return Boundary</string>
+    <string name="arc_retreat_mode_label">Lower-Stage Return Boundary</string>
+    <string name="arc_retreat_mode_radial">Arc</string>
+    <string name="arc_retreat_mode_edge">Edge</string>
+    <string name="arc_retreat_mode_custom">Custom</string>
+    <string name="arc_retreat_desc_radial">Returns only when sliding inward toward the origin. Zero misfires on top/bottom slots or rotary scrolling.</string>
+    <string name="arc_retreat_desc_edge">Returns only when entering the inner edge dead-zone. Maximum protection for wide arc gestures.</string>
+    <string name="arc_retreat_desc_custom">Returns when pulling horizontally past your custom line, with built-in wide-angle arc protection.</string>
+    <string name="arc_label_retreat_radial">Return Arc Size</string>
+    <string name="arc_label_retreat_custom">Custom Return Line</string>
+    <string name="arc_label_dead_zone">Cancel Dead-Zone</string>
+    <string name="arc_label_rotary_speed">Rotary Scroll Speed</string>
+
+    <string name="button_watch_animation">Watch animation</string>
+    <string name="demo_sheet_guide_dedicated">Swipe inward from the highlighted side area to open the fan menu instantly, then slide to pick an item.</string>
+    <string name="demo_sheet_guide_edge_hold">Touch and hold on the screen edge until the ring fills, then slide out to choose a slot.</string>
+    <string name="demo_sheet_guide_pull_return">Swipe inward past the first stage and U-turn back toward the edge to pop open the fan menu.</string>
+    <string name="demo_sheet_guide_gesture">Pull inward from the normal edge area to reach Stage 2 and expand the fan menu seamlessly.</string>
+    <string name="demo_badge_instant_0ms">Instant 0 ms</string>
+    <string name="demo_badge_hold_ms">Hold %1$d ms</string>
+    <string name="demo_badge_uturn">Pull &amp; U-turn</string>
+    <string name="demo_badge_distance_pct">Distance %1$d%%</string>
+    <string name="demo_retreat_preview_title">Live feel preview</string>
+    <string name="demo_badge_arc_safe">Arc safe</string>
+    <string name="demo_badge_rotary_speed">Scroll %1$d%%</string>
+    <string name="demo_badge_retreat_demo">Pull back to return</string>
+    <string name="demo_badge_returned_previous">Returned to previous action</string>
+    <string name="demo_badge_bottom_long_press">Long-press</string>
+
+    <!-- Common Badges & Actions -->
+    <string name="badge_beta">Beta</string>
+    <string name="button_cancel">Cancel</string>
+
+    <!-- App-Wide Prism Glass UI -->
+
+    <!-- HyperOS Second Space Trick & Emergency Recovery -->
+    <string name="guide_second_space_title">Second Space 3-Button Hide Trick</string>
+    <string name="guide_second_space_badge">No PC · Survives Reboot</string>
+    <string name="guide_second_space_desc">On many HyperOS devices, creating a Second Space lets you switch to full-screen gestures while keeping a third-party launcher in your Main Space.</string>
+    <string name="guide_second_space_step1">Open Settings → Additional settings → Second Space and create a Second Space.</string>
+    <string name="guide_second_space_step2">Inside Second Space, set the stock system launcher as default and enable Full-Screen Gestures.</string>
+    <string name="guide_second_space_step3">Switch back to Main Space; the 3-button bar often stays hidden even with your third-party launcher.</string>
+    <string name="guide_second_space_step4">Behavior varies by HyperOS version—if the bar returns after an update, use the Shizuku toggle above.</string>
+    <string name="guide_emergency_badge">Safety</string>
+    <string name="guide_emergency_settings_title">Emergency Recovery #1: Restore 3-Button Bar in Settings</string>
+    <string name="guide_emergency_settings_desc">If gestures ever stop responding while the 3-button bar is hidden, you can always re-enable 3-button navigation directly from System Settings.</string>
+    <string name="guide_emergency_settings_path">Settings → Home screen → System navigation → Buttons</string>
+    <string name="guide_emergency_safemode_title">Emergency Recovery #2: Android Safe Mode</string>
+    <string name="guide_emergency_safemode_desc">Safe Mode temporarily disables all third-party accessibility services and launchers so you can safely restore normal navigation.</string>
+    <string name="guide_emergency_safemode_step1">Power off your phone (or hold the Power button until it restarts).</string>
+    <string name="guide_emergency_safemode_step2">As soon as the Xiaomi / HyperOS logo appears, press and hold Volume Down until the lock screen loads.</string>
+    <string name="guide_emergency_safemode_step3">Once "Safe mode" appears at the bottom-left, restore 3-button navigation or disable Hinata, then reboot normally.</string>
+
+    <!-- 5-Step Interactive Onboarding -->
+    <string name="onboarding_disclaimer_title">⚠️ Important Warning Before Starting (Lockout Risk &amp; Self-Responsibility)</string>
+    <string name="onboarding_disclaimer_body">Hinata requires Android Accessibility to remain ON at all times to control edge navigation. If system navigation (such as 3-button controls) is hidden and Hinata is stopped or Accessibility is turned off due to OS battery savers, memory cleanup, or bugs, you may lose Back/Home controls and face a navigation lockout. Although Hinata includes automatic recovery and Quick Panel escape tools, the developer assumes zero liability for any stoppage, lockout, or device issue — you use this app strictly at your own risk.</string>
+    <string name="onboarding_disclaimer_agree">I understand the risk of losing navigation if the app stops, and I agree to use Hinata entirely at my own responsibility even if it disconnects or stops working</string>
+    <string name="onboarding_button_agree_start">Agree &amp; Start</string>
+    <string name="onboarding_sandbox_title">Try Gestures Right Here</string>
+    <string name="onboarding_sandbox_desc">Swipe inside the preview phone below—no permissions needed yet.</string>
+    <string name="onboarding_sandbox_tab_side">Side Edge</string>
+    <string name="onboarding_sandbox_tab_menu">Quick Menu</string>
+    <string name="onboarding_sandbox_tab_bottom">Bottom Bar</string>
+    <string name="onboarding_sandbox_side_hint">Swipe inward from the left or right edge</string>
+    <string name="onboarding_sandbox_menu_hint">Pull from either side and glide along the fan arc</string>
+    <string name="onboarding_sandbox_bottom_hint">Swipe up from the bottom pill, or touch &amp; hold it</string>
+    <string name="onboarding_sandbox_stage1">Stage 1 · Back</string>
+    <string name="onboarding_sandbox_stage2">Stage 2 · Previous App</string>
+    <string name="onboarding_sandbox_stage3">Stage 3 · Screenshot</string>
+    <string name="onboarding_sandbox_menu_selected">Quick Menu · %1$s</string>
+    <string name="onboarding_sandbox_bottom_home">Short Lift · Home</string>
+    <string name="onboarding_sandbox_bottom_recents">Deep Lift · Overview</string>
+    <string name="onboarding_sandbox_bottom_cts">Hold Shimmer · Circle to Search</string>
+    <string name="onboarding_shizuku_title">Hide 3-Button Bar (Optional)</string>
+    <string name="onboarding_shizuku_desc">To hide HyperOS\'s 3-button bar with third-party launchers, you can pair with the free Shizuku app—or check the HyperOS tab later for the Second Space trick.</string>
+    <string name="onboarding_shizuku_connected">Shizuku Connected</string>
+    <string name="onboarding_shizuku_not_connected">Not Connected (Optional)</string>
+    <string name="onboarding_shizuku_return_hint">Links open in your browser or store. Status refreshes automatically when you return.</string>
+    <string name="onboarding_shizuku_link_play">Get Shizuku on Google Play</string>
+    <string name="onboarding_shizuku_link_github">Download from GitHub Releases</string>
+    <string name="onboarding_shizuku_link_fdroid">F-Droid / IzzyOnDroid</string>
+    <string name="onboarding_shizuku_link_apkmirror">APKMirror</string>
+    <string name="onboarding_button_try_ab_wizard">Try Beginner Auto-Tune (Beta)</string>
+    <string name="onboarding_button_start_now">Start Using Now</string>
+
+    <!-- Beginner A/B Auto-Tune Wizard (Beta) -->
+    <string name="ab_wizard_entry_title">Beginner A/B Auto-Tune</string>
+    <string name="ab_wizard_entry_desc">Pick features and compare A vs B interactively to auto-calibrate your ideal edge feel.</string>
+    <string name="ab_wizard_title">Beginner A/B Auto-Tune</string>
+    <string name="ab_wizard_apply_button">Apply My Settings</string>
+    <string name="ab_step_features_title">Which features do you want?</string>
+    <string name="ab_step_features_desc">Turn off anything you don\'t need—we\'ll tailor the controls to keep everything simple.</string>
+    <string name="ab_feat_quick_menu_title">Quick Menu (Radial Fan)</string>
+    <string name="ab_feat_quick_menu_desc">Open a curved shortcut fan right from the screen edge.</string>
+    <string name="ab_feat_recent_switcher_title">Recent Apps Strip</string>
+    <string name="ab_feat_recent_switcher_desc">Slide seamlessly between your recently used apps.</string>
+    <string name="ab_feat_bottom_bar_title">Bottom Bar Gestures</string>
+    <string name="ab_feat_bottom_bar_desc">Swipe up for Home/Recents and hold for Circle to Search.</string>
+    <string name="ab_feat_three_stage_title">3-Stage Deep Swipes</string>
+    <string name="ab_feat_three_stage_desc">Unlock an extra third action when pulling further inward.</string>
+    <string name="ab_feat_liquid_glass_title">Prism Glass Effects</string>
+    <string name="ab_feat_liquid_glass_desc">Real-time optical glass refraction on Android 13 and newer.</string>
+    <string name="ab_q1_title">Q1 · Side Edge Reach &amp; Thickness</string>
+    <string name="ab_q1_desc">Swipe naturally on the pad below so we measure your thumb height, then pick your preferred edge thickness.</string>
+    <string name="ab_q1_opt_a_title">A · Slim &amp; Unobtrusive (14 dp)</string>
+    <string name="ab_q1_opt_a_desc">Stays out of the way of buttons near the edge.</string>
+    <string name="ab_q1_opt_b_title">B · Wide &amp; Forgiving (24 dp)</string>
+    <string name="ab_q1_opt_b_desc">Easy to catch even with a thick phone case.</string>
+    <string name="ab_q1_pad_hint">Swipe inward 2–3 times naturally with your thumb</string>
+    <string name="ab_q1_calibrated_status">Measured %1$d swipe(s) · Bottom offset %2$d%%</string>
+    <string name="ab_q1_uncalibrated_status">Optional: swipe above to auto-measure your thumb height</string>
+    <string name="ab_q2_title">Q2 · Bottom Bar Comfort</string>
+    <string name="ab_q2_desc">Choose how generous the bottom swipe area should feel.</string>
+    <string name="ab_q2_opt_a_title">A · Sleek &amp; Flush</string>
+    <string name="ab_q2_opt_a_desc">Low profile right along the bottom edge.</string>
+    <string name="ab_q2_opt_b_title">B · Cushioned &amp; Case-Friendly</string>
+    <string name="ab_q2_opt_b_desc">Slightly taller with a small lift above thick cases.</string>
+    <string name="ab_q2_pad_hint">Try dragging upward from the bottom pill</string>
+    <string name="ab_q3_title">Q3 · Visual Feel &amp; Shape</string>
+    <string name="ab_q3_desc">Pick your favorite surface look and indicator silhouette.</string>
+    <string name="ab_q3_surface_a_title">Surface A · Prism Glass</string>
+    <string name="ab_q3_surface_a_desc">Translucent refractive glass with soft specular highlights.</string>
+    <string name="ab_q3_surface_b_title">Surface B · Clean Frosted</string>
+    <string name="ab_q3_surface_b_desc">Crisp, minimal frosted contrast without refraction.</string>
+    <string name="ab_q3_shape_a_title">Shape A · Bending Droplet</string>
+    <string name="ab_q3_shape_a_desc">Organic Bezier curve that bends smoothly with your thumb.</string>
+    <string name="ab_q3_shape_b_title">Shape B · Minimal Arrow</string>
+    <string name="ab_q3_shape_b_desc">Compact floating chevron with minimal footprint.</string>
+    <string name="ab_q3_pad_hint">Swipe from either side to compare the look live</string>
+    <string name="ab_q4_title">Q4 · How Should Stage 2 Trigger?</string>
+    <string name="ab_q4_desc">Try pulling on the pad below and choose whether distance or a brief hold feels better.</string>
+    <string name="ab_q4_opt_a_title">A · Pull Further (Distance)</string>
+    <string name="ab_q4_opt_a_desc">Fast and continuous—pull past the halfway mark.</string>
+    <string name="ab_q4_opt_b_title">B · Pause Briefly (Hold)</string>
+    <string name="ab_q4_opt_b_desc">Short reach—pull slightly and hold for a moment.</string>
+    <string name="ab_q4_pad_hint">Pull inward to feel Stage 1 → Stage 2 transition</string>
+    <string name="ab_q4_stage1_lit">Stage 1 · Back</string>
+    <string name="ab_q4_stage2_lit">Stage 2 · Triggered</string>
+    <string name="ab_summary_title">Your Tailored Setup Is Ready</string>
+    <string name="ab_summary_desc">Review your choices below. You can still fine-tune every detail anytime in settings.</string>
+    <string name="ab_summary_calibrated_tag">Thumb-calibrated from your swipes</string>
+    <string name="ab_summary_on">On</string>
+    <string name="ab_summary_off">Off</string>
+
+    <!-- HyperOS Freeform API Diagnostics -->
+    <string name="diag_copy_freeform_api_button">Copy Floating Window API Log</string>
+    <string name="diag_copy_freeform_api_copied">Copied floating window API diagnostics to clipboard</string>
+    <string name="diag_copy_freeform_api_failed">Could not retrieve API log. Make sure Shizuku is running.</string>
+
+    <!-- URL validation guide -->
+    <string name="hint_url_validation_guide">Enter a valid URL such as https://example.com or example.com</string>
+
+    <!-- Live Interactive Screen Translate -->
+    <string name="action_toggle_screen_translate">Toggle Translate Button</string>
+    <string name="action_translate_screen_once">Translate Screen Now</string>
+    <string name="translate_toast_unsupported_android">Screen Translate requires Android 11 or higher.</string>
+    <string name="translate_toast_secure_screen">This screen is protected and cannot be captured for translation.</string>
+    <string name="translate_toast_downloading_model">Downloading offline language pack…</string>
+    <string name="translate_toast_wifi_required">Connect to Wi-Fi or disable Wi-Fi-only download in Translate settings.</string>
+    <string name="translate_toast_model_download_failed">Failed to download offline language pack. Check your connection and try again.</string>
+
+    <string name="translate_settings_entry_title">Screen Translate</string>
+    <string name="translate_settings_entry_desc">One-tap floating translate button for games, comics, and apps</string>
+    <string name="translate_settings_title">Screen Translate</string>
+
+    <string name="translate_section_languages">Translation Languages</string>
+    <string name="translate_label_source">From</string>
+    <string name="translate_label_target">To</string>
+    <string name="translate_source_auto_short">Auto</string>
+    <string name="translate_source_auto_title">Auto-detect (Recommended)</string>
+    <string name="translate_source_auto_desc">Automatically identifies the script and language on screen</string>
+    <string name="translate_languages_note">OCR supports 42 readable languages (Latin, Japanese, Chinese, Korean, Devanagari). Target supports all 59 offline ML Kit languages.</string>
+    <string name="cd_swap_languages">Swap source and target languages</string>
+    <string name="translate_picker_source_title">Select Source Language</string>
+    <string name="translate_picker_target_title">Select Target Language</string>
+    <string name="translate_search_language_hint">Search language name or code…</string>
+    <string name="translate_lang_section_popular">Popular</string>
+    <string name="translate_lang_section_all">All Languages</string>
+    <string name="translate_pack_ready_short">Ready</string>
+
+    <string name="translate_section_tracking">Tracking &amp; Refresh Mode</string>
+    <string name="translate_mode_smart_auto">Smart Auto</string>
+    <string name="translate_mode_smart_auto_desc">Detects screen changes automatically and skips identical frames to save battery.</string>
+    <string name="translate_mode_game_continuous">Game / Continuous</string>
+    <string name="translate_mode_game_continuous_desc">Polls subtitles and game UI continuously even when apps do not emit scroll events.</string>
+    <string name="translate_mode_manual_once">Manual Once</string>
+    <string name="translate_mode_manual_once_desc">Translates the current screen once until you tap refresh on the floating pill.</string>
+    <string name="translate_label_refresh_speed">Refresh Speed</string>
+    <string name="translate_speed_power_saver">Power Saver</string>
+    <string name="translate_speed_balanced">Balanced</string>
+    <string name="translate_speed_fast">Fast</string>
+
+    <string name="translate_section_display">Overlay Appearance</string>
+    <string name="translate_style_inplace">In-Place Blend</string>
+    <string name="translate_style_frosted">Frosted Card</string>
+    <string name="translate_label_overlay_alpha">Overlay Opacity</string>
+    <string name="translate_toggle_skip_target_title">Skip Already-Translated Text</string>
+    <string name="translate_toggle_skip_target_desc">Leave text that is already in your target language untouched.</string>
+
+    <string name="translate_section_packs">Offline Language Packs</string>
+    <string name="translate_toggle_wifi_only_title">Download on Wi-Fi Only</string>
+    <string name="translate_toggle_wifi_only_desc">Prevent downloading ~30 MB language packs over mobile data.</string>
+    <string name="translate_search_pack_hint">Filter language packs…</string>
+    <string name="translate_pack_size_hint">~30 MB offline</string>
+    <string name="translate_packs_show_all">Show all %1$d languages</string>
+    <string name="translate_packs_show_popular">Show popular languages only</string>
+    <string name="cd_download_language_pack">Download offline language pack</string>
+    <string name="cd_delete_language_pack">Delete offline language pack</string>
+
+    <string name="translate_section_guide">How to Use</string>
+    <string name="translate_guide_step1">Assign \"Toggle Translate Button\" or \"Translate Screen Now\" to any edge swipe or Quick Menu slot.</string>
+    <string name="translate_guide_step2">Tap the floating \"文A\" button on the screen edge to translate the entire screen cleanly with one tap—tap again to clear.</string>
+    <string name="translate_guide_step3">Tap the small \"⋯\" tab under the button to retranslate, hold to peek original text, swap languages, switch engine, or close.</string>
+
+    <!-- Spec 66: ML Kit safe init & smooth droplet shape sliders -->
+    <string name="translate_mlkit_unavailable_notice">Offline translation model manager is unavailable on this device environment. You can still configure language preferences safely.</string>
+    <string name="label_droplet_peak_width">Droplet Peak Height</string>
+    <string name="label_droplet_base_width">Droplet Base Span</string>
+
+    <!-- Native Circle to Search & CN ROM Assistant Repair -->
+    <string name="cts_card_title">Circle to Search (Native &amp; CN ROM Repair)</string>
+    <string name="cts_card_subtitle">Invokes the system\'s native Google Circle to Search session directly, with optional Shizuku Assistant repair for CN ROM devices.</string>
+    <string name="cts_toggle_auto_repair_title">Auto-Repair Google Assistant via Shizuku</string>
+    <string name="cts_toggle_auto_repair_desc">If a CN ROM resets the voice interaction service, automatically restore Google Assistant when Shizuku is connected.</string>
+    <string name="cts_shizuku_repair_button">Force-Set Google Assistant (Shizuku)</string>
+    <string name="cts_shizuku_reset_button">Reset Assistant Settings</string>
+    <string name="cts_shizuku_repair_success">Google Assistant restored for Circle to Search.</string>
+    <string name="cts_shizuku_reset_success">System assistant settings reset to default.</string>
+    <string name="cts_cn_rom_checklist_title">CN ROM Checklist (OriginOS / ColorOS / realme UI / HyperOS CN)</string>
+    <string name="cts_cn_rom_step1">Install and sign in to the Google app, and enable Google Basic Services in system settings.</string>
+    <string name="cts_cn_rom_step2">Allow Auto-start / Associated startup and Unrestricted battery for the Google app.</string>
+    <string name="cts_cn_rom_step3">Tap \"Force-Set Google Assistant (Shizuku)\" above if native Circle to Search fails to appear.</string>
+    <string name="cts_cn_rom_step4">Keep the Google app updated and set as the default digital assistant in system settings.</string>
+    <string name="cts_open_google_app_info_button">Open Google App Info</string>
+    <string name="cts_google_app_not_found">Google app is not installed on this device.</string>
+
+    <!-- OS Back Gesture Conflict Mitigation & Shizuku Control -->
+    <string name="zones_os_back_mitigation_title">OS Back Gesture Conflict Mitigation</string>
+    <string name="zones_os_back_mitigation_desc">If system edge back gestures trigger near the top of your trigger zone, suppress OS back gestures via Shizuku or adjust edge sensitivity in device navigation settings.</string>
+    <string name="zones_os_back_disable_shizuku_button">Suppress OS Back via Shizuku</string>
+    <string name="zones_os_back_restore_button">Restore OS Back Gestures</string>
+    <string name="zones_open_nav_settings_button">Open Device Navigation Settings</string>
+
+    <!-- No-Shizuku HyperOS Control Center Floating Window Macro -->
+    <string name="shizuku_toggle_no_shizuku_cc_float_title">Control Center Floating-Window Macro (No Shizuku)</string>
+    <string name="shizuku_toggle_no_shizuku_cc_float_desc">When Shizuku is disconnected, automatically open Control Center and tap the Floating Windows tile to trigger genuine scaled mini-windows.</string>
+    <string name="floating_window_cc_tile_not_found">Floating Windows tile not found in Control Center. Add it to the first page of Control Center tiles or connect Shizuku.</string>
+
+    <string name="shizuku_card_title_coloros">ColorOS / realme UI Navigation Control (Shizuku)</string>
+    <string name="shizuku_card_title_originos">OriginOS Navigation Control (Shizuku)</string>
+    <string name="shizuku_card_title_oneui">One UI Navigation Control (Shizuku)</string>
+    <string name="shizuku_card_title_aosp">System Back &amp; Nav Control (Shizuku)</string>
+    <string name="shizuku_card_subtitle_coloros">Hide the 3-button bar or suppress OS edge back gestures so Hinata gestures never conflict on ColorOS, OxygenOS, or realme UI.</string>
+    <string name="shizuku_card_subtitle_originos">Hide the navigation bar or suppress OS edge back gestures on vivo / iQOO OriginOS without root.</string>
+    <string name="shizuku_card_subtitle_oneui">Hide the Samsung gesture hint / navigation bar or suppress OS edge back gestures without root.</string>
+    <string name="shizuku_card_subtitle_aosp">Suppress Android\'s left/right system back gestures or hide the navigation bar on Pixel, Xperia, Nothing, Motorola, and AOSP devices.</string>
+    <string name="shizuku_safety_guard_note">Anti-lockout guard active: Hinata verifies its Accessibility Service is running before suppressing OS navigation, and you can restore defaults anytime.</string>
+    <string name="shizuku_snackbar_accessibility_required">Enable Hinata Accessibility Service first to prevent navigation lockout.</string>
+    <string name="shizuku_button_suppress_back">Suppress OS Back Gestures</string>
+    <string name="shizuku_snackbar_back_suppressed">System edge back gestures suppressed.</string>
+    <string name="shizuku_button_hide_navbar_generic">Hide System Navigation Bar</string>
+    <string name="shizuku_button_restore_all_defaults">Restore All System Defaults</string>
+
+    <!-- Mission 2: No-Shizuku Floating Window Setup, Reload, OCR Fallback & Warning -->
+    <string name="floating_window_cc_tile_not_found_setup">Place \"Floating windows\" on page 1 of Control Center, then run \"Reload button position\" or OCR scan in Settings.</string>
+    <string name="cc_float_scan_internal_success">Button position loaded and saved.</string>
+    <string name="cc_float_scan_internal_failed">Could not find the button automatically. Please try the fallback OCR scan.</string>
+    <string name="cc_float_scan_ocr_success">Button position memorized via OCR!</string>
+    <string name="cc_float_scan_ocr_failed">Could not detect the button via OCR. Make sure \"Floating windows\" is on page 1 of Control Center.</string>
+    <string name="cc_float_scan_manual_success">Button position saved from your tap!</string>
+    <string name="cc_float_manual_tap_prompt">Tap the \"Floating windows\" button once to save its position.</string>
+    <string name="cc_float_scan_service_required">Enable the Hinata Accessibility Service first to scan Control Center.</string>
+    <string name="cc_float_status_auto">Auto-detected</string>
+    <string name="cc_float_status_ocr">Saved via OCR</string>
+    <string name="cc_float_status_manual">Saved by tap</string>
+    <string name="cc_float_status_unset">Not set</string>
+    <string name="cc_float_setup_dialog_title">Floating Window Setup &amp; Caution</string>
+    <string name="cc_float_setup_shizuku_on_title">When Shizuku is ON (Recommended)</string>
+    <string name="cc_float_setup_shizuku_on_desc">Works directly and reliably from any screen without any Control Center setup.</string>
+    <string name="cc_float_setup_shizuku_off_title">When Shizuku is OFF</string>
+    <string name="cc_float_setup_shizuku_off_desc">Requires placing the \"Floating windows\" button on page 1 of your Control Center (Quick Settings).</string>
+    <string name="cc_float_macro_warning_full">Caution: When Shizuku is OFF, Hinata uses a macro that memorizes and taps the Control Center button position. If you rearrange Control Center tiles later, a different button may be tapped by mistake. Always tap \"Reload button position\" after moving tiles.</string>
+    <string name="cc_float_macro_warning_short">Caution: When Shizuku is OFF, rearranging Control Center tiles can tap a different button. Tap \"Reload\" after changing tile order.</string>
+    <string name="cc_float_setup_step1">Step 1: Place \"Floating windows\" on page 1 of Control Center.</string>
+    <string name="cc_float_btn_read_internal">Step 2: Read button position (Auto)</string>
+    <string name="cc_float_btn_read_ocr">Fallback: Read from screen with OCR</string>
+    <string name="cc_float_calibration_title">Control Center Button Position (No Shizuku)</string>
+    <string name="cc_float_btn_reload_internal">Reload button position (after rearranging)</string>
+    <string name="cc_float_btn_reload_ocr">Fallback: Read position with OCR</string>
+
+    <!-- Task 1: Opt-In High-Quality Online Translation Engine -->
+    <string name="translate_section_engine">Translation Engine</string>
+    <string name="translate_engine_offline">Offline (Local)</string>
+    <string name="translate_engine_online">Online (High Quality)</string>
+    <string name="translate_engine_offline_desc">Translates 100% on-device using downloaded ML Kit language packs. No text or images ever leave your device.</string>
+    <string name="translate_engine_online_desc">Sends extracted text only for natural, high-accuracy paragraph translation. Automatically falls back to offline translation when unreachable.</string>
+    <string name="translate_online_consent_title">Enable Online High-Quality Translation?</string>
+    <string name="translate_online_consent_body">• Only text extracted from the screen is sent to the translation server — screenshots and images are never transmitted.\n• Password fields and protected screens (FLAG_SECURE) are automatically excluded.\n• You can switch back to Offline (Local) anytime to stop all network requests completely.\n• When offline or rate-limited, Hinata automatically falls back to on-device offline translation.</string>
+    <string name="translate_online_consent_confirm">Agree &amp; Enable</string>
+    <string name="translate_online_consent_cancel">Cancel</string>
+
+    <!-- Task 3 & Live Translate Overhaul -->
+    <string name="cc_float_method_node">Node</string>
+    <string name="cc_float_method_ocr">OCR</string>
+    <string name="cc_float_method_manual">Tap</string>
+    <string name="cc_float_method_auto">Auto</string>
+    <string name="cc_float_error_service_disabled">Hinata Accessibility Service is turned off. Please enable it in Accessibility settings.</string>
+    <string name="cc_float_error_service_not_bound">Hinata Accessibility Service is not responding. Toggle it OFF and ON again in Accessibility settings.</string>
+    <string name="cc_float_action_open_accessibility">Open Settings</string>
+    <string name="cc_float_btn_dont_show_again">Got it, don\'t show again</string>
+    <string name="cc_float_calibration_shizuku_summary">Shizuku ON: direct native floating windows. Shizuku OFF: macro taps the memorized Control Center tile.</string>
+    <string name="cc_float_saved_coords_format">Saved: X %1$d%% · Y %2$d%% (%3$s)</string>
+    <string name="cc_float_saved_coords_unset">Saved position: Not set yet</string>
+    <string name="cc_float_btn_reset_coords">Reset</string>
+    <string name="translate_toast_switched_online">Switched to Online (High Quality) translation</string>
+    <string name="translate_toast_switched_offline">Switched to Offline (Local) translation</string>
+    <string name="translate_toast_online_consent_required">Please agree to online translation in Screen Translate Settings first.</string>
+
+    <!-- PART 3: Beginner Visual Guide & Control Center First-Page Animation -->
+    <string name="cc_demo_phase1_caption">1. Swipe down from the top-right corner to open Control Center</string>
+    <string name="cc_demo_phase2_caption">2. Place \"Floating windows\" on Page 1 (first dot active)</string>
+    <string name="cc_demo_phase3_caption">3. If you move tiles later, tap \"Reload button position\"</string>
+    <string name="cc_demo_tile_floating_short">Float</string>
+    <string name="cc_demo_page1_label">Page 1</string>
+    <string name="cc_demo_toggle_show_guide">Show visual guide &amp; 3-step explanation</string>
+    <string name="cc_demo_toggle_hide_guide">Hide visual guide</string>
+    <string name="cc_guide_what_is_cc_title">What is Control Center?</string>
+    <string name="cc_guide_what_is_cc_desc">It is the quick-toggle panel that opens when you swipe down from the top-right edge of the screen.</string>
+    <string name="cc_guide_what_is_page1_title">What does \"Page 1\" mean?</string>
+    <string name="cc_guide_what_is_page1_desc">It is the very first screen of tiles shown immediately without swiping left or right. Tap the Edit (pencil) icon in Control Center and drag \"Floating windows\" onto Page 1.</string>
+    <string name="cc_guide_reorder_caution_title">Important if you rearrange tiles</string>
+    <string name="cc_guide_reorder_caution_desc">When Shizuku is OFF, Hinata automatically taps the memorized button position. If you edit or reorder Control Center tiles later, run \"Reload button position\" again. (With Shizuku ON, Control Center is not used at all.)</string>
+
+    <!-- PART 4: Strict HyperOS Capability Gating & Diagnostics -->
+    <string name="floating_window_hyperos_or_shizuku_only">Floating windows require HyperOS or an active Shizuku connection on this device.</string>
+    <string name="floating_window_requires_hyperos_or_shizuku_badge">Shizuku</string>
+    <string name="floating_window_toggle_restricted_desc">Available on HyperOS devices or when Shizuku is connected.</string>
+    <string name="shizuku_floating_window_non_hyperos_note">Floating windows on this device use Android standard freeform via Shizuku. Connect Shizuku above to enable floating window actions.</string>
+    <string name="diag_os_environment">OS Environment</string>
+    <string name="diag_os_hyperos_full">%1$s (Full HyperOS Mode)</string>
+    <string name="diag_os_standard_mode">%1$s (Standard Android Mode)</string>
+
+    <!-- One-Tap Translate Button & Bottom Bar During IME -->
+    <string name="translate_section_button_behavior">Translate Button Behavior</string>
+    <string name="translate_button_behavior_desc">Translates cleanly only when you tap the floating edge button—no background polling, no battery drain, and zero flicker.</string>
+    <string name="translate_toggle_auto_clear_scroll_title">Auto-clear translation on scroll</string>
+    <string name="translate_toggle_auto_clear_scroll_desc">Automatically hides overlaid translations when you scroll so stale text never floats over new content.</string>
+    <string name="translate_toast_no_text_found">No translatable text found on this screen.</string>
+    <string name="label_show_bottom_bar_during_ime">Keep bottom gesture bar active during keyboard</string>
+    <string name="desc_show_bottom_bar_during_ime">Allow swiping from the bottom edge even while the on-screen keyboard is open. Turn OFF to prevent accidental triggers while typing.</string>
+
+    <!-- 4-Layer Safety, Shizuku Auto-Revive & Quick Settings Recovery -->
+    <string name="qs_tile_recovery_label">Hinata Recovery</string>
+    <string name="qs_tile_recovery_subtitle_active">Tap to reload / restore nav</string>
+    <string name="qs_tile_recovery_subtitle_inactive">Tap for emergency recovery</string>
+    <string name="shortcut_revive_short">Restart gestures</string>
+    <string name="shortcut_revive_long">Restart edge gestures</string>
+    <string name="shortcut_restore_nav_short">Restore 3-button nav</string>
+    <string name="shortcut_restore_nav_long">Emergency restore 3-button &amp; OS nav</string>
+    <string name="notification_keep_alive_channel_name">Keep-Alive Protection (Silent)</string>
+    <string name="notification_keep_alive_title">Hinata Gestures Protected</string>
+    <string name="notification_keep_alive_text">Preventing background kills. Use the buttons below for 1-tap recovery.</string>
+    <string name="notification_action_reload">🔄 Reload</string>
+    <string name="notification_action_restore_nav">🛟 Restore Nav</string>
+    <string name="recovery_toast_revive_success">Hinata restarted</string>
+    <string name="recovery_toast_nav_restored">System navigation restored</string>
+    <string name="recovery_toast_open_accessibility_manual">Turn Hinata OFF and back ON in Accessibility settings</string>
+    <string name="recovery_toast_open_nav_settings_manual">Opened system navigation settings. Select 3-button or gesture navigation.</string>
+    <string name="recovery_toast_revive_failed_open_settings">Shizuku rebind failed. Opening Accessibility settings.</string>
+    <string name="recovery_toast_nav_restore_failed_open_settings">Shizuku navigation restore failed. Opening system settings.</string>
+    <string name="recovery_card_title">🛟 Auto-Recovery &amp; Emergency Escape</string>
+    <string name="recovery_card_badge">4-Layer Safety</string>
+    <string name="recovery_toggle_keep_alive_title">Show anti-kill protection notification (Recommended)</string>
+    <string name="recovery_toggle_keep_alive_desc">Prevents OS background kills and gives 1-tap Reload &amp; Restore Nav buttons in the notification shade.</string>
+    <string name="recovery_toggle_auto_revive_title">Auto-revive via Shizuku &amp; restore nav on stop</string>
+    <string name="recovery_toggle_auto_revive_desc">Automatically attempts restart if stopped in the background, and restores 3-button navigation if recovery fails.</string>
+    <string name="recovery_button_rebind_now">Rebind &amp; Restart Gestures Now</string>
+    <string name="recovery_qs_tile_tip">💡 Add the \"Hinata Recovery\" tile in Quick Settings / Control Center for 1-tap recovery from any screen. You can also long-press the Hinata home screen icon for emergency shortcuts.</string>
+
+    <!-- Emergency Accessibility Off Escape Notification (ID 4199) -->
+    <string name="notification_emergency_off_channel_name">Hinata Emergency Recovery Alert</string>
+    <string name="notification_emergency_off_title">⚠️ Hinata Accessibility Stopped</string>
+    <string name="notification_emergency_off_text">Edge gestures are paused. Tap below to re-enable Accessibility or restore 3-button navigation immediately.</string>
+    <string name="notification_emergency_action_open_accessibility">Open Accessibility</string>
+    <string name="notification_emergency_action_restore_nav">Restore 3-Button Nav</string>
+
+    <!-- Mandatory Onboarding & QS Tile Safety Step -->
+    <string name="onboarding_a11y_mandatory_agree">I agree that keeping Android Accessibility enabled at all times is mandatory to use Hinata</string>
+    <string name="onboarding_qs_tile_title">🛟 Add \"Hinata Recovery\" to Quick Panel (Strongly Recommended)</string>
+    <string name="onboarding_qs_tile_desc">Even if edge gestures ever stop working, swiping down from the top to open Quick Settings / Control Center always works. Adding the \"Hinata Recovery\" tile lets you restart gestures or restore 3-button navigation in 1 tap so you never get stuck.</string>
+    <string name="onboarding_qs_tile_add_now_button">+ Add \"Hinata Recovery\" Tile to Quick Panel Now</string>
+    <string name="onboarding_qs_tile_manual_title">Manual setup (if needed)</string>
+    <string name="onboarding_qs_tile_manual_steps">Swipe down from top-right → Tap Edit (pencil icon) → Drag \"Hinata Recovery\" onto Page 1.</string>
+    <string name="onboarding_qs_tile_open_panel_button">Open Quick Settings Panel</string>
+    <string name="onboarding_qs_tile_countdown_button">Please read carefully (%1$ds remaining)</string>
+    <string name="onboarding_qs_tile_next_button">I Understand — Continue</string>
+    <string name="onboarding_qs_tile_added_toast">\"Hinata Recovery\" tile added to Quick Panel</string>
+    <string name="onboarding_qs_tile_manual_hint_toast">Swipe down from the top, tap Edit, and add \"Hinata Recovery\" to Page 1.</string>
+
+    <!-- Post-Onboarding Mandatory Accessibility Hard Gate -->
+    <string name="a11y_gate_title">Accessibility Is Off — Hinata Unavailable</string>
+    <string name="a11y_gate_desc">Hinata requires Android Accessibility to run gestures and safety guards (including automatic 3-button restoration on crash). Settings and gesture features remain locked until Accessibility is turned on. (You remain solely responsible if Accessibility turns off and causes navigation issues.)</string>
+    <string name="a11y_gate_open_accessibility_button">Open Accessibility Settings &amp; Turn ON</string>
+    <string name="a11y_gate_shizuku_auto_enable_button">⚡ Auto-Enable Accessibility via Shizuku Now</string>
+    <string name="a11y_gate_emergency_restore_nav_button">🛟 Emergency Restore 3-Button / Standard Nav Now</string>
+    <string name="a11y_gate_add_qs_tile_button">Add \"Hinata Recovery\" Tile to Quick Panel</string>
+</resources>
+
+
+
