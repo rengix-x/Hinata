@@ -366,6 +366,10 @@
     <string name="onboarding_button_start">Get Started</string>
     <string name="onboarding_step2_title">Enable Edge Gestures</string>
     <string name="onboarding_step2_desc">Turn on Hinata in Accessibility settings so swipes from screen edges can trigger Back, Home, and shortcuts.</string>
+    <string name="onboarding_a11y_restricted_title">First, allow restricted settings (Android 13+)</string>
+    <string name="onboarding_a11y_restricted_desc">Because Hinata is installed from outside Google Play, Android may block turning on Accessibility. Open App info, tap the ⋮ menu in the top-right, choose "Allow restricted settings", then come back and turn on Accessibility.</string>
+    <string name="onboarding_a11y_open_app_info">Open App info</string>
+    <string name="onboarding_a11y_nav_warning">If you have hidden the 3-button navigation bar, restore the buttons first (Settings → System navigation). Without buttons or gestures you cannot move through the Settings screens.</string>
     <string name="onboarding_step2_status_enabled">Enabled</string>
     <string name="onboarding_step2_status_waiting">Not enabled yet</string>
     <string name="onboarding_step2_open_settings">Open Accessibility Settings</string>
