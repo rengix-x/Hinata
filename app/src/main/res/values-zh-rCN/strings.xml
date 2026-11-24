@@ -366,6 +366,10 @@
     <string name="onboarding_button_start">开始使用</string>
     <string name="onboarding_step2_title">开启边缘手势</string>
     <string name="onboarding_step2_desc">请在无障碍设置中开启 Hinata，以便从屏幕边缘滑动触发返回、桌面和快捷操作。</string>
+    <string name="onboarding_a11y_restricted_title">请先允许受限设置（Android 13 及以上）</string>
+    <string name="onboarding_a11y_restricted_desc">由于 Hinata 不是从 Google Play 安装的，Android 可能会阻止开启无障碍。请打开应用信息，点右上角的「⋮」，选择「允许受限设置」，然后回来开启无障碍。</string>
+    <string name="onboarding_a11y_open_app_info">打开应用信息</string>
+    <string name="onboarding_a11y_nav_warning">如果您已隐藏三键导航栏，请先在设置的「系统导航」中恢复按钮显示。没有按钮也没有手势时，将无法在设置界面中移动。</string>
     <string name="onboarding_step2_status_enabled">已启用</string>
     <string name="onboarding_step2_status_waiting">尚未启用</string>
     <string name="onboarding_step2_open_settings">前往无障碍设置</string>
