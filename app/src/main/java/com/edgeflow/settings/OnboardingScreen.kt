@@ -50,6 +50,7 @@ import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material.icons.automirrored.rounded.ArrowForward
 import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material.icons.rounded.CheckCircle
+import androidx.compose.material.icons.rounded.Info
 import com.example.ui.icons.HinataIcons
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -1439,6 +1440,7 @@ private fun OnboardingStepInteractiveSandbox() {
 private fun OnboardingStepAccessibility(
     isAccessibilityEnabled: Boolean
 ) {
+    val context = LocalContext.current
     val extendedColors = LocalEdgeFlowColors.current
     val emblemBg by animateColorAsState(
         targetValue = if (isAccessibilityEnabled) {
@@ -1541,6 +1543,54 @@ private fun OnboardingStepAccessibility(
                         MaterialTheme.colorScheme.onSurfaceVariant
                     }
                 )
+            }
+        }
+
+        if (!isAccessibilityEnabled) {
+            Spacer(Modifier.height(20.dp))
+
+            Surface(
+                shape = RoundedCornerShape(16.dp),
+                color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.55f),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 8.dp)
+            ) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(
+                            imageVector = Icons.Rounded.Info,
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.primary,
+                            modifier = Modifier.size(20.dp)
+                        )
+                        Spacer(Modifier.width(8.dp))
+                        Text(
+                            text = stringResource(R.string.onboarding_a11y_restricted_title),
+                            style = MaterialTheme.typography.titleSmall,
+                            color = MaterialTheme.colorScheme.onSurface
+                        )
+                    }
+                    Spacer(Modifier.height(8.dp))
+                    Text(
+                        text = stringResource(R.string.onboarding_a11y_restricted_desc),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    Spacer(Modifier.height(12.dp))
+                    OutlinedButton(
+                        onClick = { openAppDetailsSettings(context) },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text(text = stringResource(R.string.onboarding_a11y_open_app_info))
+                    }
+                    Spacer(Modifier.height(12.dp))
+                    Text(
+                        text = stringResource(R.string.onboarding_a11y_nav_warning),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.error
+                    )
+                }
             }
         }
     }
