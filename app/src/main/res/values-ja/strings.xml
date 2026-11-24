@@ -366,6 +366,10 @@
     <string name="onboarding_button_start">はじめる</string>
     <string name="onboarding_step2_title">ジェスチャーを有効にする</string>
     <string name="onboarding_step2_desc">画面端のスワイプで戻る・ホーム・ショートカットを動かすため、ユーザー補助でHinataをオンにしてください。</string>
+    <string name="onboarding_a11y_restricted_title">最初に「制限付き設定を許可」してください（Android 13以降）</string>
+    <string name="onboarding_a11y_restricted_desc">Google Play以外からインストールしたアプリは、そのままではユーザー補助をオンにできないことがあります。「アプリ情報を開く」→右上の「⋮」→「制限付き設定を許可」の順に進めてから、戻ってユーザー補助をオンにしてください。</string>
+    <string name="onboarding_a11y_open_app_info">アプリ情報を開く</string>
+    <string name="onboarding_a11y_nav_warning">3ボタンナビゲーションを非表示にしている場合は、先に設定の「システムナビゲーション」からボタン表示に戻してください。ボタンもジェスチャーもないと、設定画面を移動できません。</string>
     <string name="onboarding_step2_status_enabled">有効になりました</string>
     <string name="onboarding_step2_status_waiting">まだ有効になっていません</string>
     <string name="onboarding_step2_open_settings">ユーザー補助設定を開く</string>
