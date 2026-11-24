@@ -366,6 +366,10 @@
     <string name="onboarding_button_start">शुरू करें</string>
     <string name="onboarding_step2_title">एज जेस्चर चालू करें</string>
     <string name="onboarding_step2_desc">स्क्रीन के किनारे से बैक, होम और शॉर्टकट चलाने के लिए एक्सेसिबिलिटी सेटिंग में Hinata को चालू करें।</string>
+    <string name="onboarding_a11y_restricted_title">पहले प्रतिबंधित सेटिंग की अनुमति दें (Android 13+)</string>
+    <string name="onboarding_a11y_restricted_desc">Hinata Google Play के बाहर से इंस्टॉल किया गया है, इसलिए Android एक्सेसिबिलिटी चालू करने से रोक सकता है। ऐप जानकारी खोलें, ऊपर-दाईं ओर के ⋮ मेनू पर टैप करें, "प्रतिबंधित सेटिंग की अनुमति दें" चुनें, फिर वापस आकर एक्सेसिबिलिटी चालू करें।</string>
+    <string name="onboarding_a11y_open_app_info">ऐप जानकारी खोलें</string>
+    <string name="onboarding_a11y_nav_warning">यदि आपने 3-बटन नेविगेशन बार छिपा रखा है, तो पहले सेटिंग के "सिस्टम नेविगेशन" से बटन वापस दिखाएँ। बटन या जेस्चर के बिना आप सेटिंग स्क्रीन में आगे नहीं बढ़ पाएँगे।</string>
     <string name="onboarding_step2_status_enabled">सक्रिय हो गया</string>
     <string name="onboarding_step2_status_waiting">अभी सक्रिय नहीं है</string>
     <string name="onboarding_step2_open_settings">एक्सेसिबिलिटी सेटिंग खोलें</string>
