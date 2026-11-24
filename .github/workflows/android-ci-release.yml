@@ -25,6 +25,8 @@ jobs:
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
+    - name: Make gradlew executable
+    run: chmod +x gradlew
 
       - name: Verify zero Compose imports in resident service package
         run: |
@@ -55,6 +57,8 @@ jobs:
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
+      - name: Make gradlew executable
+      run: chmod +x gradlew
 
       - name: Decode Release Keystore (if configured)
         id: keystore
