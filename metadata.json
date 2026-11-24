@@ -1,8 +1,0 @@
-{
-  "name": "Hinata",
-  "description": "An ultra-lightweight, privacy-first Android edge gesture, 120fps Prism Glass arc menu, and one-tap screen translator.",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}
