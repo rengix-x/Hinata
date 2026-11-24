@@ -38,6 +38,10 @@ Xiaomi / POCO HyperOS の操作性向上から生まれ、すべての Android 1
 
 ---
 
+<p align="center">
+  <img src="docs/demo.gif" alt="Hinata demo — 3-stage edge gestures with Prism Glass" width="360">
+</p>
+
 ## Key Features / 主な機能
 
 - **3-Stage Edge Gestures, Tunable on Both Axes / 横・縦ともに3段階調整できるエッジジェスチャー**
