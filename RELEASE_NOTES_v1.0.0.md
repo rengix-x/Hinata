@@ -20,9 +20,9 @@ Android 10–16 (API 29–36) · Application ID: `io.github.rengixx.hinata` · A
 
 | File Name | Recommended For / 対象端末 |
 | --- | --- |
-| **`app-arm64-v8a-release.apk`** *(Recommended / 推奨)* | **99% of modern Android phones** (2018+, Snapdragon / Dimensity / Exynos / Tensor 64-bit ARM). Smallest download & fastest install. / **最近のほとんどの Android スマホ（64bit ARM）はこちらが最軽量・おすすめです。** |
-| **`app-armeabi-v7a-release.apk`** | Older 32-bit ARM devices only. / 古い 32bit ARM 端末向け。 |
-| **`app-universal-release.apk`** | Works on both 64-bit and 32-bit ARM devices if you are unsure. / 端末のアーキテクチャが分からない場合の汎用版。 |
+| **`Hinata-v1.0.0-arm64-v8a.apk`** *(Recommended / 推奨)* | **99% of modern Android phones** (2018+, Snapdragon / Dimensity / Exynos / Tensor 64-bit ARM). Smallest download & fastest install. / **最近のほとんどの Android スマホ（64bit ARM）はこちらが最軽量・おすすめです。** |
+| **`Hinata-v1.0.0-armeabi-v7a.apk`** | Older 32-bit ARM devices only. / 古い 32bit ARM 端末向け。 |
+| **`Hinata-v1.0.0-universal.apk`** | Works on both 64-bit and 32-bit ARM devices if you are unsure. / 端末のアーキテクチャが分からない場合の汎用版。 |
 
 ---
 
@@ -34,6 +34,24 @@ Android 10–16 (API 29–36) · Application ID: `io.github.rengixx.hinata` · A
 4. **Optional Floating Windows & System Nav Control**:
    - **With Shizuku ON (Recommended)**: Works directly from any screen with zero Control Center setup.
    - **HyperOS without Shizuku**: Place the *"Floating windows"* tile on Page 1 of Control Center if fallback macro mode is needed.
+
+---
+
+## Verification / 検証情報
+
+SHA-256 checksums (also attached as `SHA256SUMS.txt`):
+
+```
+e61ca1ba534a1bc2a47af39f30605c88cb32d1211b15ad878035eb875561bcc9  Hinata-v1.0.0-arm64-v8a.apk
+5dbb772a6936f7cf306a4dfbc703a94b6ee43ad75c8c6b4d5c3d97b4c7f86dbe  Hinata-v1.0.0-armeabi-v7a.apk
+2441e598c7eed82a327c8fb32b7247e035cdca18d58d1e37ff978fe7b0629dc0  Hinata-v1.0.0-universal.apk
+```
+
+Signing certificate SHA-256 fingerprint / 署名証明書のSHA-256フィンガープリント:
+
+```
+0A:CB:E0:F2:5B:2E:8C:1E:F0:82:91:9C:87:30:65:3B:06:C7:6B:D1:85:98:BB:61:A2:A4:01:28:4E:F7:F6:D3
+```
 
 ---
 

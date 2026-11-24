@@ -24,6 +24,12 @@
   Developed by <b>rengix-x</b>
 </p>
 
+<p align="center">
+  <a href="https://github.com/rengix-x/Hinata/releases/latest"><b>⬇ Download the latest APK / 最新APKをダウンロード</b></a>
+  &nbsp;·&nbsp;
+  <a href="#setup--初回セットアップ"><b>Setup / 初回セットアップ</b></a>
+</p>
+
 ---
 
 An ultra-lightweight, privacy-first Android edge gesture, 120fps Prism Glass arc menu, and one-tap on-device screen translator — born on Xiaomi / POCO HyperOS and engineered to work seamlessly across **all Android 10–16 devices**.
@@ -79,6 +85,7 @@ Xiaomi / POCO HyperOS の操作性向上から生まれ、すべての Android 1
 - **Two Explicit HTTPS Network Uses Only**:
   1. **Google ML Kit Offline Models**: Downloading and managing on-device ML Kit offline translation language packs (~30 MB, Wi-Fi-only toggle enabled by default), including standard HTTPS model delivery and management requests performed internally by the Google ML Kit SDK.
   2. **Opt-in Online High-Quality Translation**: Disabled by default. Only enabled after explicit user consent in Screen Translate Settings. Even when enabled, **only extracted plain text is sent over HTTPS — screenshots and images are never transmitted**, and password fields / `FLAG_SECURE` screens are automatically excluded. You can switch back to 100% offline mode at any time.
+- **Verify Your Download / ダウンロードの検証**: SHA-256 checksums for every APK are published in `SHA256SUMS.txt` attached to each Release. Signing certificate (SHA-256): `0A:CB:E0:F2:5B:2E:8C:1E:F0:82:91:9C:87:30:65:3B:06:C7:6B:D1:85:98:BB:61:A2:A4:01:28:4E:F7:F6:D3` (see [SECURITY.md](SECURITY.md)).
 
 ---
 
